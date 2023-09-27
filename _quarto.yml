@@ -9,8 +9,8 @@ book:
   page-navigation: true
   title: "Documentation"
   description: "foo"
-  site-url: "https://foogithub.io/foo/"
-  repo-url: https://github.com/foo/foo
+  site-url: "https://llm-hdm.github.io/documentation/"
+  repo-url: https://github.com/llm-hdm/documentation
   repo-actions: [edit, issue]
   open-graph: true
   image: "/images/logo.png"
