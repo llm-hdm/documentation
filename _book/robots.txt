@@ -1,1 +1,1 @@
-Sitemap: https://foogithub.io/foo/sitemap.xml
+Sitemap: https://llm-hdm.github.io/documentation/sitemap.xml
