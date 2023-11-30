@@ -1,5 +1,6 @@
-# Introduction
+# Use Case Identification
 
-This is a book created from markdown and executable code.
+Zu Beginn der Veranstaltung haben wir diskutiert, welches Unternehmen für uns in Frage kommt.
+Da wir schon eine grobe Idee für ein mögliches Projekt hatten, hielten wir ausschau nach Unternehmen, die klein Geräte
+oder kleinere
 
-See @knuth84 for additional discussion of literate programming.
