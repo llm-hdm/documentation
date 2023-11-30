@@ -21,6 +21,48 @@
     "text": "Gruppenmitglieder\n\nFrieder Ludwig\nTom Knittel\nJohannes Glock\nAaron Stark"
   },
   {
+    "objectID": "einleitung.html",
+    "href": "einleitung.html",
+    "title": "1  Einleitung",
+    "section": "",
+    "text": "In der Ära digitaler Innovation ist die Entwicklung einer maßgeschneiderten Anwendung von entscheidender Bedeutung. Dieses Projekt fokussiert sich darauf, eine hochentwickelte Applikation zu schaffen, die auf Large Language Models (LLMs) basiert und durch Prompt Engineering verfeinert wird.\nLLMs wie GPT-3 bieten ein enormes Potenzial zur Lösung komplexer Probleme. In Kombination mit Prompt Engineering wollen wir eine anpassungsfähige und leistungsstarke Anwendung kreieren, die spezifische Anforderungen erfüllt und präzise Ergebnisse liefert.\nEin weiteres Ziel besteht darin, diese Anwendung in einem ausgewählten Unternehmen einzusetzen, um eine spezifische Problemstellung zu lösen. Durch die direkte Anwendung in der realen Welt wollen wir die Effektivität und Anwendbarkeit unserer Lösung unter Beweis stellen. Dies ermöglicht es, reale Geschäftsprobleme mit innovativer Technologie zu lösen und einen echten Mehrwert zu bieten.\nUnser Fokus liegt nicht nur auf der technologischen Entwicklung, sondern auch auf der praktischen Anwendung, um den Nutzen dieser innovativen Applikation in Unternehmen zu demonstrieren. Ziel ist es, Standards für leistungsstarke, anpassungsfähige Unternehmensanwendungen zu setzen und so zur Weiterentwicklung der Technologiebranche beizutragen."
+  },
+  {
+    "objectID": "grundlagen.html",
+    "href": "grundlagen.html",
+    "title": "2  Grundlagen",
+    "section": "",
+    "text": "Beschreibung und Problemstellung\nTechnologien (GPT4, Prompt Engineering, LanChain? Vector DB?)\n\n\n2.0.1 Prompt Engineering\nPrompt Engineering ist eine Methode, die die Leistung von Large Language Models (LLMs) verbessert, indem sie gezielt formulierte Eingabeanweisungen, sogenannte “Prompts”, verwendet. Diese Anweisungen dienen dazu, die Ausgabe des Modells zu lenken und präziser auf spezifische Aufgaben oder Kontexte zuzuschneiden.\nDie Grundidee hinter Prompt Engineering besteht darin, dem LLM klare und präzise Anweisungen zu geben, wie es die gestellte Aufgabe verstehen und bearbeiten soll. Diese Prompts können in Form von Beispielsätzen, Fragen oder Anweisungen formuliert werden, um dem Modell Kontext und Richtung zu geben. Durch das Feintuning dieser Prompts kann die Leistung des LLMs verbessert werden, indem es genauer und zielgerichteter reagiert.\nEin Beispiel wäre die Verwendung eines LLMs zur Textgenerierung. Ein Forscher, der die Qualität der Erklärungen des Modells verbessern möchte, könnte ein spezifisches Prompt verwenden, das dem Modell klare Anweisungen gibt, um detaillierte und verständliche Antworten zu generieren. Ein solches Prompt könnte lauten: “Erkläre präzise und verständlich den Prozess der Photosynthese in Pflanzen.” Durch die präzise Formulierung des Prompts wird das Modell darauf trainiert, genau auf diese Anforderungen zu reagieren und genaue Erklärungen zu liefern. So kann Prompt Engineering die Ausgabequalität und Relevanz des Modells in bestimmten Anwendungsfällen deutlich verbessern."
+  },
+  {
+    "objectID": "ziele_und_anforderungen.html",
+    "href": "ziele_und_anforderungen.html",
+    "title": "3  Ziele und Anforerungen",
+    "section": "",
+    "text": "Anforderung\nIdee (welche hatten wir, welche haben wir verworfen)\nUse Case\nUser Personas\nWElchne Firma hanben wir gewählt und warum?\nBusiness Model Canvas"
+  },
+  {
+    "objectID": "design_und_entwicklung.html",
+    "href": "design_und_entwicklung.html",
+    "title": "4  Design und Entwicklung",
+    "section": "",
+    "text": "Page Scraper (Daten beschaffung)\nTest APP zurm Prompt Engineering –&gt; alles erklären\n‘Evaluation of the Model usw.’\nDesign (Chatbot Design)\nSoftware Architektur\nEntwicklung des Frontend\nEntwicklung des Backend\n\n\n4.0.1 Mögliche Gliederung\n\nPage Scraper\nTEst App\nPrompt Engineering\nEvaluatiuon of the Model\nsoftware architecture\nDesign of the User Interface\nImplement of the frontend and backend"
+  },
+  {
+    "objectID": "evaluation.html",
+    "href": "evaluation.html",
+    "title": "5  Evaluation",
+    "section": "",
+    "text": "Was lief gut, was lief schlecht?\n\neinmal evaulieren bitte"
+  },
+  {
+    "objectID": "fazit.html",
+    "href": "fazit.html",
+    "title": "6  Fazit",
+    "section": "",
+    "text": "fazit ist klar"
+  },
+  {
     "objectID": "links.html#link-zur-app",
     "href": "links.html#link-zur-app",
     "title": "Links",
