@@ -18,7 +18,7 @@ book:
         type: overlay
     page-footer:
         left: |
-            © Team X, 2023
+            © Team 4, 2023
         center:
             - text: "Home"
               href: index.qmd

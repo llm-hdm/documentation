@@ -8,7 +8,7 @@ Dabei soll anhand eines selbst entwickelten Tools, das ein LLM nutzt ein Prozess
 
 ## Hinweise
 
-Alle Rechte vorbehalten.
+© Alle Rechte vorbehalten.
 
 ## Gruppenmitglieder
 
