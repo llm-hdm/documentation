@@ -1,14 +1,20 @@
-# Preface {.unnumbered}
+# LLM-Modul 2023 {.unnumbered}
 
-This is a Quarto book.
+Diese Dokumentation ist eine Arbeit des Moduls "Einsatz von Large Language Models (LLM) im Unternehmenskontext" im Wintersemester 2023 an der Hochschule der Medien in Stuttgart.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Ziel ist es, zu untersuchen wie LLMs praktisch im Unternehmen angewendet werden können.
+Dabei soll anhand eines selbst entwickelten Tools, das ein LLM nutzt ein Prozess in einem Unternehemen verbessert werden.
 
 
 ## Hinweise
 
-- [Mögliche Gliederung](https://kirenz.github.io/thesis-guide/docs/design-science-research-gliederung.html) (Design Science Research)
+Alle Rechte vorbehalten.
 
 ## Gruppenmitglieder
 
-- [HTML Themes](https://quarto.org/docs/output-formats/html-themes.html)
+- Frieder Ludwig
+- Tom Knittel
+- Johannes Glock
+- Aaron Stark
+
+<img src="images/Bild_1_robot.jpeg" width="400" height="400">

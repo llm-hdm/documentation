@@ -1,5 +1,0 @@
-# Das ist eine TEST ÜBERSCHRIFT
-
-In summary, this book has no content whatsoever.
-Test 
-Test
