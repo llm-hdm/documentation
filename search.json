@@ -2,36 +2,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Documentation",
+    "title": "Projekt Dokumentation",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "LLM-Modul 2023\nDiese Dokumentation ist eine Arbeit des Moduls “Einsatz von Large Language Models (LLM) im Unternehmenskontext” im Wintersemester 2023 an der Hochschule der Medien in Stuttgart.\nZiel ist es, zu untersuchen wie LLMs praktisch im Unternehmen angewendet werden können. Dabei soll anhand eines selbst entwickelten Tools, das ein LLM nutzt ein Prozess in einem Unternehemen verbessert werden."
   },
   {
     "objectID": "index.html#hinweise",
     "href": "index.html#hinweise",
-    "title": "Documentation",
+    "title": "Projekt Dokumentation",
     "section": "Hinweise",
-    "text": "Hinweise\n\nMögliche Gliederung (Design Science Research)"
+    "text": "Hinweise\nAlle Rechte vorbehalten."
   },
   {
     "objectID": "index.html#gruppenmitglieder",
     "href": "index.html#gruppenmitglieder",
-    "title": "Documentation",
+    "title": "Projekt Dokumentation",
     "section": "Gruppenmitglieder",
-    "text": "Gruppenmitglieder\n\nHTML Themes"
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  1 Use Case Identification",
-    "section": "",
-    "text": "Zu Beginn der Veranstaltung haben wir diskutiert, welches Unternehmen für uns in Frage kommt. Da wir schon eine grobe Idee für ein mögliches Projekt hatten, hielten wir ausschau nach Unternehmen, die klein Geräte oder kleinere"
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Das ist eine TEST ÜBERSCHRIFT",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever. Test Test"
+    "text": "Gruppenmitglieder\n\nFrieder Ludwig\nTom Knittel\nJohannes Glock\nAaron Stark"
   }
 ]
