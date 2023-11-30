@@ -1,1 +1,24 @@
 # Design und Entwicklung
+
+- Page Scraper (Daten beschaffung)
+
+- Test APP zurm Prompt Engineering --> alles erklären
+- 'Evaluation of the Model usw.'
+
+- Design (Chatbot Design)
+
+- Software Architektur
+
+- Entwicklung des Frontend
+- Entwicklung des Backend
+
+
+### Mögliche Gliederung
+
+- Page Scraper
+- TEst App
+- Prompt Engineering
+- Evaluatiuon of the Model
+- software architecture
+- Design of the User Interface
+- Implement of the frontend and backend

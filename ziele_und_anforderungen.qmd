@@ -1,1 +1,8 @@
 # Ziele und Anforerungen
+
+- Anforderung
+- Idee (welche hatten wir, welche haben wir verworfen)
+- Use Case
+- User Personas
+- WElchne Firma hanben wir gewählt und warum?
+- Business Model Canvas
