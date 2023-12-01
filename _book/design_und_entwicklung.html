@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Entwicklung eines Chatbot’s am Beispiel des Unternehmens FESTOOL">
+<meta name="description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
 
 <title>Projekt Dokumentation - 4&nbsp; Design und Entwicklung</title>
 <style>
@@ -68,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Projekt Dokumentation - 4&nbsp; Design und Entwicklung">
-<meta property="og:description" content="Entwicklung eines Chatbot’s am Beispiel des Unternehmens FESTOOL">
+<meta property="og:description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
 <meta property="og:site-name" content="Projekt Dokumentation">
 </head>
 
@@ -168,7 +168,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#mögliche-gliederung" id="toc-mögliche-gliederung" class="nav-link active" data-scroll-target="#mögliche-gliederung"><span class="header-section-number">4.0.1</span> Mögliche Gliederung</a></li>
+  <li><a href="#datenbeschaffung" id="toc-datenbeschaffung" class="nav-link active" data-scroll-target="#datenbeschaffung"><span class="header-section-number">4.1</span> Datenbeschaffung</a></li>
+  <li><a href="#prompt-engineering" id="toc-prompt-engineering" class="nav-link" data-scroll-target="#prompt-engineering"><span class="header-section-number">4.2</span> Prompt Engineering</a></li>
+  <li><a href="#evaluation-of-the-model" id="toc-evaluation-of-the-model" class="nav-link" data-scroll-target="#evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</a></li>
+  <li><a href="#software-architecture" id="toc-software-architecture" class="nav-link" data-scroll-target="#software-architecture"><span class="header-section-number">4.4</span> Software Architecture</a></li>
+  <li><a href="#user-interface-ui-design" id="toc-user-interface-ui-design" class="nav-link" data-scroll-target="#user-interface-ui-design"><span class="header-section-number">4.5</span> User Interface (UI) Design</a></li>
+  <li><a href="#frontend" id="toc-frontend" class="nav-link" data-scroll-target="#frontend"><span class="header-section-number">4.6</span> Frontend</a></li>
+  <li><a href="#backend" id="toc-backend" class="nav-link" data-scroll-target="#backend"><span class="header-section-number">4.7</span> Backend</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/design_und_entwicklung.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -192,26 +198,29 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<ul>
-<li><p>Page Scraper (Daten beschaffung)</p></li>
-<li><p>Test APP zurm Prompt Engineering –&gt; alles erklären</p></li>
-<li><p>‘Evaluation of the Model usw.’</p></li>
-<li><p>Design (Chatbot Design)</p></li>
-<li><p>Software Architektur</p></li>
-<li><p>Entwicklung des Frontend</p></li>
-<li><p>Entwicklung des Backend</p></li>
-</ul>
-<section id="mögliche-gliederung" class="level3" data-number="4.0.1">
-<h3 data-number="4.0.1" class="anchored" data-anchor-id="mögliche-gliederung"><span class="header-section-number">4.0.1</span> Mögliche Gliederung</h3>
-<ul>
-<li>Page Scraper</li>
-<li>TEst App</li>
-<li>Prompt Engineering</li>
-<li>Evaluatiuon of the Model</li>
-<li>software architecture</li>
-<li>Design of the User Interface</li>
-<li>Implement of the frontend and backend</li>
-</ul>
+<section id="datenbeschaffung" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="datenbeschaffung"><span class="header-section-number">4.1</span> Datenbeschaffung</h2>
+</section>
+<section id="prompt-engineering" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="prompt-engineering"><span class="header-section-number">4.2</span> Prompt Engineering</h2>
+<p>Prompt Engineering ist eine Methode, die die Leistung von Large Language Models (LLMs) verbessert, indem sie gezielt formulierte Eingabeanweisungen, sogenannte “Prompts”, verwendet. Diese Anweisungen dienen dazu, die Ausgabe des Modells zu lenken und präziser auf spezifische Aufgaben oder Kontexte zuzuschneiden.</p>
+<p>Die Grundidee hinter Prompt Engineering besteht darin, dem LLM klare und präzise Anweisungen zu geben, wie es die gestellte Aufgabe verstehen und bearbeiten soll. Diese Prompts können in Form von Beispielsätzen, Fragen oder Anweisungen formuliert werden, um dem Modell Kontext und Richtung zu geben. Durch das Feintuning dieser Prompts kann die Leistung des LLMs verbessert werden, indem es genauer und zielgerichteter reagiert.</p>
+<p>Ein Beispiel wäre die Verwendung eines LLMs zur Textgenerierung. Ein Forscher, der die Qualität der Erklärungen des Modells verbessern möchte, könnte ein spezifisches Prompt verwenden, das dem Modell klare Anweisungen gibt, um detaillierte und verständliche Antworten zu generieren. Ein solches Prompt könnte lauten: “Erkläre präzise und verständlich den Prozess der Photosynthese in Pflanzen.” Durch die präzise Formulierung des Prompts wird das Modell darauf trainiert, genau auf diese Anforderungen zu reagieren und genaue Erklärungen zu liefern. So kann Prompt Engineering die Ausgabequalität und Relevanz des Modells in bestimmten Anwendungsfällen deutlich verbessern.</p>
+</section>
+<section id="evaluation-of-the-model" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</h2>
+</section>
+<section id="software-architecture" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="software-architecture"><span class="header-section-number">4.4</span> Software Architecture</h2>
+</section>
+<section id="user-interface-ui-design" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="user-interface-ui-design"><span class="header-section-number">4.5</span> User Interface (UI) Design</h2>
+</section>
+<section id="frontend" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="frontend"><span class="header-section-number">4.6</span> Frontend</h2>
+</section>
+<section id="backend" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="backend"><span class="header-section-number">4.7</span> Backend</h2>
 
 
 </section>

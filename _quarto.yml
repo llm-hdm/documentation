@@ -7,7 +7,7 @@ execute:
 book:
     page-navigation: true
     title: "Projekt Dokumentation"
-    description: "Entwicklung eines Chatbot's am Beispiel des Unternehmens FESTOOL"
+    description: "Entwicklung eines KI basierten Chatbot's am Beispiel des Unternehmens FESTOOL"
     site-url: "https://llm-hdm.github.io/documentation/"
     repo-url: https://github.com/llm-hdm/documentation
     repo-actions: [edit, issue]

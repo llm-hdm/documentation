@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Entwicklung eines Chatbot’s am Beispiel des Unternehmens FESTOOL">
+<meta name="description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
 
 <title>Projekt Dokumentation - 3&nbsp; Ziele und Anforerungen</title>
 <style>
@@ -68,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Projekt Dokumentation - 3&nbsp; Ziele und Anforerungen">
-<meta property="og:description" content="Entwicklung eines Chatbot’s am Beispiel des Unternehmens FESTOOL">
+<meta property="og:description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
 <meta property="og:site-name" content="Projekt Dokumentation">
 </head>
 
@@ -164,7 +164,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#anforderung" id="toc-anforderung" class="nav-link active" data-scroll-target="#anforderung"><span class="header-section-number">3.1</span> Anforderung</a></li>
+  <li><a href="#ziel" id="toc-ziel" class="nav-link" data-scroll-target="#ziel"><span class="header-section-number">3.2</span> Ziel</a></li>
+  <li><a href="#ideen-entwicklung" id="toc-ideen-entwicklung" class="nav-link" data-scroll-target="#ideen-entwicklung"><span class="header-section-number">3.3</span> Ideen Entwicklung</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/ziele_und_anforderungen.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -186,16 +194,38 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="anforderung" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="anforderung"><span class="header-section-number">3.1</span> Anforderung</h2>
+<p>Der Kurs <em>Einsatz von Large Language Models im Unternehmensanwendungen</em> konzentriert sich auf die Erforschung und Realisierung des Potenzials von LLMs (z. B. GPT-4 von OpenAI) zur Automatisierung verschiedener Geschäftsaufgaben. Insbesondere werden wir untersuchen, wie LLMs zur Automatisierung von Routineaufgaben wie dem Verfassen von E-Mails und der Erstellung von Berichten eingesetzt werden können (Kirenz, 2023)</p>
+</section>
+<section id="ziel" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="ziel"><span class="header-section-number">3.2</span> Ziel</h2>
+<p>Ziel ist es, die Produktivität und Effizienz in Unternehmen zu steigern und gleichzeitig die Qualität und Konsistenz der generierten Inhalte sicherzustellen.</p>
+</section>
+<section id="ideen-entwicklung" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="ideen-entwicklung"><span class="header-section-number">3.3</span> Ideen Entwicklung</h2>
+<p>Zu Beginn, waren wir auf der Suche nach einer passenden Idee, die alle Anforderungen abdeckt. Schnell war uns in der Gruppe klar, wir wollen einen Sprachassistenten entwicklen, der Prozesse irgendwelcher Art in Unternehmen vereinfacht und deutlich verbessert. Nach einigem Abwägen sind wir auf zwei Ideen gekommen die wir weiter ausgearbeitet haben:</p>
+<p><strong><em>Idee 1 - ein Unternehmensinterner Support Bot für bestehende Prozesse</em></strong></p>
 <ul>
-<li>Anforderung</li>
-<li>Idee (welche hatten wir, welche haben wir verworfen)</li>
-<li>Use Case</li>
-<li>User Personas</li>
-<li>WElchne Firma hanben wir gewählt und warum?</li>
-<li>Business Model Canvas</li>
+<li>Ziel hierbei: Eine oder mehrere ausgewählte Prozesse eines Unternehmens zu verbesern. Das kann die Übernahme eines Urlaubsantrags, einer Krankmeldung, einer E-Mail Zusammenfassung sein oder aber auch Arbeitsstunden eintragen und ein IT-Ticket anlegen.</li>
+<li>Der Mitarbeiter sollte hier auswählen können um welchen Prozess es sich handelt und anschließend hierbei Hilfe erhalten</li>
+<li>Funktional wäre dies eine Kombination aus einem generellen IT-System was interene Unternehmensprozesse abbildet verknüpft mit einem Sprach-/Chat Assistent der auf natürlicher Eingabe des Mitarbeiters diese umsetzt.</li>
+</ul>
+<p><strong><em>Idee 2 - ein Kaufberatungs- / Produktinformationschatsystem in einem Webshop für Kunden</em></strong></p>
+<ul>
+<li>Ziel hierbei: Kunden so schnell wie möglich perfekte Produktvorschläge liefern. Dabei soll zudem der Kunde bei der Kaufentscheidung unterstützt werden und ihm auf Rückfrage auch Technische Details und Vor- und Nachteile genannt werden. Dem Kunden soll durch eine natürliche Unterhaltung und geschickt gestellten Rückfragen zu einer für ihn perfekten Kaufentscheidung verholfen werden</li>
+<li>Kunden können dabei Fragen über alle Produkte stellen oder aber nur Anwendungsbereiche definieren. Das Chatsystem stellt dann passende Produkte vor.</li>
+</ul>
+<p>Nach kurzer Diskussion waren wir uns einig, <strong>Idee 2</strong> weiter zu verfolgen. Dies hatte folgende Gründe:</p>
+<ul>
+<li>Daten beschaffung gut möglich (über Produktinformationen in dem jeweiligen Online Shop)</li>
+<li>Realistische Situation was uns motiviert, das System gut zu gestalten</li>
+<li>Bekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung anwenden</li>
+<li>relevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)</li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -571,7 +601,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="./einleitung.html">Einleitung</a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/ziele_und_anforderungen.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

@@ -1,24 +1,22 @@
 # Design und Entwicklung
 
-- Page Scraper (Daten beschaffung)
+## Datenbeschaffung
 
-- Test APP zurm Prompt Engineering --> alles erklären
-- 'Evaluation of the Model usw.'
+## Prompt Engineering
 
-- Design (Chatbot Design)
+Prompt Engineering ist eine Methode, die die Leistung von Large Language Models (LLMs) verbessert, indem sie gezielt formulierte Eingabeanweisungen, sogenannte "Prompts", verwendet. Diese Anweisungen dienen dazu, die Ausgabe des Modells zu lenken und präziser auf spezifische Aufgaben oder Kontexte zuzuschneiden.
 
-- Software Architektur
+Die Grundidee hinter Prompt Engineering besteht darin, dem LLM klare und präzise Anweisungen zu geben, wie es die gestellte Aufgabe verstehen und bearbeiten soll. Diese Prompts können in Form von Beispielsätzen, Fragen oder Anweisungen formuliert werden, um dem Modell Kontext und Richtung zu geben. Durch das Feintuning dieser Prompts kann die Leistung des LLMs verbessert werden, indem es genauer und zielgerichteter reagiert.
 
-- Entwicklung des Frontend
-- Entwicklung des Backend
+Ein Beispiel wäre die Verwendung eines LLMs zur Textgenerierung. Ein Forscher, der die Qualität der Erklärungen des Modells verbessern möchte, könnte ein spezifisches Prompt verwenden, das dem Modell klare Anweisungen gibt, um detaillierte und verständliche Antworten zu generieren. Ein solches Prompt könnte lauten: "Erkläre präzise und verständlich den Prozess der Photosynthese in Pflanzen." Durch die präzise Formulierung des Prompts wird das Modell darauf trainiert, genau auf diese Anforderungen zu reagieren und genaue Erklärungen zu liefern. So kann Prompt Engineering die Ausgabequalität und Relevanz des Modells in bestimmten Anwendungsfällen deutlich verbessern.
 
 
-### Mögliche Gliederung
+## Evaluation of the Model
 
-- Page Scraper
-- TEst App
-- Prompt Engineering
-- Evaluatiuon of the Model
-- software architecture
-- Design of the User Interface
-- Implement of the frontend and backend
+## Software Architecture
+
+## User Interface (UI) Design
+
+## Frontend
+
+## Backend

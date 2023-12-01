@@ -1,6 +1,6 @@
 # Einleitung
 
-In der Ära digitaler Innovation ist die Entwicklung einer maßgeschneiderten Anwendung von entscheidender Bedeutung. Dieses Projekt fokussiert sich darauf, eine hochentwickelte Applikation zu schaffen, die auf Large Language Models (LLMs) basiert und durch Prompt Engineering verfeinert wird.
+In der Ära digitaler Innovation und digitaler Transformation ist der Einsatz von neuen Technologien im Unternehmenskontext essenziell. Künstliche Intelligenz erobert das Internet und alle bereiche des täglichen Lebens. Gerade erst durch Chat-GPT wurde deutlich, wie gut KI schon heute bei verschiedensten Dingen unterstützen kann. Dieses Projekt fokussiert sich darauf, eine Anwendung zu schaffen, die auf Large Language Models (LLMs) basiert und durch Prompt Engineering verfeinert wird.
 
 LLMs wie GPT-3 bieten ein enormes Potenzial zur Lösung komplexer Probleme. In Kombination mit Prompt Engineering wollen wir eine anpassungsfähige und leistungsstarke Anwendung kreieren, die spezifische Anforderungen erfüllt und präzise Ergebnisse liefert.
 
