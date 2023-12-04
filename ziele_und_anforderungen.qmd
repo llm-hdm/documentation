@@ -31,3 +31,55 @@ Nach kurzer Diskussion waren wir uns einig, **Idee 2** weiter zu verfolgen. Dies
 - Realistische Situation was uns motiviert, das System gut zu gestalten
 - Bekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung anwenden
 - relevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)
+
+## Auswahl des Unternehmens
+
+Bei der Auswahl des Unternehmens war es uns wichtig, dass das Unternehmen folgende eigenschaften Besitzt:
+- Kein gleiches oder ähnliches System bereits vorhanden
+- eine gute datenbeschaffungs Basis (viele Produktinformationen in Form von Bedienungsanleitungen Beschreibungen im Online Shop, o.ä.)
+- Produkte für Endanwender
+- grundsätzliches Interesse an den Produkten in unserer Gruppe
+
+Aufgrund dieser Kriterien standen für uns folgende Firmen zur Auswahl:
+
+- Ikea
+- Stihl
+- Festool
+- Ensinger
+- Kärcher
+
+Final haben wir uns für die Firma *FESTOOL* entschieden, da sie noch kein so ein System besitzt uns wir überzeugt sind, dass ein solcher Chatbot für Profis als auch für Amateure im Bereich "Bauen" hilfreich sein kann. Zudem hat FESTOOL sehr viele Produktinformationen in ihrem Onlineshop, was sich gut eigenet um es dem LLM als Informationen zu übergeben.
+
+## Business Model Canvas
+
+<img src="images/Business_Model_Canvas.png" width="650">
+
+
+## Use Case
+
+Der Kunde kann...
+
+- Fragen zu Produkten auf der Festtool Website stellen
+- Rückfragen zu vorher gestellten Fragen stellen
+- Auf Antworten des Chatbots eingehen
+- Den Chat über einen Button “Clear” schalten
+- Seine Fähigkeit bzw. sein Vorwissen "Profi - Amateur - Anfänger" einstellen
+
+
+
+## User Personas
+
+**Person 1:**
+
+Herr Schmid besitzt eine Schreinerei. In der Vergangenheit hat er bereits einige Festtool Geräte gekauft. Nun ist seine Tauchkreissäge mit Kabelanschluss bei einem Kundenauftrag kaputt gegangen. Er beauftragt den Azubi, die gleiche Säge erneut zu bestellen. Falls es mittlerweile Sägen gibt, die bessere Features haben, soll der Azubi ihm diese nennen. Anschließend entscheiden Sie gemeinsam ob eine neue Säge gekauft wird.
+
+Der Azubi geht auf die Homepage von Festtool. Damit er nicht lange suchen muss, benutzt er den Chatbot und gibt seine informationen ein.
+
+Direkt erhält er eine Antwort und kann mit dieser Antwort zu seinem Chef gehen.
+
+**Person 2:**
+
+Simon möchte sein Haus, was er frisch gekauft hat, renovieren. Da er keine Ahnung hat, welche Werkzeuge dafür geeignet sind sucht er im Internet nach Herstellern. Er findet Festtool und den Chatbot darauf. Praktischerweise kann er genau die Frage die er hat (also Welche Werkzeuge für eine Hausrenovierung wichtig sind) in den Chatbot eintragen.  Er bekommt eine Liste an Geräten, die für die Hausrenovierung wichtig sind.
+**Person 3:**
+
+Elisa braucht einen passenden Akkuschrauber, um ihre neuen Möbel aufzubauen. Sie weiß von ihrem Vater, dass die Marke Festool führend im Bereich Elektrowerkzeuge ist und möchte sehr gerne einen Akkuschrauber von Festool kaufen. Sie ruft die Webseite auf und nutzt Chatbot, um den passenden Akkuschrauber für ihre Bedürfnisse zu finden.
