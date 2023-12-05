@@ -15,7 +15,20 @@ Ein Beispiel wäre die Verwendung eines LLMs zur Textgenerierung. Ein Forscher, 
 
 ## Software Architecture
 
+Aufgrund der schnellen Entwicklung von technologien im Bereich von LLM's haben wir in der Zeit der Entwicklung zwei verschiedene Software Architekturen implementiert. \
+Zu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf GPT4.5 turbo umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die genauigkeit des Modells verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben. \
+Die Vektor-Datenbank (ChromaDB) haben wir durch OpenAI's eigenen Assistent abgelöst. Auch hier konnten wir eine deutliche verbesserung der performance als auch der genauigkeit des Outputs des Modells erhalten.
+
+**Version 1:**
+
+<img src="images/Software_Architektur_1.png" width="650">
+
+**Version 2:**
+
 ## User Interface (UI) Design
+
+![Dark Mode](images/Darkmode1.png){width=50%}  
+![Normal Mode](images/Darkmode2.png){width=50%}
 
 ## Frontend
 

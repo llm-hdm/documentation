@@ -69,7 +69,10 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Projekt Dokumentation - 3&nbsp; Ziele und Anforerungen">
 <meta property="og:description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
+<meta property="og:image" content="https://llm-hdm.github.io/documentation/images/Business_Model_Canvas.png">
 <meta property="og:site-name" content="Projekt Dokumentation">
+<meta property="og:image:height" content="1400">
+<meta property="og:image:width" content="2856">
 </head>
 
 <body class="nav-sidebar floating">
@@ -171,6 +174,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#anforderung" id="toc-anforderung" class="nav-link active" data-scroll-target="#anforderung"><span class="header-section-number">3.1</span> Anforderung</a></li>
   <li><a href="#ziel" id="toc-ziel" class="nav-link" data-scroll-target="#ziel"><span class="header-section-number">3.2</span> Ziel</a></li>
   <li><a href="#ideen-entwicklung" id="toc-ideen-entwicklung" class="nav-link" data-scroll-target="#ideen-entwicklung"><span class="header-section-number">3.3</span> Ideen Entwicklung</a></li>
+  <li><a href="#auswahl-des-unternehmens" id="toc-auswahl-des-unternehmens" class="nav-link" data-scroll-target="#auswahl-des-unternehmens"><span class="header-section-number">3.4</span> Auswahl des Unternehmens</a></li>
+  <li><a href="#business-model-canvas" id="toc-business-model-canvas" class="nav-link" data-scroll-target="#business-model-canvas"><span class="header-section-number">3.5</span> Business Model Canvas</a></li>
+  <li><a href="#use-case" id="toc-use-case" class="nav-link" data-scroll-target="#use-case"><span class="header-section-number">3.6</span> Use Case</a></li>
+  <li><a href="#user-personas" id="toc-user-personas" class="nav-link" data-scroll-target="#user-personas"><span class="header-section-number">3.7</span> User Personas</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/ziele_und_anforderungen.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -223,6 +230,45 @@ ul.task-list li input[type="checkbox"] {
 <li>Bekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung anwenden</li>
 <li>relevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)</li>
 </ul>
+</section>
+<section id="auswahl-des-unternehmens" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="auswahl-des-unternehmens"><span class="header-section-number">3.4</span> Auswahl des Unternehmens</h2>
+<p>Bei der Auswahl des Unternehmens war es uns wichtig, dass das Unternehmen folgende eigenschaften Besitzt: - Kein gleiches oder ähnliches System bereits vorhanden - eine gute datenbeschaffungs Basis (viele Produktinformationen in Form von Bedienungsanleitungen Beschreibungen im Online Shop, o.ä.) - Produkte für Endanwender - grundsätzliches Interesse an den Produkten in unserer Gruppe</p>
+<p>Aufgrund dieser Kriterien standen für uns folgende Firmen zur Auswahl:</p>
+<ul>
+<li>Ikea</li>
+<li>Stihl</li>
+<li>Festool</li>
+<li>Ensinger</li>
+<li>Kärcher</li>
+</ul>
+<p>Final haben wir uns für die Firma <em>FESTOOL</em> entschieden, da sie noch kein so ein System besitzt uns wir überzeugt sind, dass ein solcher Chatbot für Profis als auch für Amateure im Bereich “Bauen” hilfreich sein kann. Zudem hat FESTOOL sehr viele Produktinformationen in ihrem Onlineshop, was sich gut eigenet um es dem LLM als Informationen zu übergeben.</p>
+</section>
+<section id="business-model-canvas" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="business-model-canvas"><span class="header-section-number">3.5</span> Business Model Canvas</h2>
+<p><img src="images/Business_Model_Canvas.png" width="650"></p>
+</section>
+<section id="use-case" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="use-case"><span class="header-section-number">3.6</span> Use Case</h2>
+<p>Der Kunde kann…</p>
+<ul>
+<li>Fragen zu Produkten auf der Festtool Website stellen</li>
+<li>Rückfragen zu vorher gestellten Fragen stellen</li>
+<li>Auf Antworten des Chatbots eingehen</li>
+<li>Den Chat über einen Button “Clear” schalten</li>
+<li>Seine Fähigkeit bzw. sein Vorwissen “Profi - Amateur - Anfänger” einstellen</li>
+</ul>
+</section>
+<section id="user-personas" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="user-personas"><span class="header-section-number">3.7</span> User Personas</h2>
+<p><strong>Person 1:</strong></p>
+<p>Herr Schmid besitzt eine Schreinerei. In der Vergangenheit hat er bereits einige Festtool Geräte gekauft. Nun ist seine Tauchkreissäge mit Kabelanschluss bei einem Kundenauftrag kaputt gegangen. Er beauftragt den Azubi, die gleiche Säge erneut zu bestellen. Falls es mittlerweile Sägen gibt, die bessere Features haben, soll der Azubi ihm diese nennen. Anschließend entscheiden Sie gemeinsam ob eine neue Säge gekauft wird.</p>
+<p>Der Azubi geht auf die Homepage von Festtool. Damit er nicht lange suchen muss, benutzt er den Chatbot und gibt seine informationen ein.</p>
+<p>Direkt erhält er eine Antwort und kann mit dieser Antwort zu seinem Chef gehen.</p>
+<p><strong>Person 2:</strong></p>
+<p>Simon möchte sein Haus, was er frisch gekauft hat, renovieren. Da er keine Ahnung hat, welche Werkzeuge dafür geeignet sind sucht er im Internet nach Herstellern. Er findet Festtool und den Chatbot darauf. Praktischerweise kann er genau die Frage die er hat (also Welche Werkzeuge für eine Hausrenovierung wichtig sind) in den Chatbot eintragen. Er bekommt eine Liste an Geräten, die für die Hausrenovierung wichtig sind.</p>
+<p><strong>Person 3:</strong></p>
+<p>Elisa braucht einen passenden Akkuschrauber, um ihre neuen Möbel aufzubauen. Sie weiß von ihrem Vater, dass die Marke Festool führend im Bereich Elektrowerkzeuge ist und möchte sehr gerne einen Akkuschrauber von Festool kaufen. Sie ruft die Webseite auf und nutzt Chatbot, um den passenden Akkuschrauber für ihre Bedürfnisse zu finden.</p>
 
 
 </section>
