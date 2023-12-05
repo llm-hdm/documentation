@@ -5,15 +5,15 @@
 **Step 1:**
 Um die Kaufberatung zu starten kann der folgende grüne Button "Kaufberatung" ausgewählt werden. 
 
-<img src="images/Button_kaufberatung" width="100" height="100">
+<img src="images/Button_kaufberatung.png" width="100" height="100">
 
 **Step 2:**
 Anschließend öffnet sich der Chatbot. Hier kann jetzt jede beliebige Frage zu einem Produkt aus dem
 Festool Sortiment gestellt werden. 
 
-<img src="images/Button_kaufberatung" width="400" height="400">
+<img src="images/Button_kaufberatung.png" width="400" height="400">
 
 ## Zusatzfunktionen
 Es gibt sowohl die Möglichkeit den Chatbot im Dark-Mode als auch in einem Light-Mode zu nutzen. 
 Hierzu kann der Switch wie in folgendem Screenshot zu sehen genutzt werden.
-<img src="images/Switch_Light_Mode" width="500" height="500">
+<img src="images/Switch_Light_Mode.png" width="500" height="500">
