@@ -9,9 +9,11 @@ Um die Kaufberatung zu starten kann der folgende grüne Button "Kaufberatung" au
 
 **Step 2:**
 Anschließend öffnet sich der Chatbot. Hier kann jetzt jede beliebige Frage zu einem Produkt aus dem
-Festool Sortiment gestellt werden. 
+Festool Sortiment gestellt werden. Hierzu kann der grüne Senden Button gewählt werden. 
 
 <img src="images/Chatbot_foto.png" width="400">
+
+
 
 ## Zusatzfunktionen
 Es gibt sowohl die Möglichkeit den Chatbot im Dark-Mode als auch in einem Light-Mode zu nutzen. 
