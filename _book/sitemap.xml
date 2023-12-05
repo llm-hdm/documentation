@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://llm-hdm.github.io/documentation/index.html</loc>
-    <lastmod>2023-12-05T10:05:10.672Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.168Z</lastmod>
   </url>
   <url>
     <loc>https://llm-hdm.github.io/documentation/einleitung.html</loc>
-    <lastmod>2023-12-05T10:05:10.675Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.170Z</lastmod>
   </url>
   <url>
     <loc>https://llm-hdm.github.io/documentation/grundlagen.html</loc>
-    <lastmod>2023-12-05T10:05:10.678Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.172Z</lastmod>
   </url>
   <url>
     <loc>https://llm-hdm.github.io/documentation/ziele_und_anforderungen.html</loc>
-    <lastmod>2023-12-05T10:05:10.682Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.175Z</lastmod>
   </url>
   <url>
     <loc>https://llm-hdm.github.io/documentation/design_und_entwicklung.html</loc>
-    <lastmod>2023-12-05T10:05:10.687Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.178Z</lastmod>
   </url>
   <url>
     <loc>https://llm-hdm.github.io/documentation/evaluation.html</loc>
-    <lastmod>2023-12-05T10:05:10.689Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.181Z</lastmod>
   </url>
   <url>
     <loc>https://llm-hdm.github.io/documentation/fazit.html</loc>
-    <lastmod>2023-12-05T10:05:10.692Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.183Z</lastmod>
   </url>
   <url>
     <loc>https://llm-hdm.github.io/documentation/links.html</loc>
-    <lastmod>2023-12-05T10:05:10.694Z</lastmod>
+    <lastmod>2023-12-05T16:35:28.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://llm-hdm.github.io/documentation/Benutzeranleitung.html</loc>
+    <lastmod>2023-12-05T16:35:28.187Z</lastmod>
   </url>
 </urlset>

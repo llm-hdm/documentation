@@ -39,6 +39,7 @@ book:
         - evaluation.qmd
         - fazit.qmd
         - links.qmd
+        - Benutzeranleitung.qmd
 
 format:
     html:
