@@ -130,7 +130,7 @@
     "href": "design_und_entwicklung.html#user-interface-ui-design",
     "title": "4  Design und Entwicklung",
     "section": "4.5 User Interface (UI) Design",
-    "text": "4.5 User Interface (UI) Design"
+    "text": "4.5 User Interface (UI) Design\nFür das Design des User Interface orientierten wir uns an dem Coperate Design von Festool. Uns war es wichtig, dass wir ein Produkt entwickeln dass jederzeit auf dem Webshop, bzw. der Website von Festool eingebunden werden könnte.\nSo haben wir uns dazu entschieden einen Button zu bauen, der OnClick ein Chatfenster öffnet. Wir haben besonders darauf geachtet, dass das Chatfenster, wie z.B. von anderen Messengern, vom User intuitiv und gewohnt benutzt werden kann.\nZudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des Chatbots zu verwenden.\nDark-Mode:\n\nNormal-Mode:"
   },
   {
     "objectID": "design_und_entwicklung.html#frontend",
