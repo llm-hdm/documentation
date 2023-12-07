@@ -25,10 +25,21 @@ Die Vektor-Datenbank (ChromaDB) haben wir durch OpenAI's eigenen Assistent abgel
 
 **Version 2:**
 
+<img src="images/Software_Architektur_2.png" width="650">
+
 ## User Interface (UI) Design
 
-![Dark Mode](images/Darkmode1.png){width=50%}  
-![Normal Mode](images/Darkmode2.png){width=50%}
+Für das Design des User Interface orientierten wir uns an dem Coperate Design von Festool. Uns war es wichtig, dass wir ein Produkt entwickeln dass jederzeit auf dem Webshop, bzw. der Website von Festool eingebunden werden könnte. \
+So haben wir uns dazu entschieden einen Button zu bauen, der OnClick ein Chatfenster öffnet. Wir haben besonders darauf geachtet, dass das Chatfenster, wie z.B. von anderen Messengern, vom User intuitiv und gewohnt benutzt werden kann. \
+Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des Chatbots zu verwenden.
+
+**Dark-Mode:**
+
+![](images/Darkmode1.png){width=50%} 
+
+**Normal-Mode:**
+
+![](images/Darkmode2.png){width=50%}
 
 ## Frontend
 
