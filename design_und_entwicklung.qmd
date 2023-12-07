@@ -2,6 +2,33 @@
 
 ## Datenbeschaffung
 
+Zur Beschaffung der Daten, legten wir erst fest, welche Daten für uns und das LLM sinvoll sind. Um die Daten auch öfter zu sammeln, da Festool in der Zeit der Entwicklung neue Produkte oder Preise ändern könnte, haben wir diesen Prozess automatisiert. \
+Dazu programmierten wir einen Webscraper der dies für alle Produkte auf der Festool Website erledigt und uns die Daten in einer Textdatei speichert.
+Folgende Daten wurden gespeichert: 
+
+- URL
+- Name
+- Artikelnummer
+- Nettopreis
+- Bruttopreis ???????????????
+- Beschreibung (Produktbeschreibung)
+- Vorteile / Benefits
+- Technische Daten
+- Highlights
+
+Programmiert wurde der Webscraper mittels Python. 
+
+**Funktionsweise:**
+
+Der Webscraper besucht die Festtool Website und akzeptiert die Cookies. Danach wird für jede Prouktkategorie folgendes ausgeführt. /
+Das Programm speichert jede URL eines Prdukts ab, welches sich in der jeweiligen Produktkategorie befindet. \
+Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben genannten Features ab. /
+Findet er die Daten nicht, lässt er das Feld frei und geht zum nächsten. Dieser Fall ist allerding selten. 
+
+Aufgrund der Automatisierung können wir nun schnell alle für uns relevanten Produkinformationen aus dem Webshop laden.
+
+***Link zum GitHub Repository: *** [https://github.com/llm-hdm/page-scraper](https://github.com/llm-hdm/page-scraper)
+
 ## Prompt Engineering
 
 Prompt Engineering ist eine Methode, die die Leistung von Large Language Models (LLMs) verbessert, indem sie gezielt formulierte Eingabeanweisungen, sogenannte "Prompts", verwendet. Diese Anweisungen dienen dazu, die Ausgabe des Modells zu lenken und präziser auf spezifische Aufgaben oder Kontexte zuzuschneiden.
@@ -12,6 +39,8 @@ Ein Beispiel wäre die Verwendung eines LLMs zur Textgenerierung. Ein Forscher, 
 
 
 ## Evaluation of the Model
+
+tbd
 
 ## Software Architecture
 

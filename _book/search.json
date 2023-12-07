@@ -102,7 +102,7 @@
     "href": "design_und_entwicklung.html#datenbeschaffung",
     "title": "4  Design und Entwicklung",
     "section": "4.1 Datenbeschaffung",
-    "text": "4.1 Datenbeschaffung"
+    "text": "4.1 Datenbeschaffung\nZur Beschaffung der Daten, legten wir erst fest, welche Daten für uns und das LLM sinvoll sind. Um die Daten auch öfter zu sammeln, da Festool in der Zeit der Entwicklung neue Produkte oder Preise ändern könnte, haben wir diesen Prozess automatisiert.\nDazu programmierten wir einen Webscraper der dies für alle Produkte auf der Festool Website erledigt und uns die Daten in einer Textdatei speichert. Folgende Daten wurden gespeichert:\n\nURL\nName\nArtikelnummer\nNettopreis\nBruttopreis ???????????????\nBeschreibung (Produktbeschreibung)\nVorteile / Benefits\nTechnische Daten\nHighlights\n\nProgrammiert wurde der Webscraper mittels Python.\nFunktionsweise:\nDer Webscraper besucht die Festtool Website und akzeptiert die Cookies. Danach wird für jede Prouktkategorie folgendes ausgeführt. / Das Programm speichert jede URL eines Prdukts ab, welches sich in der jeweiligen Produktkategorie befindet.\nIm Laufe des Programms besucht der Scraper dann jede URL und speichert die oben genannten Features ab. / Findet er die Daten nicht, lässt er das Feld frei und geht zum nächsten. Dieser Fall ist allerding selten.\nAufgrund der Automatisierung können wir nun schnell alle für uns relevanten Produkinformationen aus dem Webshop laden.\nLink zum GitHub Repository:  https://github.com/llm-hdm/page-scraper"
   },
   {
     "objectID": "design_und_entwicklung.html#prompt-engineering",
@@ -116,7 +116,7 @@
     "href": "design_und_entwicklung.html#evaluation-of-the-model",
     "title": "4  Design und Entwicklung",
     "section": "4.3 Evaluation of the Model",
-    "text": "4.3 Evaluation of the Model"
+    "text": "4.3 Evaluation of the Model\ntbd"
   },
   {
     "objectID": "design_und_entwicklung.html#software-architecture",
@@ -161,6 +161,20 @@
     "text": "fazit ist klar"
   },
   {
+    "objectID": "benutzeranleitung.html#user-instruction",
+    "href": "benutzeranleitung.html#user-instruction",
+    "title": "Benutzeranleitung",
+    "section": "User Instruction",
+    "text": "User Instruction\nStep 1: Um die Kaufberatung zu starten kann der folgende grüne Button “Kaufberatung” ausgewählt werden.\n\nStep 2: Anschließend öffnet sich der Chatbot. Hier kann jetzt jede beliebige Frage zu einem Produkt aus dem Festool Sortiment gestellt werden. Hierzu kann der grüne Senden Button gewählt werden."
+  },
+  {
+    "objectID": "benutzeranleitung.html#zusatzfunktionen",
+    "href": "benutzeranleitung.html#zusatzfunktionen",
+    "title": "Benutzeranleitung",
+    "section": "Zusatzfunktionen",
+    "text": "Zusatzfunktionen\nEs gibt sowohl die Möglichkeit den Chatbot im Dark-Mode als auch in einem Light-Mode zu nutzen. Hierzu kann der Switch wie in folgendem Screenshot zu sehen genutzt werden."
+  },
+  {
     "objectID": "links.html#link-zur-app",
     "href": "links.html#link-zur-app",
     "title": "Links",
@@ -180,19 +194,5 @@
     "title": "Links",
     "section": "Link zum GitHub Repository - Page Scraper",
     "text": "Link zum GitHub Repository - Page Scraper\nhttps://github.com/llm-hdm/page-scraper"
-  },
-  {
-    "objectID": "Benutzeranleitung.html#user-instruction",
-    "href": "Benutzeranleitung.html#user-instruction",
-    "title": "Benutzeranleitung",
-    "section": "User Instruction",
-    "text": "User Instruction\nStep 1: Um die Kaufberatung zu starten kann der folgende grüne Button “Kaufberatung” ausgewählt werden.\n\nStep 2: Anschließend öffnet sich der Chatbot. Hier kann jetzt jede beliebige Frage zu einem Produkt aus dem Festool Sortiment gestellt werden. Hierzu kann der grüne Senden Button gewählt werden."
-  },
-  {
-    "objectID": "Benutzeranleitung.html#zusatzfunktionen",
-    "href": "Benutzeranleitung.html#zusatzfunktionen",
-    "title": "Benutzeranleitung",
-    "section": "Zusatzfunktionen",
-    "text": "Zusatzfunktionen\nEs gibt sowohl die Möglichkeit den Chatbot im Dark-Mode als auch in einem Light-Mode zu nutzen. Hierzu kann der Switch wie in folgendem Screenshot zu sehen genutzt werden."
   }
 ]

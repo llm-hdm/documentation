@@ -157,14 +157,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./links.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Links</span></a>
+  <a href="./benutzeranleitung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Benutzeranleitung</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Benutzeranleitung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Benutzeranleitung</span></a>
+  <a href="./links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Links</span></a>
   </div>
 </li>
     </ul>
@@ -209,6 +209,25 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="datenbeschaffung" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="datenbeschaffung"><span class="header-section-number">4.1</span> Datenbeschaffung</h2>
+<p>Zur Beschaffung der Daten, legten wir erst fest, welche Daten für uns und das LLM sinvoll sind. Um die Daten auch öfter zu sammeln, da Festool in der Zeit der Entwicklung neue Produkte oder Preise ändern könnte, haben wir diesen Prozess automatisiert.<br>
+Dazu programmierten wir einen Webscraper der dies für alle Produkte auf der Festool Website erledigt und uns die Daten in einer Textdatei speichert. Folgende Daten wurden gespeichert:</p>
+<ul>
+<li>URL</li>
+<li>Name</li>
+<li>Artikelnummer</li>
+<li>Nettopreis</li>
+<li>Bruttopreis ???????????????</li>
+<li>Beschreibung (Produktbeschreibung)</li>
+<li>Vorteile / Benefits</li>
+<li>Technische Daten</li>
+<li>Highlights</li>
+</ul>
+<p>Programmiert wurde der Webscraper mittels Python.</p>
+<p><strong>Funktionsweise:</strong></p>
+<p>Der Webscraper besucht die Festtool Website und akzeptiert die Cookies. Danach wird für jede Prouktkategorie folgendes ausgeführt. / Das Programm speichert jede URL eines Prdukts ab, welches sich in der jeweiligen Produktkategorie befindet.<br>
+Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben genannten Features ab. / Findet er die Daten nicht, lässt er das Feld frei und geht zum nächsten. Dieser Fall ist allerding selten.</p>
+<p>Aufgrund der Automatisierung können wir nun schnell alle für uns relevanten Produkinformationen aus dem Webshop laden.</p>
+<p><strong><em>Link zum GitHub Repository: </em></strong> <a href="https://github.com/llm-hdm/page-scraper">https://github.com/llm-hdm/page-scraper</a></p>
 </section>
 <section id="prompt-engineering" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="prompt-engineering"><span class="header-section-number">4.2</span> Prompt Engineering</h2>
@@ -218,6 +237,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="evaluation-of-the-model" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</h2>
+<p>tbd</p>
 </section>
 <section id="software-architecture" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="software-architecture"><span class="header-section-number">4.4</span> Software Architecture</h2>

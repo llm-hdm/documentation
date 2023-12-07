@@ -38,8 +38,8 @@ book:
         - design_und_entwicklung.qmd
         - evaluation.qmd
         - fazit.qmd
+        - benutzeranleitung.qmd
         - links.qmd
-        - Benutzeranleitung.qmd
 
 format:
     html:
