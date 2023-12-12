@@ -6,13 +6,13 @@ Der Kurs *Einsatz von Large Language Models im Unternehmensanwendungen* konzentr
 
 **Ziel:** Ziel ist es, die Produktivität und Effizienz in Unternehmen zu steigern und gleichzeitig die Qualität und Konsistenz der generierten Inhalte sicherzustellen.
 
-## Technoligien
+## Technologien
 
-Die verwendeten Technologien sind in unserem Fall: GPT4.5 turbo, **...** 
+Die verwendeten Technologien sind in unserem Fall: GPT4.5 turbo, **//////////////////////////////** 
 Desweiteren React, Python, ...
 
 
-## Bereuung und Beratung bei der Entwicklung
+## Betreuung und Beratung bei der Entwicklung
 
 - Prof. Dr. Jan Kirenz
 - ZOI TechCOn GmbH

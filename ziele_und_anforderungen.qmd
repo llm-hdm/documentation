@@ -23,6 +23,7 @@ Nach einigem Abwägen sind wir auf zwei Ideen gekommen die wir weiter ausgearbei
 - Ziel hierbei: Entwicklung einer Anwendung zur Geschäftsreiseplanung
 - Automatische Suche nach Verkehrsverbindungen, Hotels und möglichen Aktivitäten durch ein Language Model (LLM) und die Zusammenstellung der Informationen in einem Dokument als Reiseplaner
 - Gründe für die Ablehnung: Datenbeschaffung, bedingt dadurch, dass wir Flugdaten, Bahnverbindungen und Verkehrsinformationen hätten zur Verfügung stellen müssen wäre die Datenmenge extrem groß gewesen.Desweiteren hätten   die Daten Frequenzziel  abgefragt werden müssen über verschiedene API’S. Dies hat sich bei den Airlines als schwierig und vor allem als sehr kostenintensiv herausgestellt. 
+
 ***Idee 3 - Geschäftsreisenplanner***
 - Ziel hierbei: Die Anwendung sollte in der Lage sein, Telefongespräche aufzuzeichnen und mithilfe der WhisperApi den Dialog in eine Textdatei umzuwandeln. Anschließend sollte ein Language Model (LLM) den Text kürzen und zusammenfassen
 - Gründe für  die Ablehnung: - Technologie existiert bereits. Dies hätte bedeutet, dass wir ein bestehendes Produkt entwickeln würden, das nicht spezifisch auf die Bedürfnisse unseres Unternehmens zugeschnitten ist
@@ -34,7 +35,7 @@ Nach einigem Abwägen sind wir auf zwei Ideen gekommen die wir weiter ausgearbei
 - Kunden können dabei Fragen über alle Produkte stellen oder aber nur Anwendungsbereiche definieren. Das Chatsystem stellt dann passende Produkte vor.
 
 
-Nach kurzer Diskussion waren wir uns einig, **Idee 4** weiter zu verfolgen. Dies hatte folgende Gründe:
+Nach kurzer Diskussion waren wir uns einig, **Idee 1** weiter zu verfolgen. Dies hatte folgende Gründe:
 
 - Daten beschaffung gut möglich (über Produktinformationen in dem jeweiligen Online Shop)
 - Realistische Situation was uns motiviert, das System gut zu gestalten
@@ -51,11 +52,11 @@ Bei der Auswahl des Unternehmens war es uns wichtig, dass das Unternehmen folgen
 
 Aufgrund dieser Kriterien standen für uns folgende Firmen zur Auswahl:
 
-- Ikea
+- IKEA
 - Stihl
 - Festool
-- Ensinger
-- Kärcher
+- Ensinger Mineral-Heilquellen GmbH
+- Kärcher 
 
 Final haben wir uns für die Firma *FESTOOL* entschieden, da sie noch kein so ein System besitzt uns wir überzeugt sind, dass ein solcher Chatbot für Profis als auch für Amateure im Bereich "Bauen" hilfreich sein kann. Zudem hat FESTOOL sehr viele Produktinformationen in ihrem Onlineshop, was sich gut eigenet um es dem LLM als Informationen zu übergeben.
 

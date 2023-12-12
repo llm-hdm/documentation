@@ -9,8 +9,7 @@ Folgende Daten wurden gespeichert:
 - URL
 - Name
 - Artikelnummer
-- Nettopreis
-- Bruttopreis ???????????????
+- Bruttopreis
 - Beschreibung (Produktbeschreibung)
 - Vorteile / Benefits
 - Technische Daten
@@ -72,4 +71,8 @@ Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des
 
 ## Frontend
 
+/////////// 
+
 ## Backend
+
+//////////
