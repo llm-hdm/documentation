@@ -179,7 +179,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#datenbeschaffung" id="toc-datenbeschaffung" class="nav-link active" data-scroll-target="#datenbeschaffung"><span class="header-section-number">4.1</span> Datenbeschaffung</a></li>
   <li><a href="#prompt-engineering" id="toc-prompt-engineering" class="nav-link" data-scroll-target="#prompt-engineering"><span class="header-section-number">4.2</span> Prompt Engineering</a></li>
-  <li><a href="#evaluation-of-the-model" id="toc-evaluation-of-the-model" class="nav-link" data-scroll-target="#evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</a></li>
+  <li><a href="#evaluation-of-the-model" id="toc-evaluation-of-the-model" class="nav-link" data-scroll-target="#evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</a>
+  <ul class="collapse">
+  <li><a href="#richtigkeit-und-verlässlichkeit-des-chatbots" id="toc-richtigkeit-und-verlässlichkeit-des-chatbots" class="nav-link" data-scroll-target="#richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">4.3.1</span> Richtigkeit und Verlässlichkeit des Chatbots</a></li>
+  <li><a href="#verbesserung-der-user-experience-ux" id="toc-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#verbesserung-der-user-experience-ux"><span class="header-section-number">4.3.2</span> Verbesserung der User Experience (UX):</a></li>
+  </ul></li>
   <li><a href="#software-architecture" id="toc-software-architecture" class="nav-link" data-scroll-target="#software-architecture"><span class="header-section-number">4.4</span> Software Architecture</a></li>
   <li><a href="#user-interface-ui-design" id="toc-user-interface-ui-design" class="nav-link" data-scroll-target="#user-interface-ui-design"><span class="header-section-number">4.5</span> User Interface (UI) Design</a></li>
   <li><a href="#frontend" id="toc-frontend" class="nav-link" data-scroll-target="#frontend"><span class="header-section-number">4.6</span> Frontend</a></li>
@@ -236,7 +240,22 @@ Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben 
 </section>
 <section id="evaluation-of-the-model" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</h2>
-<p>tbd</p>
+<section id="richtigkeit-und-verlässlichkeit-des-chatbots" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">4.3.1</span> Richtigkeit und Verlässlichkeit des Chatbots</h3>
+</section>
+<section id="verbesserung-der-user-experience-ux" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="verbesserung-der-user-experience-ux"><span class="header-section-number">4.3.2</span> Verbesserung der User Experience (UX):</h3>
+<p><strong>Testszenario 1:</strong> Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.</p>
+<p><strong>Manuell:</strong></p>
+<p><em>Vorgehensweise:</em> Der User muss auf die Produktübersicht gehen und die Kachel “Bohren und Schrauben” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.</p>
+<p><em>Dauer: &gt; 5 Minuten</em></p>
+<p><strong>Chatbot:</strong></p>
+<p><em>Prompt:</em> Ich möchte einen Allrounder Akkuschrauber für Heimwerker.</p>
+<p><em>Antwort:</em> Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.</p>
+<p><em>Evaluation:</em> Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.</p>
+<p><em>Dauer: 32 Sekunden</em></p>
+<p><strong>Fazit:</strong> Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!</p>
+</section>
 </section>
 <section id="software-architecture" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="software-architecture"><span class="header-section-number">4.4</span> Software Architecture</h2>
