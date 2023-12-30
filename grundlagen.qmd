@@ -9,7 +9,7 @@ Der Kurs *Einsatz von Large Language Models im Unternehmensanwendungen* konzentr
 ## Technologien
 
 Die verwendeten Technologien sind in unserem Fall: GPT4.5 turbo, **//////////////////////////////** 
-Desweiteren React, Python, ...
+Desweiteren React, Python, AWS-Cloud (hier cloud dienste Angeben) ...
 
 
 ## Betreuung und Beratung bei der Entwicklung

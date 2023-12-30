@@ -6,11 +6,11 @@ Der Kurs *Einsatz von Large Language Models im Unternehmensanwendungen* konzentr
 
 ## Ziel
 
-Ziel ist es, die Produktivität und Effizienz in Unternehmen zu steigern und gleichzeitig die Qualität und Konsistenz der generierten Inhalte sicherzustellen.
+Ziel ist es, die Produktivität und Effizienz in Unternehmen zu steigern und gleichzeitig die Qualität und Konsistenz der generierten Inhalte sicherzustellen. 
 
 ## Ideen Entwicklung
 
-Zu Beginn, waren wir auf der Suche nach einer passenden Idee, die alle Anforderungen abdeckt. Schnell war uns in der Gruppe klar, wir wollen einen Sprachassistenten entwicklen, der Prozesse irgendwelcher Art in Unternehmen vereinfacht und deutlich verbessert.
+Zu Beginn, waren wir auf der Suche nach einer passenden Idee, die alle Anforderungen abdeckt. Schnell war uns in der Gruppe klar, wir wollen einen Sprachassistenten entwicklen, der Prozesse irgendwelcher Art in Unternehmen vereinfacht und deutlich verbessert. Wiederkehrende Tätigkeiten sollten somit einfacher und vor allem schneller damit gestaltet werden.
 Nach einigem Abwägen sind wir auf zwei Ideen gekommen die wir weiter ausgearbeitet haben:
 
 ***Idee 1 - ein Unternehmensinterner Support Bot für bestehende Prozesse***
@@ -49,6 +49,7 @@ Bei der Auswahl des Unternehmens war es uns wichtig, dass das Unternehmen folgen
 - eine gute datenbeschaffungs Basis (viele Produktinformationen in Form von Bedienungsanleitungen Beschreibungen im Online Shop, o.ä.)
 - Produkte für Endanwender
 - grundsätzliches Interesse an den Produkten in unserer Gruppe
+- diverses Produktportfolio
 
 Aufgrund dieser Kriterien standen für uns folgende Firmen zur Auswahl:
 
@@ -94,3 +95,8 @@ Simon möchte sein Haus, was er frisch gekauft hat, renovieren. Da er keine Ahnu
 **Person 3:**
 
 Elisa braucht einen passenden Akkuschrauber, um ihre neuen Möbel aufzubauen. Sie weiß von ihrem Vater, dass die Marke Festool führend im Bereich Elektrowerkzeuge ist und möchte sehr gerne einen Akkuschrauber von Festool kaufen. Sie ruft die Webseite auf und nutzt Chatbot, um den passenden Akkuschrauber für ihre Bedürfnisse zu finden.
+
+**Person 4:**
+
+Markus verfügt über eine gut ausgestattete Werkstatt in seinem Keller, in der er regelmäßig Möbel baut, Elektronikprojekte umsetzt und kleine Reparaturen durchführt. Qualität in Bezug auf Akkuschrauber mangelhaft. Weswegen sich Markus für die Akkuschrauber von Festool interessiert. Er findet mithilfe des Chatbots den passenden Akkuschrauber und kann sich auch durch den Bot, genau die Produktdaten ausgeben lassen, die er benötigt, ohne dabei stunden nach diesen zu suchen.
+
