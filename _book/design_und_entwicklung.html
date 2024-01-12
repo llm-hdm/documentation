@@ -260,6 +260,59 @@ Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben 
 <h2 data-number="4.3" class="anchored" data-anchor-id="evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</h2>
 <section id="richtigkeit-und-verlässlichkeit-des-chatbots" class="level3" data-number="4.3.1">
 <h3 data-number="4.3.1" class="anchored" data-anchor-id="richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">4.3.1</span> Richtigkeit und Verlässlichkeit des Chatbots</h3>
+<p><strong>Allgemeine Bewertungskriterien:</strong></p>
+<ul>
+<li>3 Punkte pro richtiges vorgeschlagenes Werkzeug</li>
+<li>1 Punkt Abzug für einen fehlenden oder nicht funktionierenden Link</li>
+<li>1 Punkt für einen Vorschlag der nicht 100 % der Idealantwort entspricht</li>
+</ul>
+<p><strong>Testszenario 2:</strong> <strong><em>Ein Weihnachtsgeschenk basteln!</em></strong></p>
+<p><strong>Frage an den Assistant Bot:</strong> Ich möchte für Weihnachten Sterne basteln und diese aus Holz aussägen und ein Loch reinbohren.</p>
+<p><strong><em>Optimal Antwort:</em></strong><br>
+- Als Akku-Schrauber eignet sich am besten der <strong>Akku-Bohrschrauber&nbsp;TXS 18-Basic</strong>.<br>
+- Als Säge am besten eine Stichsäge, da diese für Amateure leicht in der Anwendung ist. Zudem wird vermieden, dass der Kunde gleich ein extrem großes Gerät gekauft werden muss. Am besten eignet sich hierbei die <strong>Akku-Pendelstichsäge CARVEX PSBC 420 EB-Basic</strong>.</p>
+<p><strong><em>Rückfragen:</em></strong> &nbsp; Der Chatbot ist so entwickelt, dass dieser wenn er nicht gleich eine geeignete Antwort findet, gezielte Rückfragen stellt um einen besseren Vorschlag machen zu können.</p>
+<p><strong><em>Diese Rückfragen waren:</em></strong><br>
+- Wie stark ist das Holz?<br>
+- Welchen Durchmesser soll die Bohrung haben?<br>
+- Wie viel Sterne wollen Sie aussägen?<br>
+- Möchten Sie ein Akku-Gerät?<br>
+</p>
+<p>Die Antworten hierauf wurden immer, den Fragen entsprechend, gleich beantwortet.</p>
+<p><strong>Testrunden:</strong><br>
+Runde 1:<br>
+- Kein Bohrer vorgeschlagen. → 0P<br>
+- Säbelsäge anstatt einer Stich-, oder Dekupiersäge, Link vorhanden → 1P</p>
+<p>Runde 2:<br>
+- Korrekt vorgeschlagene Stichsäge → 3P<br>
+- Korrekter Akku-Schrauber, Verlinkung geht nicht → 2P</p>
+<p>Runde 3:<br>
+- Korrekte Stichsäge, kein Link → 2P<br>
+- Korrekter Akku-Schrauber, kein Link → 2P</p>
+<p>Runde 4:<br>
+- Korrekt vorgeschlagene Stichsäge → 3P<br>
+- Gleichwertiger Akku-Schrauber → 2P</p>
+<p>Runde 5:<br>
+- Korrekt vorgeschlagene Stichsäge → 3P<br>
+- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
+<p>Runde 6:<br>
+- Schwertsäge, ungeeignet, Link korrekt → 1P<br>
+- Richtiger Akku-Schrauber, Link korrekt —&gt; 3P</p>
+<p>Runde 7:<br>
+- Korrekt vorgeschlagene Stichsäge → 3P<br>
+- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
+<p>Runde 8:<br>
+- Schwertsäge, ungeeignet, link vorhanden → 1P<br>
+- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
+<p>Runde 9:<br>
+- Schwertsäge, ungeeignet, link vorhanden → 1P<br>
+- Korrekt vorgeschlagener Akku-Schrauber, kein Link → 2P<br>
+</p>
+<p>Runde 10:<br>
+- Schwertsäge, ungeeignet, link vorhanden → 1P<br>
+- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
+<p><strong>Auswertung:</strong></p>
+<p>Von 60 möglichen Punkten im Szenario 2, hat der Chatbot <strong>42 Punkte</strong> erreicht. Das Entpricht einer Genauigkeit von <strong>70%</strong> und damit einer Wahrscheinlichkeit die richtigen Produkte vorgeschlagen zu bekommen von &gt; 2/3. Auffällig war, dass der Bot an unterschiedlichen Tageszeiten, bzw. an unterschiedlichen Zeitpunkten besser oder schlechter geantwortet hat. Auch die Geschwindigkeit der Antworten hat stark variiert.</p>
 </section>
 <section id="verbesserung-der-user-experience-ux" class="level3" data-number="4.3.2">
 <h3 data-number="4.3.2" class="anchored" data-anchor-id="verbesserung-der-user-experience-ux"><span class="header-section-number">4.3.2</span> Verbesserung der User Experience (UX):</h3>

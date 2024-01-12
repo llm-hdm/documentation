@@ -92,6 +92,78 @@ Antworte immer auf Deutsch.
 
 ### Richtigkeit und Verlässlichkeit des Chatbots
 
+**Allgemeine Bewertungskriterien:**
+
+- 3 Punkte pro richtiges vorgeschlagenes Werkzeug
+- 1 Punkt Abzug für einen fehlenden oder nicht funktionierenden Link
+- 1 Punkt für einen Vorschlag der nicht 100 % der Idealantwort entspricht
+
+**Testszenario 2:** ***Ein Weihnachtsgeschenk basteln!***
+
+**Frage an den Assistant Bot:** Ich möchte für Weihnachten Sterne basteln und diese aus Holz aussägen und ein Loch reinbohren.
+
+***Optimal Antwort:*** \
+- Als Akku-Schrauber eignet sich am besten der **Akku-Bohrschrauber TXS 18-Basic**. \
+- Als Säge am besten eine Stichsäge, da diese für Amateure leicht in der Anwendung ist. Zudem wird vermieden, dass der Kunde gleich ein extrem großes Gerät gekauft werden muss. Am besten eignet sich hierbei die **Akku-Pendelstichsäge CARVEX PSBC 420 EB-Basic**.
+
+***Rückfragen:*** \ 
+Der Chatbot ist so entwickelt, dass dieser wenn er nicht gleich eine geeignete Antwort findet, gezielte Rückfragen stellt um einen besseren Vorschlag machen zu können.
+
+***Diese Rückfragen waren:*** \
+- Wie stark ist das Holz? \
+- Welchen Durchmesser soll die Bohrung haben? \
+- Wie viel Sterne wollen Sie aussägen? \
+- Möchten Sie ein Akku-Gerät? \
+
+Die Antworten hierauf wurden immer, den Fragen entsprechend, gleich beantwortet.
+
+**Testrunden:** \
+Runde 1: \
+- Kein  Bohrer vorgeschlagen. → 0P \
+- Säbelsäge anstatt einer Stich-, oder Dekupiersäge, Link vorhanden → 1P
+
+Runde 2: \
+- Korrekt vorgeschlagene Stichsäge → 3P \
+- Korrekter Akku-Schrauber, Verlinkung geht nicht → 2P
+
+Runde 3: \
+- Korrekte Stichsäge, kein Link → 2P \
+- Korrekter Akku-Schrauber, kein Link → 2P
+
+Runde 4: \
+- Korrekt vorgeschlagene Stichsäge → 3P \
+- Gleichwertiger Akku-Schrauber → 2P
+
+Runde 5: \
+- Korrekt vorgeschlagene Stichsäge → 3P \
+- Korrekt vorgeschlagener Akku-Schrauber → 3P
+
+Runde 6: \
+- Schwertsäge, ungeeignet, Link korrekt → 1P \
+- Richtiger Akku-Schrauber, Link korrekt —> 3P
+
+Runde 7: \
+- Korrekt vorgeschlagene Stichsäge → 3P \
+- Korrekt vorgeschlagener Akku-Schrauber → 3P
+
+Runde 8: \
+- Schwertsäge, ungeeignet, link vorhanden → 1P \
+- Korrekt vorgeschlagener Akku-Schrauber → 3P
+
+Runde 9: \
+- Schwertsäge, ungeeignet, link vorhanden → 1P \
+- Korrekt vorgeschlagener Akku-Schrauber, kein Link → 2P \
+
+Runde 10: \
+- Schwertsäge, ungeeignet, link vorhanden → 1P \
+- Korrekt vorgeschlagener Akku-Schrauber → 3P
+
+
+**Auswertung:**
+
+Von 60 möglichen Punkten im Szenario 2, hat der Chatbot **42 Punkte** erreicht. Das Entpricht einer Genauigkeit von **70%** und damit einer Wahrscheinlichkeit die richtigen Produkte vorgeschlagen zu bekommen von > 2/3. 
+Auffällig war, dass der Bot an unterschiedlichen Tageszeiten, bzw. an unterschiedlichen Zeitpunkten besser oder schlechter geantwortet hat. Auch die Geschwindigkeit der Antworten hat stark variiert. 
+
 ### Verbesserung der User Experience (UX):
 
 **Testszenario 1:** Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist. 
