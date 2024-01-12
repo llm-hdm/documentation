@@ -172,12 +172,6 @@ Runde 8: \
 
 Runde 9: \ 
 
-
-
-
-
-
-
 **Testszenario 3:** ***Ein Weihnachtsgeschenk basteln!***
 
 **Frage an den Assistant Bot:** Ich möchte für Weihnachten Sterne basteln und diese aus Holz aussägen und ein Loch reinbohren.

@@ -90,11 +90,12 @@ Direkt erhält er eine Antwort und kann mit dieser Antwort zu seinem Chef gehen.
 
 **Person 2:**
 
-Simone möchte für Ihre Verwandschaft und einige Freunde als Geschenk für Weihnachten Sterne aus einer Holzplatte aussägen. Diese sollen anschließend aufgehangen werden. Dazu benötigt Sie Werkzeug, mit dem auch sie als Bastelanfängerin umgehen kann. Sie besucht die Festool Seite und schildert dem Chatbot ihr vorhaben. Dieser empfiehlt ihr anschließend Werkzeuge, die zu Simones vorhaben am besten geeignet sind. 
+Simon möchte sein Haus, was er frisch gekauft hat, renovieren. Da er keine Ahnung hat, welche Werkzeuge dafür geeignet sind sucht er im Internet nach Herstellern. Er findet Festtool und den Chatbot auf deren Website. Praktischerweise kann er genau die Frage die er hat (Welche Werkzeuge für eine Hausrenovierung wichtig sind) dem Chatbot stellen.  Er bekommt eine Liste an Geräten, die für die Hausrenovierung wichtig sind.
 
 **Person 3:**
 
-Elisa braucht einen passenden Akkuschrauber, um ihre neuen Möbel aufzubauen. Sie weiß von ihrem Vater, dass die Marke Festool führend im Bereich Elektrowerkzeuge ist und möchte sehr gerne einen Akkuschrauber von Festool kaufen. Sie ruft die Webseite auf und nutzt Chatbot, um den passenden Akkuschrauber für ihre Bedürfnisse zu finden.
+Elisa möchte für Ihre Verwandschaft und einige Freunde als Geschenk für Weihnachten Sterne aus einer Holzplatte aussägen. Diese sollen anschließend aufgehangen werden. Dazu benötigt Sie Werkzeug, mit dem auch sie als Bastelanfängerin umgehen kann. Sie besucht die Festool Seite und schildert dem Chatbot ihr vorhaben. Dieser empfiehlt ihr anschließend Werkzeuge, die zu Simones vorhaben am besten geeignet sind. 
+
 
 **Person 4:**
 
