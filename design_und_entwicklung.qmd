@@ -105,7 +105,7 @@ Antworte immer auf Deutsch.
 
 Ich möchte meine Wohnung renovieren: Dabei möchte ich Boden abschleifen, Steckdosen bohren und eine Arbeitsflächen zuschneiden. Kannst du mir eine Liste von Werkzeugen ausgeben die ich brauche?
 
-***Optimale Antowort***
+***Optimale Antwort***
 - Für Schleifen beim Sanieren einer Wohnung eignet sich der Sanierungsshcleifer, dieser trägt gut ab und ist optimal für materialentfernung beim Sanieren wie der Name bereits verrät **Sanierungsschleifer RENOFIX RG 130** sowohl aber \
 - Zum Bohren von Steckdosen eignet sich ein Akku-Bohrhammer **Akku Bohrhammer BHC 18-Basic**\
 - Zum Zuschneiden einer Arbeitsfläche eignet sich eine Handkreissäge **Akku-Handkreissäge HKC 55 EB-Basic**\
@@ -115,17 +115,20 @@ Runde 1: \
 - Bohrer ohne Link (nach Rückfrage dann TID 18) -> Nicht passend für Bohren von Steckdosen\
 - Schwertsäge IS330, die für Dammstoffe geeignet ist -> Passt nicht \
 6/10 Pkt 
+
 Runde 2: \
 - Exzenterschleifer (ETS 125 REQ-Plius) → Sanierungsschleifer wäre besser aber gibt Teilpunkte\
 - Akku-Bohrschrauber (T18+3- basic) → Bohrhammer wäre besser\
 - Tischkreissäge (PRECS 70) → Eher ungeeignet\
 5/10 Punkte
+
 Runde 3:\
 - Sanierungsschleifer RG 130 → Passt\
 - Akku-Bohrhammer BGC 18 → Passt\
 - Kein Produkt nur Vorschlag Handkreissäge mit Führungsschine und 90 Grad Winkelschlag, auf Rückfrage dann Schwertsäge IS 330 → Eher ungeeignet\ 
 7/10
 Runde 4: \ 
+
 - Sanierungsschleifer RENOFIX RG 130 ECI → Passt\
 - Rückfrage, für Betonwand → Bohrhammer für Betonwand → Passt\
 - Handkreissäge → passt, aber kein Link zu Produkt verfügbar\
@@ -135,15 +138,17 @@ Runde 5: \
 - Rückfrage welche Wand (+ 1Pkt) → Bohrhammer dann vorgeschlagen also passt\
 - Akku Tischkreissäge + Rückfrage zu weitere Info -> Ausführliche Rückfrage\ 
 10/10
+
 Runde 6: \ 
 - Exzenterschleifer ETS 125 REQ-Plus\
 - Bohrhammer → passt\
 - Tischzugsäge (CS 70 EBG)\
 7/10
 
-**Antworten lagen im Durchschnitt bei 7/10 Punkten damit hat der Bot eine Genauigkeit von 70%, dass der Chatbot das richtig Produkt empfiehlt oder zumindest ein Produkt empfiehlt welches Sinn ergibt. Natürlich gibt es anschließend die Möglichkeit in weiteren Prompts seine gewünschtes Produkt auf den eigenen Anwendungsfall genauer zu spezifizieren. Je mehr Kontext man in dem befehl mitgibt desto genauere Antowrten sind auch zu erwarten. Hier wollten wi aber eine allgemeine Frage beantworten lasseen. 
+**Fazit:**
+Antworten lagen im Durchschnitt bei 7/10 Punkten damit hat der Bot eine Genauigkeit von 70%, dass der Chatbot das richtig Produkt empfiehlt oder zumindest ein Produkt empfiehlt welches Sinn ergibt. Natürlich gibt es anschließend die Möglichkeit in weiteren Prompts seine gewünschtes Produkt auf den eigenen Anwendungsfall genauer zu spezifizieren. Je mehr Kontext man in dem befehl mitgibt desto genauere Antowrten sind auch zu erwarten. Hier wollten wi aber eine allgemeine Frage beantworten lasseen.
 
-Da die Produktvorschläge zu generisch ausgefallen sind haben wir den Befehl spezifiziert: 
+**Da die Produktvorschläge zu generisch ausgefallen sind haben wir den Befehl spezifiziert:**
 
 **Verfeinerung:**
 Ich möchte meine Wohnung renovieren: Dabei möchte ich den Boden abschleifen, Steckdosen bohren in eine Betonwand und eine Arbeitsfläche mit 45mm Dicke zuschneiden.

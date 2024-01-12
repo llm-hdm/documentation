@@ -270,17 +270,42 @@ Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben 
 <p><strong>Testszenario 2:</strong> <strong><em>Wohnung renovieren</em></strong></p>
 <p><strong>Frage an den Assistant Bot</strong></p>
 <p>Ich möchte meine Wohnung renovieren: Dabei möchte ich Boden abschleifen, Steckdosen bohren und eine Arbeitsflächen zuschneiden. Kannst du mir eine Liste von Werkzeugen ausgeben die ich brauche?</p>
-<p><strong><em>Optimale Antowort</em></strong> - Für Schleifen beim Sanieren einer Wohnung eignet sich der Sanierungsshcleifer, dieser trägt gut ab und ist optimal für materialentfernung beim Sanieren wie der Name bereits verrät <strong>Sanierungsschleifer RENOFIX RG 130</strong> sowohl aber - Zum Bohren von Steckdosen eignet sich ein Akku-Bohrhammer <strong>Akku Bohrhammer BHC 18-Basic</strong> - Zum Zuschneiden einer Arbeitsfläche eignet sich eine Handkreissäge <strong>Akku-Handkreissäge HKC 55 EB-Basic</strong> <strong>Testrunden</strong><br>
+<p><strong><em>Optimale Antowort</em></strong> - Für Schleifen beim Sanieren einer Wohnung eignet sich der Sanierungsshcleifer, dieser trägt gut ab und ist optimal für materialentfernung beim Sanieren wie der Name bereits verrät <strong>Sanierungsschleifer RENOFIX RG 130</strong> sowohl aber<br>
+- Zum Bohren von Steckdosen eignet sich ein Akku-Bohrhammer <strong>Akku Bohrhammer BHC 18-Basic</strong><br>
+- Zum Zuschneiden einer Arbeitsfläche eignet sich eine Handkreissäge <strong>Akku-Handkreissäge HKC 55 EB-Basic</strong><br>
+<strong>Testrunden</strong><br>
 Runde 1:<br>
-- Schleifer wurde richtig erkannt - Bohrer ohne Link (nach Rückfrage dann TID 18) -&gt; Nicht passend für Bohren von Steckdosen - Schwertsäge IS330, die für Dammstoffe geeignet ist -&gt; Passt nicht 6/10 Pkt Runde 2:<br>
-- Exzenterschleifer (ETS 125 REQ-Plius) → Sanierungsschleifer wäre besser aber gibt Teilpunkte - Akku-Bohrschrauber (T18+3- basic) → Bohrhammer wäre besser - Tischkreissäge (PRECS 70) → Eher ungeeignet 5/10 Punkte Runde 3: - Sanierungsschleifer RG 130 → Passt - Akku-Bohrhammer BGC 18 → Passt - Kein Produkt nur Vorschlag Handkreissäge mit Führungsschine und 90 Grad Winkelschlag, auf Rückfrage dann Schwertsäge IS 330 → Eher ungeeignet 7/10 Runde 4: &nbsp; - Sanierungsschleifer RENOFIX RG 130 ECI → Passt - Rückfrage, für Betonwand → Bohrhammer für Betonwand → Passt - Handkreissäge → passt, aber kein Link zu Produkt verfügbar 7/10 Runde 5: &nbsp; - Stellt Rückfrage zu Größe der Fläche (+1 Pkt) Exzentrentschleifer (Getriebe Exzentrentschleifer Rotex RO 90 DX FE Plus) -&gt; auch für grobschliff geeignet daher TP - Rückfrage welche Wand (+ 1Pkt) → Bohrhammer dann vorgeschlagen also passt - Akku Tischkreissäge + Rückfrage zu weitere Info -&gt; Ausführliche Rückfrage 10/10 Runde 6: &nbsp; - Exzenterschleifer&nbsp;ETS 125 REQ-Plus - Bohrhammer → passt - Tischzugsäge (CS 70 EBG) 7/10</p>
+- Schleifer wurde richtig erkannt<br>
+- Bohrer ohne Link (nach Rückfrage dann TID 18) -&gt; Nicht passend für Bohren von Steckdosen<br>
+- Schwertsäge IS330, die für Dammstoffe geeignet ist -&gt; Passt nicht<br>
+6/10 Pkt Runde 2:<br>
+- Exzenterschleifer (ETS 125 REQ-Plius) → Sanierungsschleifer wäre besser aber gibt Teilpunkte<br>
+- Akku-Bohrschrauber (T18+3- basic) → Bohrhammer wäre besser<br>
+- Tischkreissäge (PRECS 70) → Eher ungeeignet<br>
+5/10 Punkte Runde 3:<br>
+- Sanierungsschleifer RG 130 → Passt<br>
+- Akku-Bohrhammer BGC 18 → Passt<br>
+- Kein Produkt nur Vorschlag Handkreissäge mit Führungsschine und 90 Grad Winkelschlag, auf Rückfrage dann Schwertsäge IS 330 → Eher ungeeignet&nbsp; 7/10 Runde 4: &nbsp; - Sanierungsschleifer RENOFIX RG 130 ECI → Passt<br>
+- Rückfrage, für Betonwand → Bohrhammer für Betonwand → Passt<br>
+- Handkreissäge → passt, aber kein Link zu Produkt verfügbar<br>
+7/10 Runde 5: &nbsp; - Stellt Rückfrage zu Größe der Fläche (+1 Pkt) Exzentrentschleifer (Getriebe Exzentrentschleifer Rotex RO 90 DX FE Plus) -&gt; auch für grobschliff geeignet daher TP<br>
+- Rückfrage welche Wand (+ 1Pkt) → Bohrhammer dann vorgeschlagen also passt<br>
+- Akku Tischkreissäge + Rückfrage zu weitere Info -&gt; Ausführliche Rückfrage&nbsp; 10/10 Runde 6: &nbsp; - Exzenterschleifer&nbsp;ETS 125 REQ-Plus<br>
+- Bohrhammer → passt<br>
+- Tischzugsäge (CS 70 EBG)<br>
+7/10</p>
 <p>**Antworten lagen im Durchschnitt bei 7/10 Punkten damit hat der Bot eine Genauigkeit von 70%, dass der Chatbot das richtig Produkt empfiehlt oder zumindest ein Produkt empfiehlt welches Sinn ergibt. Natürlich gibt es anschließend die Möglichkeit in weiteren Prompts seine gewünschtes Produkt auf den eigenen Anwendungsfall genauer zu spezifizieren. Je mehr Kontext man in dem befehl mitgibt desto genauere Antowrten sind auch zu erwarten. Hier wollten wi aber eine allgemeine Frage beantworten lasseen.</p>
 <p>Da die Produktvorschläge zu generisch ausgefallen sind haben wir den Befehl spezifiziert:</p>
 <p><strong>Verfeinerung:</strong> Ich möchte meine Wohnung renovieren: Dabei möchte ich den Boden abschleifen, Steckdosen bohren in eine Betonwand und eine Arbeitsfläche mit 45mm Dicke zuschneiden. Kannst du mir eine Liste von Werkzeugen ausgeben die ich brauche?</p>
 <p>Runde 7:<br>
-- Sanierungsschleifer RENOFIX RG 130 ECI-Plus → Passt - Akku-Bohrhammer BHC 18 → Passt - Mobile Werkstatt MW 1000 Basic in Verbindung mit einer Handkreissäge und Führungsschiene → Säge nicht ausgegeben, Mobile Werkstatt unnötig. Auf Rückfrage dann Tauchsäge TS 55 FEBQ-Plus → Passt 7/10</p>
+- Sanierungsschleifer RENOFIX RG 130 ECI-Plus → Passt<br>
+- Akku-Bohrhammer BHC 18 → Passt<br>
+- Mobile Werkstatt MW 1000 Basic in Verbindung mit einer Handkreissäge und Führungsschiene&nbsp; → Säge nicht ausgegeben, Mobile Werkstatt unnötig. Auf Rückfrage dann Tauchsäge TS 55 FEBQ-Plus → Passt<br>
+7/10</p>
 <p>Runde 8:<br>
-- Sanierungsschleifer RENOFIX RG 130 ECI → Passt - Akku-Bohrschrauber QUADRIVE TDC 18/4 I-Basic → Passt - Kapp-Zugsäge KAPEX KS 60 E-Set→ Passt 10/10</p>
+- Sanierungsschleifer RENOFIX RG 130 ECI → Passt<br>
+- Akku-Bohrschrauber QUADRIVE TDC 18/4 I-Basic → Passt<br>
+- Kapp-Zugsäge KAPEX KS 60 E-Set→ Passt&nbsp; 10/10</p>
 <p>Runde 9: &nbsp;</p>
 <p><strong>Testszenario 3:</strong> <strong><em>Ein Weihnachtsgeschenk basteln!</em></strong></p>
 <p><strong>Frage an den Assistant Bot:</strong> Ich möchte für Weihnachten Sterne basteln und diese aus Holz aussägen und ein Loch reinbohren.</p>
