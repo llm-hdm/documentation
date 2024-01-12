@@ -97,6 +97,7 @@ Antworte immer auf Deutsch.
 - 3 Punkte pro richtiges vorgeschlagenes Werkzeug
 - 1 Punkt Abzug für einen fehlenden oder nicht funktionierenden Link
 - 1 Punkt für einen Vorschlag der nicht 100 % der Idealantwort entspricht
+- 1 Punkt - falls das Produkt falsch ist, aber der Link stimmt
 
 **Testszenario 2:** ***Ein Weihnachtsgeschenk basteln!***
 
