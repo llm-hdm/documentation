@@ -90,7 +90,7 @@ Direkt erhält er eine Antwort und kann mit dieser Antwort zu seinem Chef gehen.
 
 **Person 2:**
 
-Simon möchte sein Haus, was er frisch gekauft hat, renovieren. Da er keine Ahnung hat, welche Werkzeuge dafür geeignet sind sucht er im Internet nach Herstellern. Er findet Festtool und den Chatbot darauf. Praktischerweise kann er genau die Frage die er hat (also Welche Werkzeuge für eine Hausrenovierung wichtig sind) in den Chatbot eintragen.  Er bekommt eine Liste an Geräten, die für die Hausrenovierung wichtig sind.
+Simone möchte für Ihre Verwandschaft und einige Freunde als Geschenk für Weihnachten Sterne aus einer Holzplatte aussägen. Diese sollen anschließend aufgehangen werden. Dazu benötigt Sie Werkzeug, mit dem auch sie als Bastelanfängerin umgehen kann. Sie besucht die Festool Seite und schildert dem Chatbot ihr vorhaben. Dieser empfiehlt ihr anschließend Werkzeuge, die zu Simones vorhaben am besten geeignet sind. 
 
 **Person 3:**
 
