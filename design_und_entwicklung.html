@@ -266,7 +266,49 @@ Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben 
 <li>1 Punkt Abzug für einen fehlenden oder nicht funktionierenden Link</li>
 <li>1 Punkt für einen Vorschlag der nicht 100 % der Idealantwort entspricht</li>
 <li>1 Punkt - falls das Produkt falsch ist, aber der Link stimmt</li>
+<li>2 Punkte für eine inhaltlich richtige Antwort – unabhängig eines Produktlinks</li>
 </ul>
+<p><strong>Testszenario 1:</strong> <strong><em>Auf der Suche nach einer neuen Tauchsäge</em></strong></p>
+<p><strong>Frage an den Assistant Bot:</strong><br>
+Ich suche eine Tauchsäge mit Kabelanschluss und Führungsschiene.</p>
+<p><strong><em>Optimal Antwort:</em></strong><br>
+Für Ihre Anforderungen empfehle ich Ihnen die&nbsp;Tauchsäge TS 60 KEBQ-Plus. Sie ist kabelgebunden und für die Kombination mit Führungsschienen konzipiert, was präzise Schnitte ermöglicht.</p>
+<p><strong>Zweite Frage an den Assistant Bot (Vertiefung):</strong><br>
+Kannst du mir mehr Infos zu der Säge geben?</p>
+<p><strong><em>Optimal Antwort:</em></strong><br>
+Die Tauchsäge TS 60 KEBQ-Plus zeichnet sich durch eine Leistung von 1500 W aus, eine variables Drehzahlspektrum von 3000 - 6800 min⁻¹ und eine maximale Schnitttiefe von 62 mm. Mit der Möglichkeit, Winkel von -1° bis 47° einzustellen, ermöglicht sie präzise Gehrungsschnitte. Sie wiegt 4,7 kg ohne Zubehör und bietet eine gute Sicht auf das Sägeblatt.</p>
+<p><strong>Testrunden:</strong><br>
+Runde 1:<br>
+- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 2:<br>
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 3:<br>
+- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 4:<br>
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 5:<br>
+- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 6:<br>
+- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 7:<br>
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 8:<br>
+- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 9:<br>
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p>Runde 10:<br>
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
+<p><strong>Auswertung:</strong> Von 50 möglichen Punkten im Szenario 1, hat der Chatbot <strong>40 Punkte</strong> erreicht. Das entspricht einer Genauigkeit von <strong>80%</strong>. Die Alternative die vorgeschlagen wurden, waren aber durchaus annehmbar. Es liegt dann bei dem Kunden zu entscheiden, welches Produkt besser geeignet ist.</p>
 <p><strong>Testszenario 2:</strong> <strong><em>Wohnung renovieren</em></strong></p>
 <p><strong>Frage an den Assistant Bot</strong></p>
 <p>Ich möchte meine Wohnung renovieren: Dabei möchte ich Boden abschleifen, Steckdosen bohren und eine Arbeitsflächen zuschneiden. Kannst du mir eine Liste von Werkzeugen ausgeben die ich brauche?</p>
@@ -397,11 +439,24 @@ Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des
 </section>
 <section id="frontend" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="frontend"><span class="header-section-number">4.6</span> Frontend</h2>
-<p>///////////</p>
+<p>Die Benutzeroberfläche unserer Software wurde mit modernen Technologien entwickelt, um eine reibungslose und ansprechende Benutzererfahrung zu gewährleisten.</p>
+<ul>
+<li><p><strong>Vite</strong>: Als Build-Tool und Entwicklungs-Server bietet Vite eine schnelle und effiziente Entwicklungsumgebung für das Frontend. Durch die Nutzung von Vite profitiert die Anwendung von schnellen Rebuilds und Live-Reloads während der Entwicklung.</p></li>
+<li><p><strong>React</strong>: Das Frontend-Framework React ermöglicht eine komponentenbasierte Struktur, die die Wiederverwendbarkeit von Code fördert. Die Verwendung von JSX erleichtert das Erstellen von benutzerfreundlichem und dynamischem UI.</p></li>
+<li><p><strong>Tailwind CSS</strong>: Als utility-first CSS-Framework ermöglicht Tailwind CSS die einfache Erstellung von modernen und ansprechenden Benutzeroberflächen. Die vordefinierten Klassen erleichtern das Styling und die Anpassung.</p></li>
+<li><p><strong>SpeechToText API von OpenAI</strong>: Die direkte Integration der SpeechToText API von OpenAI ermöglicht es Benutzern, über gesprochene Sprache mit der Anwendung zu interagieren. Dies erweitert die Zugänglichkeit und bietet eine innovative Möglichkeit der Eingabe.</p></li>
+</ul>
+<p>Jede Komponente im Frontend besteht aus einer Logik/JSX-Datei für die Funktionalität und einer styles.js-Datei für das Styling, um eine klare Trennung von Logik und Präsentation zu gewährleisten.</p>
 </section>
 <section id="backend" class="level2" data-number="4.7">
 <h2 data-number="4.7" class="anchored" data-anchor-id="backend"><span class="header-section-number">4.7</span> Backend</h2>
-<p>//////////</p>
+<p>Das Backend unserer Software setzt auf leistungsstarke Technologien, um Anfragen effizient zu verarbeiten und eine nahtlose Kommunikation zwischen dem Frontend und externen Diensten zu ermöglichen.</p>
+<ul>
+<li><p><strong>Flask</strong>: Als leichtgewichtiges Web-Framework für Python bietet Flask eine einfache und dennoch flexible Struktur für die Entwicklung von Webanwendungen. Flask ermöglicht es, schnell RESTful APIs zu erstellen.</p></li>
+<li><p><strong>Flask-RESTx</strong>: Dieses Framework macht die Entwicklung von RESTful APIs in Flask noch einfacher. Durch die automatische Validierung von API-Endpunkten erleichtert Flask-RESTx die Erstellung von robusten APIs.</p></li>
+<li><p><strong>OpenAI Assistant</strong>: Der OpenAI Assistant wird im Backend genutzt, um Anfragen der Benutzer zu verarbeiten und qualitativ hochwertige Antworten zu generieren. Die Integration ermöglicht es, fortschrittliche natürliche Sprachverarbeitungstechnologien in die Software zu integrieren.</p></li>
+</ul>
+<p>Die Kombination dieser Technologien bildet ein robustes Backend, das die Interaktionen zwischen dem Frontend und externen Diensten effizient und zuverlässig abwickelt.</p>
 
 
 </section>
