@@ -98,6 +98,65 @@ Antworte immer auf Deutsch.
 - 1 Punkt Abzug für einen fehlenden oder nicht funktionierenden Link
 - 1 Punkt für einen Vorschlag der nicht 100 % der Idealantwort entspricht
 - 1 Punkt - falls das Produkt falsch ist, aber der Link stimmt
+- 2 Punkte für eine inhaltlich richtige Antwort – unabhängig eines Produktlinks
+
+**Testszenario 1:** ***Auf der Suche nach einer neuen Tauchsäge***
+
+**Frage an den Assistant Bot:** \
+Ich suche eine Tauchsäge mit Kabelanschluss und Führungsschiene.
+
+***Optimal Antwort:*** \
+Für Ihre Anforderungen empfehle ich Ihnen die Tauchsäge TS 60 KEBQ-Plus. Sie ist kabelgebunden und für die Kombination mit Führungsschienen konzipiert, was präzise Schnitte ermöglicht.
+
+**Zweite Frage an den Assistant Bot (Vertiefung):** \
+Kannst du mir mehr Infos zu der Säge geben?
+
+***Optimal Antwort:*** \
+Die Tauchsäge TS 60 KEBQ-Plus zeichnet sich durch eine Leistung von 1500 W aus, eine variables Drehzahlspektrum von 3000 - 6800 min⁻¹ und eine maximale Schnitttiefe von 62 mm. Mit der Möglichkeit, Winkel von -1° bis 47° einzustellen, ermöglicht sie präzise Gehrungsschnitte. Sie wiegt 4,7 kg ohne Zubehör und bietet eine gute Sicht auf das Sägeblatt.
+
+**Testrunden:** \
+Runde 1: \
+- Korrekt vorgeschlagenes Werkzeug. → 3P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 2: \
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 3: \
+- Korrekt vorgeschlagenes Werkzeug. → 3P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 4: \
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 5: \
+- Korrekt vorgeschlagenes Werkzeug. → 3P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 6: \
+- Korrekt vorgeschlagenes Werkzeug. → 3P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 7: \
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 8: \
+- Korrekt vorgeschlagenes Werkzeug. → 3P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 9: \
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+Runde 10: \
+- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P \
+- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P
+
+**Auswertung:**
+Von 50 möglichen Punkten im Szenario 1, hat der Chatbot **40 Punkte** erreicht. Das entspricht einer Genauigkeit von **80%**. Die Alternative die vorgeschlagen wurden, waren aber durchaus annehmbar. Es liegt dann bei dem Kunden zu entscheiden, welches Produkt besser geeignet ist.
 
 **Testszenario 2:** ***Wohnung renovieren***
 
@@ -292,9 +351,26 @@ Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des
 ![](images/Darkmode2.png){width=50%}
 
 ## Frontend
+Die Benutzeroberfläche unserer Software wurde mit modernen Technologien entwickelt, um eine reibungslose und ansprechende Benutzererfahrung zu gewährleisten.
 
-/////////// 
+- **Vite**: Als Build-Tool und Entwicklungs-Server bietet Vite eine schnelle und effiziente Entwicklungsumgebung für das Frontend. Durch die Nutzung von Vite profitiert die Anwendung von schnellen Rebuilds und Live-Reloads während der Entwicklung.
+
+- **React**: Das Frontend-Framework React ermöglicht eine komponentenbasierte Struktur, die die Wiederverwendbarkeit von Code fördert. Die Verwendung von JSX erleichtert das Erstellen von benutzerfreundlichem und dynamischem UI.
+
+- **Tailwind CSS**: Als utility-first CSS-Framework ermöglicht Tailwind CSS die einfache Erstellung von modernen und ansprechenden Benutzeroberflächen. Die vordefinierten Klassen erleichtern das Styling und die Anpassung.
+
+- **SpeechToText API von OpenAI**: Die direkte Integration der SpeechToText API von OpenAI ermöglicht es Benutzern, über gesprochene Sprache mit der Anwendung zu interagieren. Dies erweitert die Zugänglichkeit und bietet eine innovative Möglichkeit der Eingabe.
+
+Jede Komponente im Frontend besteht aus einer Logik/JSX-Datei für die Funktionalität und einer styles.js-Datei für das Styling, um eine klare Trennung von Logik und Präsentation zu gewährleisten.
 
 ## Backend
 
-//////////
+Das Backend unserer Software setzt auf leistungsstarke Technologien, um Anfragen effizient zu verarbeiten und eine nahtlose Kommunikation zwischen dem Frontend und externen Diensten zu ermöglichen.
+
+- **Flask**: Als leichtgewichtiges Web-Framework für Python bietet Flask eine einfache und dennoch flexible Struktur für die Entwicklung von Webanwendungen. Flask ermöglicht es, schnell RESTful APIs zu erstellen.
+
+- **Flask-RESTx**: Dieses Framework macht die Entwicklung von RESTful APIs in Flask noch einfacher. Durch die automatische Validierung von API-Endpunkten erleichtert Flask-RESTx die Erstellung von robusten APIs.
+
+- **OpenAI Assistant**: Der OpenAI Assistant wird im Backend genutzt, um Anfragen der Benutzer zu verarbeiten und qualitativ hochwertige Antworten zu generieren. Die Integration ermöglicht es, fortschrittliche natürliche Sprachverarbeitungstechnologien in die Software zu integrieren.
+
+Die Kombination dieser Technologien bildet ein robustes Backend, das die Interaktionen zwischen dem Frontend und externen Diensten effizient und zuverlässig abwickelt.
