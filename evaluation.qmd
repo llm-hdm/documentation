@@ -1,6 +1,19 @@
 # Evaluation
 
-- Was lief gut, was lief schlecht?
+## Learnings
 
-einmal evaulieren bitte
+Im Projekt haben wir einige Learnings erhalten. Diese sind: \
+- Übersicht und Einführung in Generative AI \
+- Large Language Models im Überblick \
+- Nutzung der API von OpenAI und der Erstellung einer Anwendung \
+- Prompt Engineering \
+- Aufbau eines Chatsystems mittels Langchain -> umstellung nach der hälfte des Projekts auf den von OpenAI eigenen Assistant \
+- Aufbau einer App mittels modernen Technologien wie React, Python, Flask oder Vue \
+- Evaluation of the Chatsystem / LLM
+
+## Zusammenarbeit in der Gruppe
+
+Zu Beginn des Projekts haben wir zusammen einige Ideen gesammelt und uns schnell für einen Vorschlag entschieden. Wir konnten Aufgaben immer gut verteilen und niemand hat sich aus der Arbeit herausgehalten. Das hat die Entwicklung und die Arbeit am Projekt deutlich erleichtert. 
+Wir haben uns wöchtentlich getroffen und dort am System zusammen gearbeitet und programmiert. Andere To-Do's wie Prompt Engineering und testing konnten wir einzeln aufteilen und haben dies dann unter der Woche, bis zum nächsten Termin, erledigt. Hier haben wir uns in einem Notion Board organisiert, sodass nicht zwei Personen am gleichen Problem arbeiten. 
+Zusammengefasst können wir auf eine gute Gruppendynamik und gute Zusammenarbeit zurückschauen.
 
