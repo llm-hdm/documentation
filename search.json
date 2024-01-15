@@ -147,18 +147,25 @@
     "text": "4.7 Backend\nDas Backend unserer Software setzt auf leistungsstarke Technologien, um Anfragen effizient zu verarbeiten und eine nahtlose Kommunikation zwischen dem Frontend und externen Diensten zu ermöglichen.\n\nFlask: Als leichtgewichtiges Web-Framework für Python bietet Flask eine einfache und dennoch flexible Struktur für die Entwicklung von Webanwendungen. Flask ermöglicht es, schnell RESTful APIs zu erstellen.\nFlask-RESTx: Dieses Framework macht die Entwicklung von RESTful APIs in Flask noch einfacher. Durch die automatische Validierung von API-Endpunkten erleichtert Flask-RESTx die Erstellung von robusten APIs.\nOpenAI Assistant: Der OpenAI Assistant wird im Backend genutzt, um Anfragen der Benutzer zu verarbeiten und qualitativ hochwertige Antworten zu generieren. Die Integration ermöglicht es, fortschrittliche natürliche Sprachverarbeitungstechnologien in die Software zu integrieren.\n\nDie Kombination dieser Technologien bildet ein robustes Backend, das die Interaktionen zwischen dem Frontend und externen Diensten effizient und zuverlässig abwickelt."
   },
   {
-    "objectID": "evaluation.html",
-    "href": "evaluation.html",
+    "objectID": "evaluation.html#learnings",
+    "href": "evaluation.html#learnings",
     "title": "5  Evaluation",
-    "section": "",
-    "text": "Was lief gut, was lief schlecht?\n\neinmal evaulieren bitte"
+    "section": "5.1 Learnings",
+    "text": "5.1 Learnings\nIm Projekt haben wir einige Learnings erhalten. Diese sind:\n- Übersicht und Einführung in Generative AI\n- Large Language Models im Überblick\n- Nutzung der API von OpenAI und der Erstellung einer Anwendung\n- Prompt Engineering\n- Aufbau eines Chatsystems mittels Langchain -&gt; umstellung nach der hälfte des Projekts auf den von OpenAI eigenen Assistant\n- Aufbau einer App mittels modernen Technologien wie React, Python, Flask oder Vue\n- Evaluation of the Chatsystem / LLM"
+  },
+  {
+    "objectID": "evaluation.html#zusammenarbeit-in-der-gruppe",
+    "href": "evaluation.html#zusammenarbeit-in-der-gruppe",
+    "title": "5  Evaluation",
+    "section": "5.2 Zusammenarbeit in der Gruppe",
+    "text": "5.2 Zusammenarbeit in der Gruppe\nZu Beginn des Projekts haben wir zusammen einige Ideen gesammelt und uns schnell für einen Vorschlag entschieden. Wir konnten Aufgaben immer gut verteilen und niemand hat sich aus der Arbeit herausgehalten. Das hat die Entwicklung und die Arbeit am Projekt deutlich erleichtert. Wir haben uns wöchtentlich getroffen und dort am System zusammen gearbeitet und programmiert. Andere To-Do’s wie Prompt Engineering und testing konnten wir einzeln aufteilen und haben dies dann unter der Woche, bis zum nächsten Termin, erledigt. Hier haben wir uns in einem Notion Board organisiert, sodass nicht zwei Personen am gleichen Problem arbeiten. Zusammengefasst können wir auf eine gute Gruppendynamik und gute Zusammenarbeit zurückschauen."
   },
   {
     "objectID": "fazit.html",
     "href": "fazit.html",
     "title": "6  Fazit",
     "section": "",
-    "text": "fazit ist klar"
+    "text": "Das Modul Einsatz von Large Language Models in Unternehmensanwendungen empfanden wir als ein sehr spannendes Projekt. Gerade weil KI in der heutigen Zeit viel Aufmerksamkeit erlangt, Technologien sich ändern und maschinelles Lernen in der Zukunft noch eine Große Rolle spielt, haben wir uns entschieden das Projekt zu wählen. Aus einer Idee, wie man einem Kunden ein besseres Erlebnis in einem Webshop gewähren kann, ist ein funktionierender Chatbot auf Basis des LLM’s von OpenAI in der Version GPT4.5 turbo entstanden. Das hat uns gezeigt, wie einfach heutzutage solche Anwendungen entwickelt werden können. Gleichzeitig wurde uns allen bewusst wie schwer es derzeit ist, aus dem LLM eine perfekte Antwort zu generieren. Mittels prompt Engineering und speziellen kniffen, kann man jedoch eine hohe genauigkeit der Antworten entlocken.\nZuletzt lässt sich festhalten, dass das Projekt einen gelungenen Einblick in die komplexe Welt von Large Language Models gegeben hat."
   },
   {
     "objectID": "benutzeranleitung.html#user-instruction",
