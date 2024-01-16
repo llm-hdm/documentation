@@ -354,6 +354,13 @@ Runde 9: \
 - Produkt falsch, aber Link funktioniert → 1P
 Runde 10: \ 
 - Richtige Antwort, aber kein Link → 2P
+
+**Auswertung:**
+Von 30 möglichen Punkten im Szenario 4, hat der Chatbot **21 Punkte** erreicht. Das Entpricht einer Genauigkeit von **70%**
+Die Richtigkeit bei den Antworten liegt bei 70 %.
+ Die Antworten des Bots sind stellenweisen sehr inkonsistent, da ab und zu alles richtig beantwortet wird. Jedoch häufig, eine dieser Komponenten: Link, richtiges Produkt oder Rückfrage vernachlässigt, werden. Des Weiteren ist die Antwortzeit, auch bei einer so kurzen Frage, sehr lange. Positiv ist die Wortwahl, da diese vertrauen vermittelt.
+ 
+
 ### Verbesserung der User Experience (UX):
 
 **Testszenario 1:** Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist. 
