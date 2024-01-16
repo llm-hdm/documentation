@@ -99,5 +99,5 @@ Elisa möchte für Ihre Verwandschaft und einige Freunde als Geschenk für Weihn
 
 **Person 4:**
 
-Markus verfügt über eine gut ausgestattete Werkstatt in seinem Keller, in der er regelmäßig Möbel baut, Elektronikprojekte umsetzt und kleine Reparaturen durchführt. Qualität in Bezug auf Akkuschrauber mangelhaft. Weswegen sich Markus für die Akkuschrauber von Festool interessiert. Er findet mithilfe des Chatbots den passenden Akkuschrauber und kann sich auch durch den Bot, genau die Produktdaten ausgeben lassen, die er benötigt, ohne dabei stunden nach diesen zu suchen.
+Markus verfügt über eine gut ausgestattete Werkstatt in seinem Keller, in der er regelmäßig Möbel baut, Elektronikprojekte umsetzt und kleine Reparaturen durchführt. Er benutzte immer Produkte von Bosch oder AEG, jedoch sind diese Akkuschraubern nach seinem Erachten in Bezug auf die Qualität in den letzten Jahren mangelhaft gewesen. Weswegen sich Markus für die Akkuschrauber von Festool interessiert. Er findet mithilfe des Chatbots den passenden Akkuschrauber und kann sich auch durch den Bot, genau die Produktdaten ausgeben lassen, die er benötigt, ohne dabei stunden nach diesen zu suchen.
 
