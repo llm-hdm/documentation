@@ -333,7 +333,27 @@ Ich möchte einen Akkuschrauber mit bums
 **Optimal Antwort:*** \
 - Als Akku-Schrauber eignet sich am besten der **Akku-Bohrschrauber  TID 18**
 
-**Testrunden:**
+**Testrunden:** \
+Runde 1: \ 
+- Produkt falsch, aber Link funktioniert → 1P
+Runde 2: \ 
+- Richtige Antwort, aber Link funktioniert  → 2P
+Runde 3: \ 
+- Produkt falsch, aber Link funktioniert → 1P
+Runde 4: \ 
+- Passendes Produkt und Link funktioniert → 3P
+Runde 5: \ 
+- Richtige Antwort, aber kein Link → 2P
+Runde 6: \ 
+- Passendes Produkt und Link funktioniert → 3P
+Runde 7: \ 
+- Passendes Produkt und Link funktioniert → 3P
+Runde 8: \ 
+- Passendes Produkt und Link funktioniert → 3P
+Runde 9: \ 
+- Produkt falsch, aber Link funktioniert → 1P
+Runde 10: \ 
+- Richtige Antwort, aber kein Link → 2P
 ### Verbesserung der User Experience (UX):
 
 **Testszenario 1:** Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist. 
