@@ -189,19 +189,19 @@ Runde 3:\
 - Kein Produkt nur Vorschlag Handkreissäge mit Führungsschine und 90 Grad Winkelschlag, auf Rückfrage dann Schwertsäge IS 330 → Eher ungeeignet\ 
 7/10
 
-Runde 4: \ 
+Runde 4:\ 
 - Sanierungsschleifer RENOFIX RG 130 ECI → Passt\
 - Rückfrage, für Betonwand → Bohrhammer für Betonwand → Passt\
 - Handkreissäge → passt, aber kein Link zu Produkt verfügbar\
 7/10
 
-Runde 5: \ 
+Runde 5:\ 
 - Stellt Rückfrage zu Größe der Fläche (+1 Pkt) Exzentrentschleifer (Getriebe Exzentrentschleifer Rotex RO 90 DX FE Plus) -> auch für grobschliff geeignet daher TP\
 - Rückfrage welche Wand (+ 1Pkt) → Bohrhammer dann vorgeschlagen also passt\
 - Akku Tischkreissäge + Rückfrage zu weitere Info -> Ausführliche Rückfrage\ 
 10/10
 
-Runde 6: \ 
+Runde 6:\ 
 - Exzenterschleifer ETS 125 REQ-Plus\
 - Bohrhammer → passt\
 - Tischzugsäge (CS 70 EBG)\
@@ -256,9 +256,9 @@ Wie erwartet konnte nach der Verfeinerung der Frage die Produktvielfalt eingegre
 Der Bot hat mit Durchschnittlich 8,8 Punkten also 88 % Genauigkeit somit seinen Wert verbessern können. 
 
 Weitere Erkenntnis: \
-Bei der Evaluation aufgefallen ist, dass speziell diese lange Anfrage mit besonderen Detailfragen wie die Dicke der Arbeitsplatte und das Material 
-in das, die Steckdosen gebohrt werden sollen dem Chatbot zu schaffen machten. Die Zeit die Frage zu beantoworten lag bei ca. 1 Minute und länger.
-Weitegehend konnte der Chatbot auf kurze Rückfragen aber schnell reagieren. Speziell bei solchen Komplexen Fragen zu mehreren Produkten tut sich der Bot schwer und ist für diesen Fall nicht so gut geeignet wie für Kurze Fragen zu einzelnen Produkten. 
+Bei der Evaluation ist aufgefallen, dass speziell in diesem fall die lange Anfrage mit besonderen Detailfragen wie die Dicke der Arbeitsplatte und das Material 
+in das die Steckdosen gebohrt werden sollen dem Chatbot zu schaffen machte. Die Zeit die Frage zu beantoworten lag bei ca. 1 Minute und länger.
+Weitergehend konnte der Chatbot auf kurze Rückfragen aber schnell reagieren. Speziell bei solchen Komplexen Fragen zu mehreren Produkten tut sich der Bot schwer und ist für diesen Fall nicht so gut geeignet wie für kurze Fragen zu einzelnen Produkten. 
 
 
 **Testszenario 3:** ***Ein Weihnachtsgeschenk basteln!***
