@@ -327,6 +327,13 @@ Runde 10: \
 Von 60 möglichen Punkten im Szenario 2, hat der Chatbot **42 Punkte** erreicht. Das Entpricht einer Genauigkeit von **70%** und damit einer Wahrscheinlichkeit die richtigen Produkte vorgeschlagen zu bekommen von > 2/3. 
 Auffällig war, dass der Bot an unterschiedlichen Tageszeiten, bzw. an unterschiedlichen Zeitpunkten besser oder schlechter geantwortet hat. Auch die Geschwindigkeit der Antworten hat stark variiert. 
 
+**Testszenario 4:** ***Ein Akkuschrauber mit Bums!***
+**Frage an den Assistant Bot:**
+Ich möchte einen Akkuschrauber mit bums
+**Optimal Antwort:*** \
+- Als Akku-Schrauber eignet sich am besten der **Akku-Bohrschrauber  TID 18**
+
+**Testrunden:**
 ### Verbesserung der User Experience (UX):
 
 **Testszenario 1:** Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist. 
