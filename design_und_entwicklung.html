@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -51,7 +51,12 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -60,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -69,10 +75,10 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Projekt Dokumentation - 4&nbsp; Design und Entwicklung">
 <meta property="og:description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
-<meta property="og:image" content="https://llm-hdm.github.io/documentation/images/Software_Architektur_1.png">
-<meta property="og:site-name" content="Projekt Dokumentation">
-<meta property="og:image:height" content="1320">
-<meta property="og:image:width" content="2410">
+<meta property="og:image" content="https://llm-hdm.github.io/documentation//images/logo.png">
+<meta property="og:site_name" content="Projekt Dokumentation">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1024">
 </head>
 
 <body class="nav-sidebar floating">
@@ -81,12 +87,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_und_entwicklung.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Design und Entwicklung</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_und_entwicklung.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Design und Entwicklung</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -96,21 +102,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Projekt Dokumentation</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/llm-hdm/documentation" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/llm-hdm/documentation" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <div id="quarto-search" class="quarto-navigation-tool px-1" title="Search"></div>
 </div>
     </div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -170,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -193,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#frontend" id="toc-frontend" class="nav-link" data-scroll-target="#frontend"><span class="header-section-number">4.6</span> Frontend</a></li>
   <li><a href="#backend" id="toc-backend" class="nav-link" data-scroll-target="#backend"><span class="header-section-number">4.7</span> Backend</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/design_und_entwicklung.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/llm-hdm/documentation/edit/main/design_und_entwicklung.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -213,7 +215,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="datenbeschaffung" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="datenbeschaffung"><span class="header-section-number">4.1</span> Datenbeschaffung</h2>
@@ -260,168 +264,6 @@ Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben 
 <h2 data-number="4.3" class="anchored" data-anchor-id="evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</h2>
 <section id="richtigkeit-und-verlässlichkeit-des-chatbots" class="level3" data-number="4.3.1">
 <h3 data-number="4.3.1" class="anchored" data-anchor-id="richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">4.3.1</span> Richtigkeit und Verlässlichkeit des Chatbots</h3>
-<p><strong>Allgemeine Bewertungskriterien:</strong></p>
-<ul>
-<li>3 Punkte pro richtiges vorgeschlagenes Werkzeug</li>
-<li>1 Punkt Abzug für einen fehlenden oder nicht funktionierenden Link</li>
-<li>1 Punkt für einen Vorschlag der nicht 100 % der Idealantwort entspricht</li>
-<li>1 Punkt - falls das Produkt falsch ist, aber der Link stimmt</li>
-<li>2 Punkte für eine inhaltlich richtige Antwort – unabhängig eines Produktlinks</li>
-</ul>
-<p><strong>Testszenario 1:</strong> <strong><em>Auf der Suche nach einer neuen Tauchsäge</em></strong></p>
-<p><strong>Frage an den Assistant Bot:</strong><br>
-Ich suche eine Tauchsäge mit Kabelanschluss und Führungsschiene.</p>
-<p><strong><em>Optimal Antwort:</em></strong><br>
-Für Ihre Anforderungen empfehle ich Ihnen die&nbsp;Tauchsäge TS 60 KEBQ-Plus. Sie ist kabelgebunden und für die Kombination mit Führungsschienen konzipiert, was präzise Schnitte ermöglicht.</p>
-<p><strong>Zweite Frage an den Assistant Bot (Vertiefung):</strong><br>
-Kannst du mir mehr Infos zu der Säge geben?</p>
-<p><strong><em>Optimal Antwort:</em></strong><br>
-Die Tauchsäge TS 60 KEBQ-Plus zeichnet sich durch eine Leistung von 1500 W aus, eine variables Drehzahlspektrum von 3000 - 6800 min⁻¹ und eine maximale Schnitttiefe von 62 mm. Mit der Möglichkeit, Winkel von -1° bis 47° einzustellen, ermöglicht sie präzise Gehrungsschnitte. Sie wiegt 4,7 kg ohne Zubehör und bietet eine gute Sicht auf das Sägeblatt.</p>
-<p><strong>Testrunden:</strong><br>
-Runde 1:<br>
-- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 2:<br>
-- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 3:<br>
-- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 4:<br>
-- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 5:<br>
-- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 6:<br>
-- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 7:<br>
-- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 8:<br>
-- Korrekt vorgeschlagenes Werkzeug. → 3P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 9:<br>
-- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p>Runde 10:<br>
-- Vorschlag einer anderen Tauchsäge, sinnvolle Alternative → 1P<br>
-- Inhaltlich korrekte Antwort auf Vertiefungsfrage → 2P</p>
-<p><strong>Auswertung:</strong> Von 50 möglichen Punkten im Szenario 1, hat der Chatbot <strong>40 Punkte</strong> erreicht. Das entspricht einer Genauigkeit von <strong>80%</strong>. Die Alternative die vorgeschlagen wurden, waren aber durchaus annehmbar. Es liegt dann bei dem Kunden zu entscheiden, welches Produkt besser geeignet ist.</p>
-<p><strong>Testszenario 2:</strong> <strong><em>Wohnung renovieren</em></strong></p>
-<p><strong>Frage an den Assistant Bot</strong></p>
-<p>Ich möchte meine Wohnung renovieren: Dabei möchte ich Boden abschleifen, Steckdosen bohren und eine Arbeitsflächen zuschneiden. Kannst du mir eine Liste von Werkzeugen ausgeben die ich brauche?</p>
-<p><strong><em>Optimale Antwort</em></strong> - Für Schleifen beim Sanieren einer Wohnung eignet sich der Sanierungsshcleifer, dieser trägt gut ab und ist optimal für materialentfernung beim Sanieren wie der Name bereits verrät <strong>Sanierungsschleifer RENOFIX RG 130</strong> sowohl aber<br>
-- Zum Bohren von Steckdosen eignet sich ein Akku-Bohrhammer <strong>Akku Bohrhammer BHC 18-Basic</strong><br>
-- Zum Zuschneiden einer Arbeitsfläche eignet sich eine Handkreissäge <strong>-&gt; Akku-Handkreissäge HKC 55 EB-Basic</strong><br>
-</p>
-<p><strong>Testrunden</strong><br>
-Runde 1:<br>
-- Schleifer wurde richtig erkannt<br>
-- Bohrer ohne Link (nach Rückfrage dann TID 18) -&gt; Nicht passend für Bohren von Steckdosen<br>
-- Schwertsäge IS330, die für Dammstoffe geeignet ist -&gt; Passt nicht<br>
-6/10 Pkt</p>
-<p>Runde 2:<br>
-- Exzenterschleifer (ETS 125 REQ-Plius) → Sanierungsschleifer wäre besser aber gibt Teilpunkte<br>
-- Akku-Bohrschrauber (T18+3- basic) → Bohrhammer wäre besser<br>
-- Tischkreissäge (PRECS 70) → Eher ungeeignet<br>
-5/10 Punkte</p>
-<p>Runde 3:<br>
-- Sanierungsschleifer RG 130 → Passt<br>
-- Akku-Bohrhammer BGC 18 → Passt<br>
-- Kein Produkt nur Vorschlag Handkreissäge mit Führungsschine und 90 Grad Winkelschlag, auf Rückfrage dann Schwertsäge IS 330 → Eher ungeeignet&nbsp; 7/10</p>
-<p>Runde 4:&nbsp; - Sanierungsschleifer RENOFIX RG 130 ECI → Passt<br>
-- Rückfrage, für Betonwand → Bohrhammer für Betonwand → Passt<br>
-- Handkreissäge → passt, aber kein Link zu Produkt verfügbar<br>
-7/10</p>
-<p>Runde 5:&nbsp; - Stellt Rückfrage zu Größe der Fläche (+1 Pkt) Exzentrentschleifer (Getriebe Exzentrentschleifer Rotex RO 90 DX FE Plus) -&gt; auch für grobschliff geeignet daher TP<br>
-- Rückfrage welche Wand (+ 1Pkt) → Bohrhammer dann vorgeschlagen also passt<br>
-- Akku Tischkreissäge + Rückfrage zu weitere Info -&gt; Ausführliche Rückfrage&nbsp; 10/10</p>
-<p>Runde 6:&nbsp; - Exzenterschleifer&nbsp;ETS 125 REQ-Plus<br>
-- Bohrhammer → passt<br>
-- Tischzugsäge (CS 70 EBG)<br>
-7/10</p>
-<p><strong>Fazit:</strong> Antworten lagen im Durchschnitt bei 7/10 Punkten damit hat der Bot eine Genauigkeit von 70%, dass der Chatbot das richtig Produkt empfiehlt oder zumindest ein Produkt empfiehlt welches Sinn ergibt. Natürlich gibt es anschließend die Möglichkeit in weiteren Prompts seine gewünschtes Produkt auf den eigenen Anwendungsfall genauer zu spezifizieren. Je mehr Kontext man in dem befehl mitgibt desto genauere Antowrten sind auch zu erwarten. Hier wollten wi aber eine allgemeine Frage beantworten lasseen.</p>
-<p><strong>Da die Produktvorschläge zu generisch ausgefallen sind haben wir den Befehl spezifiziert:</strong></p>
-<p><strong>Verfeinerung:</strong> Ich möchte meine Wohnung renovieren: Dabei möchte ich den Boden abschleifen, Steckdosen bohren in eine Betonwand und eine Arbeitsfläche mit 45mm Dicke zuschneiden. Kannst du mir eine Liste von Werkzeugen ausgeben die ich brauche?</p>
-<p>Runde 7:<br>
-- Sanierungsschleifer RENOFIX RG 130 ECI-Plus → Passt<br>
-- Akku-Bohrhammer BHC 18 → Passt<br>
-- Mobile Werkstatt MW 1000 Basic in Verbindung mit einer Handkreissäge und Führungsschiene&nbsp; → Säge nicht ausgegeben, Mobile Werkstatt unnötig. Auf Rückfrage dann Tauchsäge TS 55 FEBQ-Plus → Passt<br>
-7/10</p>
-<p>Runde 8:<br>
-- Sanierungsschleifer RENOFIX RG 130 ECI → Passt<br>
-- Akku-Bohrschrauber QUADRIVE TDC 18/4 I-Basic → Passt<br>
-- Kapp-Zugsäge KAPEX KS 60 E-Set→ Passt&nbsp; 10/10</p>
-<p>Runde 9: &nbsp; - Deltaschleifer DTS 400 REQ-Plus -&gt; Passt<br>
-- Bohrhammer BHC -&gt; Passt<br>
-- Kapp-Zugsäge KAPEX KS 60 E -&gt; Passt<br>
-10/10</p>
-<p>Runde 10:<br>
-- Sanierungsschleifer RENOFIX RG 130 ECI -&gt; Passt &nbsp; - Akku-Bohrschrauber QUADRIVETDC 18/4 I-Basic -&gt; Passt<br>
-- Handkreissäge mit Führungsschiene und 90°-Winkelanschlag, in Verbindung mit einem höhenverstellbaren Arbeitstisch. -&gt; Kein Produkt genannt auf Rückfrage dann Schwertsäge IS 330 7/10</p>
-<p>Runde 11:<br>
-- RENOFIX RG 130 ECI -&gt; Passt<br>
-- Akku-Bohrschrauber QUADRIVE TDC 18/4 I-Basic -&gt; Passt<br>
-- Für das Zuschneiden der Arbeitsfläche wird eine Handkreissäge mit Führungsschiene und 90°-Winkelanschlag empfohlen -&gt; Auf Rückfrage Schwertsäge IS330, die Vorteile von Hand und Kettensäge vereint-&gt; Passt nicht so gut<br>
-7/10</p>
-<p><strong>Auswertung:</strong><br>
-Wie erwartet konnte nach der Verfeinerung der Frage die Produktvielfalt eingegrenzt werden die potenziell genutzt werden kann. Der Bot hat mit Durchschnittlich 8,8 Punkten also 88 % Genauigkeit somit seinen Wert verbessern können.</p>
-<p>Weitere Erkenntnis:<br>
-Bei der Evaluation ist aufgefallen, dass speziell in diesem fall die lange Anfrage mit besonderen Detailfragen wie die Dicke der Arbeitsplatte und das Material in das die Steckdosen gebohrt werden sollen dem Chatbot zu schaffen machte. Die Zeit die Frage zu beantoworten lag bei ca. 1 Minute und länger. Weitergehend konnte der Chatbot auf kurze Rückfragen aber schnell reagieren. Speziell bei solchen Komplexen Fragen zu mehreren Produkten tut sich der Bot schwer und ist für diesen Fall nicht so gut geeignet wie für kurze Fragen zu einzelnen Produkten.</p>
-<p><strong>Testszenario 3:</strong> <strong><em>Ein Weihnachtsgeschenk basteln!</em></strong></p>
-<p><strong>Frage an den Assistant Bot:</strong> Ich möchte für Weihnachten Sterne basteln und diese aus Holz aussägen und ein Loch reinbohren.</p>
-<p><strong><em>Optimal Antwort:</em></strong><br>
-- Als Akku-Schrauber eignet sich am besten der <strong>Akku-Bohrschrauber&nbsp;TXS 18-Basic</strong>.<br>
-- Als Säge am besten eine Stichsäge, da diese für Amateure leicht in der Anwendung ist. Zudem wird vermieden, dass der Kunde gleich ein extrem großes Gerät gekauft werden muss. Am besten eignet sich hierbei die <strong>Akku-Pendelstichsäge CARVEX PSBC 420 EB-Basic</strong>.</p>
-<p><strong><em>Rückfragen:</em></strong> &nbsp; Der Chatbot ist so entwickelt, dass dieser wenn er nicht gleich eine geeignete Antwort findet, gezielte Rückfragen stellt um einen besseren Vorschlag machen zu können.</p>
-<p><strong><em>Diese Rückfragen waren:</em></strong><br>
-- Wie stark ist das Holz?<br>
-- Welchen Durchmesser soll die Bohrung haben?<br>
-- Wie viel Sterne wollen Sie aussägen?<br>
-- Möchten Sie ein Akku-Gerät?<br>
-</p>
-<p>Die Antworten hierauf wurden immer, den Fragen entsprechend, gleich beantwortet.</p>
-<p><strong>Testrunden:</strong><br>
-Runde 1:<br>
-- Kein Bohrer vorgeschlagen. → 0P<br>
-- Säbelsäge anstatt einer Stich-, oder Dekupiersäge, Link vorhanden → 1P</p>
-<p>Runde 2:<br>
-- Korrekt vorgeschlagene Stichsäge → 3P<br>
-- Korrekter Akku-Schrauber, Verlinkung geht nicht → 2P</p>
-<p>Runde 3:<br>
-- Korrekte Stichsäge, kein Link → 2P<br>
-- Korrekter Akku-Schrauber, kein Link → 2P</p>
-<p>Runde 4:<br>
-- Korrekt vorgeschlagene Stichsäge → 3P<br>
-- Gleichwertiger Akku-Schrauber → 2P</p>
-<p>Runde 5:<br>
-- Korrekt vorgeschlagene Stichsäge → 3P<br>
-- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
-<p>Runde 6:<br>
-- Schwertsäge, ungeeignet, Link korrekt → 1P<br>
-- Richtiger Akku-Schrauber, Link korrekt —&gt; 3P</p>
-<p>Runde 7:<br>
-- Korrekt vorgeschlagene Stichsäge → 3P<br>
-- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
-<p>Runde 8:<br>
-- Schwertsäge, ungeeignet, link vorhanden → 1P<br>
-- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
-<p>Runde 9:<br>
-- Schwertsäge, ungeeignet, link vorhanden → 1P<br>
-- Korrekt vorgeschlagener Akku-Schrauber, kein Link → 2P<br>
-</p>
-<p>Runde 10:<br>
-- Schwertsäge, ungeeignet, link vorhanden → 1P<br>
-- Korrekt vorgeschlagener Akku-Schrauber → 3P</p>
-<p><strong>Auswertung:</strong></p>
-<p>Von 60 möglichen Punkten im Szenario 2, hat der Chatbot <strong>42 Punkte</strong> erreicht. Das Entpricht einer Genauigkeit von <strong>70%</strong> und damit einer Wahrscheinlichkeit die richtigen Produkte vorgeschlagen zu bekommen von &gt; 2/3. Auffällig war, dass der Bot an unterschiedlichen Tageszeiten, bzw. an unterschiedlichen Zeitpunkten besser oder schlechter geantwortet hat. Auch die Geschwindigkeit der Antworten hat stark variiert.</p>
-<p><strong>Testszenario 4:</strong> <strong><em>Ein Akkuschrauber mit Bums!</em></strong> <strong>Frage an den Assistant Bot:</strong> Ich möchte einen Akkuschrauber mit bums <strong>Optimal Antwort:</strong>*<br>
-- Als Akku-Schrauber eignet sich am besten der <strong>Akku-Bohrschrauber&nbsp; TID 18</strong></p>
-<p><strong>Testrunden:</strong><br>
-Runde 1: &nbsp; - Produkt falsch, aber Link funktioniert → 1P Runde 2: &nbsp; - Richtige Antwort, aber Link funktioniert → 2P Runde 3: &nbsp; - Produkt falsch, aber Link funktioniert → 1P Runde 4: &nbsp; - Passendes Produkt und Link funktioniert → 3P Runde 5: &nbsp; - Richtige Antwort, aber kein Link → 2P Runde 6: &nbsp; - Passendes Produkt und Link funktioniert → 3P Runde 7: &nbsp; - Passendes Produkt und Link funktioniert → 3P Runde 8: &nbsp; - Passendes Produkt und Link funktioniert → 3P Runde 9: &nbsp; - Produkt falsch, aber Link funktioniert → 1P Runde 10: &nbsp; - Richtige Antwort, aber kein Link → 2P</p>
-<p><strong>Auswertung:</strong> Von 30 möglichen Punkten im Szenario 4, hat der Chatbot <strong>21 Punkte</strong> erreicht. Das Entpricht einer Genauigkeit von <strong>70%</strong> Die Richtigkeit bei den Antworten liegt bei 70 %. Die Antworten des Bots sind stellenweisen sehr inkonsistent, da ab und zu alles richtig beantwortet wird. Jedoch häufig, eine dieser Komponenten: Link, richtiges Produkt oder Rückfrage vernachlässigt, werden. Des Weiteren ist die Antwortzeit, auch bei einer so kurzen Frage, sehr lange. Positiv ist die Wortwahl, da diese vertrauen vermittelt.</p>
 </section>
 <section id="verbesserung-der-user-experience-ux" class="level3" data-number="4.3.2">
 <h3 data-number="4.3.2" class="anchored" data-anchor-id="verbesserung-der-user-experience-ux"><span class="header-section-number">4.3.2</span> Verbesserung der User Experience (UX):</h3>
@@ -525,6 +367,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -591,13 +460,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -676,10 +547,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -689,8 +559,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -703,6 +582,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -746,6 +744,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -771,6 +770,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -832,12 +857,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ziele_und_anforderungen.html" class="pagination-link">
+      <a href="./ziele_und_anforderungen.html" class="pagination-link  aria-label=" &lt;span="" und="" anforerungen&lt;="" span&gt;"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ziele und Anforerungen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./evaluation.html" class="pagination-link">
+      <a href="./evaluation.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Evaluation</span>">
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -845,17 +870,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© Team 4, 2023</div>   
+    <div class="nav-footer-left">
+<p>© Team 4, 2023</p>
+</div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+    <a class="nav-link active" href="./index.html" aria-current="page">
+<p>Home</p>
+</a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./einleitung.html">Einleitung</a>
+    <a class="nav-link" href="./einleitung.html">
+<p>Einleitung</p>
+</a>
   </li>  
 </ul>
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/llm-hdm/documentation/edit/main/design_und_entwicklung.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -863,12 +894,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </i> 
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://moodle.hdm-stuttgart.de/login/index.php">Moodle</a>
+    <a class="nav-link" href="https://moodle.hdm-stuttgart.de/login/index.php">
+<p>Moodle</p>
+</a>
   </li>  
 </ul>
     </div>
   </div>
 </footer>
+
 
 
 
