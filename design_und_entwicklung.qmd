@@ -92,6 +92,27 @@ Antworte immer auf Deutsch.
 
 ### Richtigkeit und Verlässlichkeit des Chatbots
 
+Wir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich "Sägen" zu fokussieren.
+
+**Testszenario 1**
+
+Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.
+
+**Testszenario 2**
+
+Promt: Ich suche eine Tauchkreissäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.
+
+
+**Testszenario 3**
+
+Prompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.
+
+
+**Testszenario 4**
+
+Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.
+
+
 ### Verbesserung der User Experience (UX):
 
 **Testszenario 1:** Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist. 
