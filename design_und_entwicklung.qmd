@@ -100,7 +100,7 @@ Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehm
 
 **Testszenario 2**
 
-Promt: Ich suche eine Tauchkreissäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.
+Promt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.
 
 
 **Testszenario 3**
