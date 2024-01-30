@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./evaluation.html" rel="next">
+<link href="./evaluation_of_the_model.html" rel="next">
 <link href="./ziele_und_anforderungen.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -145,14 +145,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evaluation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation</span></span></a>
+  <a href="./evaluation_of_the_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation of the Model</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projekt_evaluation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Projekt Evaluation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fazit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fazit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fazit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -183,15 +189,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#definiton" id="toc-definiton" class="nav-link" data-scroll-target="#definiton"><span class="header-section-number">4.2.1</span> Definiton</a></li>
   <li><a href="#prompt-entwicklung" id="toc-prompt-entwicklung" class="nav-link" data-scroll-target="#prompt-entwicklung"><span class="header-section-number">4.2.2</span> Prompt-Entwicklung</a></li>
   </ul></li>
-  <li><a href="#evaluation-of-the-model" id="toc-evaluation-of-the-model" class="nav-link" data-scroll-target="#evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</a>
-  <ul class="collapse">
-  <li><a href="#richtigkeit-und-verlässlichkeit-des-chatbots" id="toc-richtigkeit-und-verlässlichkeit-des-chatbots" class="nav-link" data-scroll-target="#richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">4.3.1</span> Richtigkeit und Verlässlichkeit des Chatbots</a></li>
-  <li><a href="#verbesserung-der-user-experience-ux" id="toc-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#verbesserung-der-user-experience-ux"><span class="header-section-number">4.3.2</span> Verbesserung der User Experience (UX):</a></li>
-  </ul></li>
-  <li><a href="#software-architecture" id="toc-software-architecture" class="nav-link" data-scroll-target="#software-architecture"><span class="header-section-number">4.4</span> Software Architecture</a></li>
-  <li><a href="#user-interface-ui-design" id="toc-user-interface-ui-design" class="nav-link" data-scroll-target="#user-interface-ui-design"><span class="header-section-number">4.5</span> User Interface (UI) Design</a></li>
-  <li><a href="#frontend" id="toc-frontend" class="nav-link" data-scroll-target="#frontend"><span class="header-section-number">4.6</span> Frontend</a></li>
-  <li><a href="#backend" id="toc-backend" class="nav-link" data-scroll-target="#backend"><span class="header-section-number">4.7</span> Backend</a></li>
+  <li><a href="#software-architecture" id="toc-software-architecture" class="nav-link" data-scroll-target="#software-architecture"><span class="header-section-number">4.3</span> Software Architecture</a></li>
+  <li><a href="#user-interface-ui-design" id="toc-user-interface-ui-design" class="nav-link" data-scroll-target="#user-interface-ui-design"><span class="header-section-number">4.4</span> User Interface (UI) Design</a></li>
+  <li><a href="#frontend" id="toc-frontend" class="nav-link" data-scroll-target="#frontend"><span class="header-section-number">4.5</span> Frontend</a></li>
+  <li><a href="#backend" id="toc-backend" class="nav-link" data-scroll-target="#backend"><span class="header-section-number">4.6</span> Backend</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/design_und_entwicklung.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -256,36 +257,8 @@ Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben 
 <p>Du bist Chatbot auf einer Webseite. Dein Unternehmen FESTOOL bietet Elektrowerkzeuge, Profigeräte und maßgeschneiderte Systemlösungen für Handwerker an. Du sollst Kunden bei der Kaufentscheidung unterstützen. Nutze die Produktinformationen, um die Fragen zu beantworten, nur dann, wenn es auch sinnvoll ist. Falls nicht spezifisch nach einem Produkt gefragt wird, sondern nur z.B. “ich suche einen Bohrer oder Säge”, dann frage nach weiterem Input, wie z.B. “wofür brauchen sie die Säge”. Falls du keine Informationen in der Datei findest, erwähne das nicht gegenüber dem Kunden, sondern versuche durch Fragen herauszufinden, was der Kunde will. Halte dich mit technischen Informationen kurz und antworte erst bei gezielteren Fragen tiefgehender und technischer. Wenn du konkret über ein Produkt sprichst, verlinke dies, wie folgt: <a href="URL aus der Liste der Produktinformationen">namedesprodukts</a>. Wenn du keine passende URL findest, verlinke das Produkt nicht. Die Antwort soll maximal 50 Wörter lang sein. Antworte immer auf Deutsch.</p>
 </section>
 </section>
-<section id="evaluation-of-the-model" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="evaluation-of-the-model"><span class="header-section-number">4.3</span> Evaluation of the Model</h2>
-<section id="richtigkeit-und-verlässlichkeit-des-chatbots" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">4.3.1</span> Richtigkeit und Verlässlichkeit des Chatbots</h3>
-<p>Wir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren.</p>
-<p><strong>Testszenario 1</strong></p>
-<p>Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.</p>
-<p><strong>Testszenario 2</strong></p>
-<p>Promt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.</p>
-<p><strong>Testszenario 3</strong></p>
-<p>Prompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.</p>
-<p><strong>Testszenario 4</strong></p>
-<p>Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.</p>
-</section>
-<section id="verbesserung-der-user-experience-ux" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="verbesserung-der-user-experience-ux"><span class="header-section-number">4.3.2</span> Verbesserung der User Experience (UX):</h3>
-<p><strong>Testszenario 1:</strong> Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.</p>
-<p><strong>Manuell:</strong></p>
-<p><em>Vorgehensweise:</em> Der User muss auf die Produktübersicht gehen und die Kachel “Bohren und Schrauben” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.</p>
-<p><em>Dauer: &gt; 5 Minuten</em></p>
-<p><strong>Chatbot:</strong></p>
-<p><em>Prompt:</em> Ich möchte einen Allrounder Akkuschrauber für Heimwerker.</p>
-<p><em>Antwort:</em> Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.</p>
-<p><em>Evaluation:</em> Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.</p>
-<p><em>Dauer: 32 Sekunden</em></p>
-<p><strong>Fazit:</strong> Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!</p>
-</section>
-</section>
-<section id="software-architecture" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="software-architecture"><span class="header-section-number">4.4</span> Software Architecture</h2>
+<section id="software-architecture" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="software-architecture"><span class="header-section-number">4.3</span> Software Architecture</h2>
 <p>Aufgrund der schnellen Entwicklung von technologien im Bereich von LLM’s haben wir in der Zeit der Entwicklung zwei verschiedene Software Architekturen implementiert.<br>
 Zu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf GPT4.5 turbo umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die genauigkeit des Modells verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben.<br>
 Die Vektor-Datenbank (ChromaDB) haben wir durch OpenAI’s eigenen Assistent abgelöst. Auch hier konnten wir eine deutliche verbesserung der performance als auch der genauigkeit des Outputs des Modells erhalten.</p>
@@ -294,8 +267,8 @@ Die Vektor-Datenbank (ChromaDB) haben wir durch OpenAI’s eigenen Assistent abg
 <p><strong>Version 2:</strong></p>
 <p><img src="images/Software_Architektur_2.png" width="650"></p>
 </section>
-<section id="user-interface-ui-design" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="user-interface-ui-design"><span class="header-section-number">4.5</span> User Interface (UI) Design</h2>
+<section id="user-interface-ui-design" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="user-interface-ui-design"><span class="header-section-number">4.4</span> User Interface (UI) Design</h2>
 <p>Für das Design des User Interface orientierten wir uns an dem Coperate Design von Festool. Uns war es wichtig, dass wir ein Produkt entwickeln dass jederzeit auf dem Webshop, bzw. der Website von Festool eingebunden werden könnte.<br>
 So haben wir uns dazu entschieden einen Button zu bauen, der OnClick ein Chatfenster öffnet. Wir haben besonders darauf geachtet, dass das Chatfenster, wie z.B. von anderen Messengern, vom User intuitiv und gewohnt benutzt werden kann.<br>
 Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des Chatbots zu verwenden.</p>
@@ -304,8 +277,8 @@ Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des
 <p><strong>Normal-Mode:</strong></p>
 <p><img src="images/Darkmode2.png" class="img-fluid" style="width:50.0%"></p>
 </section>
-<section id="frontend" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="frontend"><span class="header-section-number">4.6</span> Frontend</h2>
+<section id="frontend" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="frontend"><span class="header-section-number">4.5</span> Frontend</h2>
 <p>Die Benutzeroberfläche unserer Software wurde mit modernen Technologien entwickelt, um eine reibungslose und ansprechende Benutzererfahrung zu gewährleisten.</p>
 <ul>
 <li><p><strong>Vite</strong>: Als Build-Tool und Entwicklungs-Server bietet Vite eine schnelle und effiziente Entwicklungsumgebung für das Frontend. Durch die Nutzung von Vite profitiert die Anwendung von schnellen Rebuilds und Live-Reloads während der Entwicklung.</p></li>
@@ -315,8 +288,8 @@ Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des
 </ul>
 <p>Jede Komponente im Frontend besteht aus einer Logik/JSX-Datei für die Funktionalität und einer styles.js-Datei für das Styling, um eine klare Trennung von Logik und Präsentation zu gewährleisten.</p>
 </section>
-<section id="backend" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="backend"><span class="header-section-number">4.7</span> Backend</h2>
+<section id="backend" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="backend"><span class="header-section-number">4.6</span> Backend</h2>
 <p>Das Backend unserer Software setzt auf leistungsstarke Technologien, um Anfragen effizient zu verarbeiten und eine nahtlose Kommunikation zwischen dem Frontend und externen Diensten zu ermöglichen.</p>
 <ul>
 <li><p><strong>Flask</strong>: Als leichtgewichtiges Web-Framework für Python bietet Flask eine einfache und dennoch flexible Struktur für die Entwicklung von Webanwendungen. Flask ermöglicht es, schnell RESTful APIs zu erstellen.</p></li>
@@ -684,8 +657,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./evaluation.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./evaluation_of_the_model.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation of the Model</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -36,7 +36,8 @@ book:
         - grundlagen.qmd
         - ziele_und_anforderungen.qmd
         - design_und_entwicklung.qmd
-        - evaluation.qmd
+        - evaluation_of_the_model.qmd
+        - projekt_evaluation.qmd
         - fazit.qmd
         - benutzeranleitung.qmd
         - links.qmd

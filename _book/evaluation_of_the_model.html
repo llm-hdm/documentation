@@ -8,7 +8,7 @@
 
 <meta name="description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
 
-<title>Projekt Dokumentation - 5&nbsp; Evaluation</title>
+<title>Projekt Dokumentation - 5&nbsp; Evaluation of the Model</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./fazit.html" rel="next">
+<link href="./projekt_evaluation.html" rel="next">
 <link href="./design_und_entwicklung.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -67,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Projekt Dokumentation - 5&nbsp; Evaluation">
+<meta property="og:title" content="Projekt Dokumentation - 5&nbsp; Evaluation of the Model">
 <meta property="og:description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
 <meta property="og:site-name" content="Projekt Dokumentation">
 </head>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./evaluation.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./evaluation_of_the_model.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation of the Model</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -142,14 +142,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evaluation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation</span></span></a>
+  <a href="./evaluation_of_the_model.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation of the Model</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projekt_evaluation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Projekt Evaluation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fazit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fazit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fazit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -174,17 +180,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learnings" id="toc-learnings" class="nav-link active" data-scroll-target="#learnings"><span class="header-section-number">5.1</span> Learnings</a></li>
-  <li><a href="#zusammenarbeit-in-der-gruppe" id="toc-zusammenarbeit-in-der-gruppe" class="nav-link" data-scroll-target="#zusammenarbeit-in-der-gruppe"><span class="header-section-number">5.2</span> Zusammenarbeit in der Gruppe</a></li>
+  <li><a href="#richtigkeit-und-verlässlichkeit-des-chatbots" id="toc-richtigkeit-und-verlässlichkeit-des-chatbots" class="nav-link active" data-scroll-target="#richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</a></li>
+  <li><a href="#verbesserung-der-user-experience-ux" id="toc-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Verbesserung der User Experience (UX):</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/evaluation.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/evaluation_of_the_model.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evaluation of the Model</span></h1>
 </div>
 
 
@@ -199,20 +205,30 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="learnings" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="learnings"><span class="header-section-number">5.1</span> Learnings</h2>
-<p>Im Projekt haben wir einige Learnings erhalten. Diese sind:<br>
-- Übersicht und Einführung in Generative AI<br>
-- Large Language Models im Überblick<br>
-- Nutzung der API von OpenAI und der Erstellung einer Anwendung<br>
-- Prompt Engineering<br>
-- Aufbau eines Chatsystems mittels Langchain -&gt; umstellung nach der hälfte des Projekts auf den von OpenAI eigenen Assistant<br>
-- Aufbau einer App mittels modernen Technologien wie React, Python, Flask oder Vue<br>
-- Evaluation of the Chatsystem / LLM</p>
+<section id="richtigkeit-und-verlässlichkeit-des-chatbots" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</h2>
+<p>Wir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren.</p>
+<p><strong>Testszenario 1</strong></p>
+<p>Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.</p>
+<p><strong>Testszenario 2</strong></p>
+<p>Promt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.</p>
+<p><strong>Testszenario 3</strong></p>
+<p>Prompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.</p>
+<p><strong>Testszenario 4</strong></p>
+<p>Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.</p>
 </section>
-<section id="zusammenarbeit-in-der-gruppe" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="zusammenarbeit-in-der-gruppe"><span class="header-section-number">5.2</span> Zusammenarbeit in der Gruppe</h2>
-<p>Zu Beginn des Projekts haben wir zusammen einige Ideen gesammelt und uns schnell für einen Vorschlag entschieden. Wir konnten Aufgaben immer gut verteilen und niemand hat sich aus der Arbeit herausgehalten. Das hat die Entwicklung und die Arbeit am Projekt deutlich erleichtert. Wir haben uns wöchtentlich getroffen und dort am System zusammen gearbeitet und programmiert. Andere To-Do’s wie Prompt Engineering und testing konnten wir einzeln aufteilen und haben dies dann unter der Woche, bis zum nächsten Termin, erledigt. Hier haben wir uns in einem Notion Board organisiert, sodass nicht zwei Personen am gleichen Problem arbeiten. Zusammengefasst können wir auf eine gute Gruppendynamik und gute Zusammenarbeit zurückschauen.</p>
+<section id="verbesserung-der-user-experience-ux" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Verbesserung der User Experience (UX):</h2>
+<p><strong>Testszenario 1:</strong> Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.</p>
+<p><strong>Manuell:</strong></p>
+<p><em>Vorgehensweise:</em> Der User muss auf die Produktübersicht gehen und die Kachel “Bohren und Schrauben” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.</p>
+<p><em>Dauer: &gt; 5 Minuten</em></p>
+<p><strong>Chatbot:</strong></p>
+<p><em>Prompt:</em> Ich möchte einen Allrounder Akkuschrauber für Heimwerker.</p>
+<p><em>Antwort:</em> Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.</p>
+<p><em>Evaluation:</em> Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.</p>
+<p><em>Dauer: 32 Sekunden</em></p>
+<p><strong>Fazit:</strong> Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!</p>
 
 
 </section>
@@ -573,8 +589,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./fazit.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fazit</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./projekt_evaluation.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Projekt Evaluation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

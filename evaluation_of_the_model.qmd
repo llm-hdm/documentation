@@ -1,0 +1,46 @@
+# Evaluation of the Model
+
+## Richtigkeit und Verlässlichkeit des Chatbots
+
+Wir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich "Sägen" zu fokussieren.
+
+**Testszenario 1**
+
+Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.
+
+**Testszenario 2**
+
+Promt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.
+
+**Testszenario 3**
+
+Prompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.
+
+**Testszenario 4**
+
+Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.
+
+## Verbesserung der User Experience (UX):
+
+**Testszenario 1:** Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.
+
+**Manuell:**
+
+_Vorgehensweise:_ Der User muss auf die Produktübersicht gehen und die Kachel "Bohren und Schrauben" wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet.
+Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt.
+Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind.
+Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.
+
+_Dauer: > 5 Minuten_
+
+**Chatbot:**
+
+_Prompt:_ Ich möchte einen Allrounder Akkuschrauber für Heimwerker.
+
+_Antwort:_ Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.
+
+_Evaluation:_ Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.
+
+_Dauer: 32 Sekunden_
+
+**Fazit:** Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!

@@ -20,11 +20,13 @@ Nach einigem Abwägen sind wir auf zwei Ideen gekommen die wir weiter ausgearbei
 - Funktional wäre dies eine Kombination aus einem generellen IT-System was interene Unternehmensprozesse abbildet verknüpft mit einem Sprach-/Chat Assistent der auf natürlicher Eingabe des Mitarbeiters diese umsetzt.
 
 ***Idee 2 - Geschäftsreisenplanner***
+
 - Ziel hierbei: Entwicklung einer Anwendung zur Geschäftsreiseplanung
 - Automatische Suche nach Verkehrsverbindungen, Hotels und möglichen Aktivitäten durch ein Language Model (LLM) und die Zusammenstellung der Informationen in einem Dokument als Reiseplaner
 - Gründe für die Ablehnung: Datenbeschaffung, bedingt dadurch, dass wir Flugdaten, Bahnverbindungen und Verkehrsinformationen hätten zur Verfügung stellen müssen wäre die Datenmenge extrem groß gewesen.Desweiteren hätten   die Daten Frequenzziel  abgefragt werden müssen über verschiedene API’S. Dies hat sich bei den Airlines als schwierig und vor allem als sehr kostenintensiv herausgestellt. 
 
 ***Idee 3 - Geschäftsreisenplanner***
+
 - Ziel hierbei: Die Anwendung sollte in der Lage sein, Telefongespräche aufzuzeichnen und mithilfe der WhisperApi den Dialog in eine Textdatei umzuwandeln. Anschließend sollte ein Language Model (LLM) den Text kürzen und zusammenfassen
 - Gründe für  die Ablehnung: - Technologie existiert bereits. Dies hätte bedeutet, dass wir ein bestehendes Produkt entwickeln würden, das nicht spezifisch auf die Bedürfnisse unseres Unternehmens zugeschnitten ist
 - Ein weiterer Gesichtspunkt war für uns das persönliche Interesse, für uns strahlte diese Projektidee keine starke Begeisterung aus, womit wir uns gemeinsam dagegen entschieden haben. 
