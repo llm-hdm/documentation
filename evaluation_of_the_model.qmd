@@ -1,8 +1,9 @@
 # Evaluation of the Model
 
-## Richtigkeit und Verlässlichkeit des Chatbots
+Wir haben uns dazu entschieden, bei der Evaluation des Chatbots auf den Produktbereich "Sägen" zu fokussieren.
+Die Vorgehensweise ist auf andere Produktkategorien anwendbar.
 
-Wir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich "Sägen" zu fokussieren.
+## Richtigkeit und Verlässlichkeit des Chatbots
 
 **Testszenario 1**
 
@@ -20,27 +21,31 @@ Prompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte m
 
 Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.
 
-## Verbesserung der User Experience (UX):
+## Messung der Verbesserung der User Experience (UX):
 
-**Testszenario 1:** Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.
+**Testszenario 1:** Ein Kunde (Heimwerker) möchte eine allrounder Tauchsäge mit Akku.
 
 **Manuell:**
 
-_Vorgehensweise:_ Der User muss auf die Produktübersicht gehen und die Kachel "Bohren und Schrauben" wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet.
-Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt.
-Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind.
-Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.
+_Vorgehensweise:_ Der User muss auf die Produktübersicht gehen und die Kachel "Sägen" wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet.
+Jetzt wählt er vier zufällige Modelle aus.
+Schnell fällt auf, dass nach Auswahl aller Modelle bereits 40 Sekunden vergangen sind.
+Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Tauchsägen miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 2 Minuten. DAbei fiel auch auf, dass es nur eine Tauchsäge mit Akku gibt. Das ist ein Pluspunkt der Vergleichsseite.
+Alternativ kann der Kunde auch die Kachel 'Akkuwerkzeug' auswählen. Jedoch hat in unserem Test die Testperson den Reiter 'Sägen' gewählt.
 
-_Dauer: > 5 Minuten_
+_Dauer:_ > 4 Minuten
 
 **Chatbot:**
 
-_Prompt:_ Ich möchte einen Allrounder Akkuschrauber für Heimwerker.
+_Prompt:_ Ich möchte eine allrounder Tauchsäge mit Akku für Heimwerker.
 
-_Antwort:_ Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.
+_Antwort:_ Für Heimwerker empfehle ich die Akku-Tauchsäge TSC 55 KEB-Basic. Sie bietet Sicherheit durch KickbackStop und flexible Anpassungen an das Material mit hoher Schnittleistung.
 
-_Evaluation:_ Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.
+_Evaluation:_ Der Chatbot empfielt dem Heimwerker das einzige Modell das Festool anbietet, welches mit Akku betrieben werden kann. Dadurch ist eine Suche nicht nötig. Der Bot verlinkt das passende Gerät gleich.
+Für die Eingabe des Prompts, wurden 15 Sekunden benötigt. Die Antwort kam nach weiteren 19 Sekunden.
 
-_Dauer: 32 Sekunden_
+_Dauer: 34 Sekunden_
 
 **Fazit:** Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!
+
+
