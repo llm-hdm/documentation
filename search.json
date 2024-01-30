@@ -54,7 +54,7 @@
     "href": "grundlagen.html#technologien",
     "title": "2  Grundlagen",
     "section": "2.2 Technologien",
-    "text": "2.2 Technologien\nDie verwendeten Technologien sind in unserem Fall: GPT4.5 turbo, ////////////////////////////// Desweiteren React, Python, AWS-Cloud (hier cloud dienste Angeben) …",
+    "text": "2.2 Technologien\nDie verwendeten Technologien sind in unserem Fall: GPT4.5 turbo, OpenAI Assistent Desweiteren React, Python, Tailwind CSS und Vite",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
@@ -64,7 +64,7 @@
     "href": "grundlagen.html#betreuung-und-beratung-bei-der-entwicklung",
     "title": "2  Grundlagen",
     "section": "2.3 Betreuung und Beratung bei der Entwicklung",
-    "text": "2.3 Betreuung und Beratung bei der Entwicklung\n\nProf. Dr. Jan Kirenz\nZOI TechCOn GmbH",
+    "text": "2.3 Betreuung und Beratung bei der Entwicklung\n\nProf. Dr. Jan Kirenz\nZOI TechC0n GmbH",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
@@ -94,7 +94,7 @@
     "href": "ziele_und_anforderungen.html#ideen-entwicklung",
     "title": "3  Ziele und Anforerungen",
     "section": "3.3 Ideen Entwicklung",
-    "text": "3.3 Ideen Entwicklung\nZu Beginn, waren wir auf der Suche nach einer passenden Idee, die alle Anforderungen abdeckt. Schnell war uns in der Gruppe klar, wir wollen einen Sprachassistenten entwicklen, der Prozesse irgendwelcher Art in Unternehmen vereinfacht und deutlich verbessert. Wiederkehrende Tätigkeiten sollten somit einfacher und vor allem schneller damit gestaltet werden. Nach einigem Abwägen sind wir auf zwei Ideen gekommen die wir weiter ausgearbeitet haben:\nIdee 1 - ein Unternehmensinterner Support Bot für bestehende Prozesse\n\nZiel hierbei: Eine oder mehrere ausgewählte Prozesse eines Unternehmens zu verbesern. Das kann die Übernahme eines Urlaubsantrags, einer Krankmeldung, einer E-Mail Zusammenfassung sein oder aber auch Arbeitsstunden eintragen und ein IT-Ticket anlegen.\nDer Mitarbeiter sollte hier auswählen können um welchen Prozess es sich handelt und anschließend hierbei Hilfe erhalten\nFunktional wäre dies eine Kombination aus einem generellen IT-System was interene Unternehmensprozesse abbildet verknüpft mit einem Sprach-/Chat Assistent der auf natürlicher Eingabe des Mitarbeiters diese umsetzt.\n\nIdee 2 - Geschäftsreisenplanner - Ziel hierbei: Entwicklung einer Anwendung zur Geschäftsreiseplanung - Automatische Suche nach Verkehrsverbindungen, Hotels und möglichen Aktivitäten durch ein Language Model (LLM) und die Zusammenstellung der Informationen in einem Dokument als Reiseplaner - Gründe für die Ablehnung: Datenbeschaffung, bedingt dadurch, dass wir Flugdaten, Bahnverbindungen und Verkehrsinformationen hätten zur Verfügung stellen müssen wäre die Datenmenge extrem groß gewesen.Desweiteren hätten die Daten Frequenzziel abgefragt werden müssen über verschiedene API’S. Dies hat sich bei den Airlines als schwierig und vor allem als sehr kostenintensiv herausgestellt.\nIdee 3 - Geschäftsreisenplanner - Ziel hierbei: Die Anwendung sollte in der Lage sein, Telefongespräche aufzuzeichnen und mithilfe der WhisperApi den Dialog in eine Textdatei umzuwandeln. Anschließend sollte ein Language Model (LLM) den Text kürzen und zusammenfassen - Gründe für die Ablehnung: - Technologie existiert bereits. Dies hätte bedeutet, dass wir ein bestehendes Produkt entwickeln würden, das nicht spezifisch auf die Bedürfnisse unseres Unternehmens zugeschnitten ist - Ein weiterer Gesichtspunkt war für uns das persönliche Interesse, für uns strahlte diese Projektidee keine starke Begeisterung aus, womit wir uns gemeinsam dagegen entschieden haben.\nIdee 4 - Script tool für Meetings \n\nZiel hierbei: Kunden so schnell wie möglich perfekte Produktvorschläge liefern. Dabei soll zudem der Kunde bei der Kaufentscheidung unterstützt werden und ihm auf Rückfrage auch Technische Details und Vor- und Nachteile genannt werden. Dem Kunden soll durch eine natürliche Unterhaltung und geschickt gestellten Rückfragen zu einer für ihn perfekten Kaufentscheidung verholfen werden\nKunden können dabei Fragen über alle Produkte stellen oder aber nur Anwendungsbereiche definieren. Das Chatsystem stellt dann passende Produkte vor.\n\nNach kurzer Diskussion waren wir uns einig, Idee 1 weiter zu verfolgen. Dies hatte folgende Gründe:\n\nDaten beschaffung gut möglich (über Produktinformationen in dem jeweiligen Online Shop)\nRealistische Situation was uns motiviert, das System gut zu gestalten\nBekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung anwenden\nrelevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)",
+    "text": "3.3 Ideen Entwicklung\nZu Beginn, waren wir auf der Suche nach einer passenden Idee, die alle Anforderungen abdeckt. Schnell war uns in der Gruppe klar, wir wollen einen Sprachassistenten entwicklen, der Prozesse irgendwelcher Art in Unternehmen vereinfacht und deutlich verbessert. Wiederkehrende Tätigkeiten sollten somit einfacher und vor allem schneller damit gestaltet werden. Nach einigem Abwägen sind wir auf zwei Ideen gekommen die wir weiter ausgearbeitet haben:\nIdee 1 - ein Unternehmensinterner Support Bot für bestehende Prozesse\n\nZiel hierbei: Eine oder mehrere ausgewählte Prozesse eines Unternehmens zu verbesern. Das kann die Übernahme eines Urlaubsantrags, einer Krankmeldung, einer E-Mail Zusammenfassung sein oder aber auch Arbeitsstunden eintragen und ein IT-Ticket anlegen.\nDer Mitarbeiter sollte hier auswählen können um welchen Prozess es sich handelt und anschließend hierbei Hilfe erhalten\nFunktional wäre dies eine Kombination aus einem generellen IT-System was interene Unternehmensprozesse abbildet verknüpft mit einem Sprach-/Chat Assistent der auf natürlicher Eingabe des Mitarbeiters diese umsetzt.\n\nIdee 2 - Geschäftsreisenplanner\n\nZiel hierbei: Entwicklung einer Anwendung zur Geschäftsreiseplanung\nAutomatische Suche nach Verkehrsverbindungen, Hotels und möglichen Aktivitäten durch ein Language Model (LLM) und die Zusammenstellung der Informationen in einem Dokument als Reiseplaner\nGründe für die Ablehnung: Datenbeschaffung, bedingt dadurch, dass wir Flugdaten, Bahnverbindungen und Verkehrsinformationen hätten zur Verfügung stellen müssen wäre die Datenmenge extrem groß gewesen.Desweiteren hätten die Daten Frequenzziel abgefragt werden müssen über verschiedene API’S. Dies hat sich bei den Airlines als schwierig und vor allem als sehr kostenintensiv herausgestellt.\n\nIdee 3 - Geschäftsreisenplanner\n\nZiel hierbei: Die Anwendung sollte in der Lage sein, Telefongespräche aufzuzeichnen und mithilfe der WhisperApi den Dialog in eine Textdatei umzuwandeln. Anschließend sollte ein Language Model (LLM) den Text kürzen und zusammenfassen\nGründe für die Ablehnung: - Technologie existiert bereits. Dies hätte bedeutet, dass wir ein bestehendes Produkt entwickeln würden, das nicht spezifisch auf die Bedürfnisse unseres Unternehmens zugeschnitten ist\nEin weiterer Gesichtspunkt war für uns das persönliche Interesse, für uns strahlte diese Projektidee keine starke Begeisterung aus, womit wir uns gemeinsam dagegen entschieden haben.\n\nIdee 4 - Script tool für Meetings \n\nZiel hierbei: Kunden so schnell wie möglich perfekte Produktvorschläge liefern. Dabei soll zudem der Kunde bei der Kaufentscheidung unterstützt werden und ihm auf Rückfrage auch Technische Details und Vor- und Nachteile genannt werden. Dem Kunden soll durch eine natürliche Unterhaltung und geschickt gestellten Rückfragen zu einer für ihn perfekten Kaufentscheidung verholfen werden\nKunden können dabei Fragen über alle Produkte stellen oder aber nur Anwendungsbereiche definieren. Das Chatsystem stellt dann passende Produkte vor.\n\nNach kurzer Diskussion waren wir uns einig, Idee 1 weiter zu verfolgen. Dies hatte folgende Gründe:\n\nDaten beschaffung gut möglich (über Produktinformationen in dem jeweiligen Online Shop)\nRealistische Situation was uns motiviert, das System gut zu gestalten\nBekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung anwenden\nrelevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ziele und Anforerungen</span>"
     ]
@@ -170,21 +170,11 @@
     ]
   },
   {
-    "objectID": "design_und_entwicklung.html#evaluation-of-the-model",
-    "href": "design_und_entwicklung.html#evaluation-of-the-model",
-    "title": "4  Design und Entwicklung",
-    "section": "4.3 Evaluation of the Model",
-    "text": "4.3 Evaluation of the Model\n\n4.3.1 Richtigkeit und Verlässlichkeit des Chatbots\nWir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren.\nTestszenario 1\nPrompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.\nTestszenario 2\nPromt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.\nTestszenario 3\nPrompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.\nTestszenario 4\nPrompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.\n\n\n4.3.2 Verbesserung der User Experience (UX):\nTestszenario 1: Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.\nManuell:\nVorgehensweise: Der User muss auf die Produktübersicht gehen und die Kachel “Bohren und Schrauben” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.\nDauer: &gt; 5 Minuten\nChatbot:\nPrompt: Ich möchte einen Allrounder Akkuschrauber für Heimwerker.\nAntwort: Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.\nEvaluation: Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.\nDauer: 32 Sekunden\nFazit: Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Design und Entwicklung</span>"
-    ]
-  },
-  {
     "objectID": "design_und_entwicklung.html#software-architecture",
     "href": "design_und_entwicklung.html#software-architecture",
     "title": "4  Design und Entwicklung",
-    "section": "4.4 Software Architecture",
-    "text": "4.4 Software Architecture\nAufgrund der schnellen Entwicklung von technologien im Bereich von LLM’s haben wir in der Zeit der Entwicklung zwei verschiedene Software Architekturen implementiert.\nZu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf GPT4.5 turbo umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die genauigkeit des Modells verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben.\nDie Vektor-Datenbank (ChromaDB) haben wir durch OpenAI’s eigenen Assistent abgelöst. Auch hier konnten wir eine deutliche verbesserung der performance als auch der genauigkeit des Outputs des Modells erhalten.\nVersion 1:\n\nVersion 2:",
+    "section": "4.3 Software Architecture",
+    "text": "4.3 Software Architecture\nAufgrund der schnellen Entwicklung von technologien im Bereich von LLM’s haben wir in der Zeit der Entwicklung zwei verschiedene Software Architekturen implementiert.\nZu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf GPT4.5 turbo umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die genauigkeit des Modells verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben.\nDie Vektor-Datenbank (ChromaDB) haben wir durch OpenAI’s eigenen Assistent abgelöst. Auch hier konnten wir eine deutliche verbesserung der performance als auch der genauigkeit des Outputs des Modells erhalten.\nVersion 1:\n\nVersion 2:",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Design und Entwicklung</span>"
     ]
@@ -193,8 +183,8 @@
     "objectID": "design_und_entwicklung.html#user-interface-ui-design",
     "href": "design_und_entwicklung.html#user-interface-ui-design",
     "title": "4  Design und Entwicklung",
-    "section": "4.5 User Interface (UI) Design",
-    "text": "4.5 User Interface (UI) Design\nFür das Design des User Interface orientierten wir uns an dem Coperate Design von Festool. Uns war es wichtig, dass wir ein Produkt entwickeln dass jederzeit auf dem Webshop, bzw. der Website von Festool eingebunden werden könnte.\nSo haben wir uns dazu entschieden einen Button zu bauen, der OnClick ein Chatfenster öffnet. Wir haben besonders darauf geachtet, dass das Chatfenster, wie z.B. von anderen Messengern, vom User intuitiv und gewohnt benutzt werden kann.\nZudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des Chatbots zu verwenden.\nDark-Mode:\n\nNormal-Mode:",
+    "section": "4.4 User Interface (UI) Design",
+    "text": "4.4 User Interface (UI) Design\nFür das Design des User Interface orientierten wir uns an dem Coperate Design von Festool. Uns war es wichtig, dass wir ein Produkt entwickeln dass jederzeit auf dem Webshop, bzw. der Website von Festool eingebunden werden könnte.\nSo haben wir uns dazu entschieden einen Button zu bauen, der OnClick ein Chatfenster öffnet. Wir haben besonders darauf geachtet, dass das Chatfenster, wie z.B. von anderen Messengern, vom User intuitiv und gewohnt benutzt werden kann.\nZudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des Chatbots zu verwenden.\nDark-Mode:\n\nNormal-Mode:",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Design und Entwicklung</span>"
     ]
@@ -203,8 +193,8 @@
     "objectID": "design_und_entwicklung.html#frontend",
     "href": "design_und_entwicklung.html#frontend",
     "title": "4  Design und Entwicklung",
-    "section": "4.6 Frontend",
-    "text": "4.6 Frontend\nDie Benutzeroberfläche unserer Software wurde mit modernen Technologien entwickelt, um eine reibungslose und ansprechende Benutzererfahrung zu gewährleisten.\n\nVite: Als Build-Tool und Entwicklungs-Server bietet Vite eine schnelle und effiziente Entwicklungsumgebung für das Frontend. Durch die Nutzung von Vite profitiert die Anwendung von schnellen Rebuilds und Live-Reloads während der Entwicklung.\nReact: Das Frontend-Framework React ermöglicht eine komponentenbasierte Struktur, die die Wiederverwendbarkeit von Code fördert. Die Verwendung von JSX erleichtert das Erstellen von benutzerfreundlichem und dynamischem UI.\nTailwind CSS: Als utility-first CSS-Framework ermöglicht Tailwind CSS die einfache Erstellung von modernen und ansprechenden Benutzeroberflächen. Die vordefinierten Klassen erleichtern das Styling und die Anpassung.\nSpeechToText API von OpenAI: Die direkte Integration der SpeechToText API von OpenAI ermöglicht es Benutzern, über gesprochene Sprache mit der Anwendung zu interagieren. Dies erweitert die Zugänglichkeit und bietet eine innovative Möglichkeit der Eingabe.\n\nJede Komponente im Frontend besteht aus einer Logik/JSX-Datei für die Funktionalität und einer styles.js-Datei für das Styling, um eine klare Trennung von Logik und Präsentation zu gewährleisten.",
+    "section": "4.5 Frontend",
+    "text": "4.5 Frontend\nDie Benutzeroberfläche unserer Software wurde mit modernen Technologien entwickelt, um eine reibungslose und ansprechende Benutzererfahrung zu gewährleisten.\n\nVite: Als Build-Tool und Entwicklungs-Server bietet Vite eine schnelle und effiziente Entwicklungsumgebung für das Frontend. Durch die Nutzung von Vite profitiert die Anwendung von schnellen Rebuilds und Live-Reloads während der Entwicklung.\nReact: Das Frontend-Framework React ermöglicht eine komponentenbasierte Struktur, die die Wiederverwendbarkeit von Code fördert. Die Verwendung von JSX erleichtert das Erstellen von benutzerfreundlichem und dynamischem UI.\nTailwind CSS: Als utility-first CSS-Framework ermöglicht Tailwind CSS die einfache Erstellung von modernen und ansprechenden Benutzeroberflächen. Die vordefinierten Klassen erleichtern das Styling und die Anpassung.\nSpeechToText API von OpenAI: Die direkte Integration der SpeechToText API von OpenAI ermöglicht es Benutzern, über gesprochene Sprache mit der Anwendung zu interagieren. Dies erweitert die Zugänglichkeit und bietet eine innovative Möglichkeit der Eingabe.\n\nJede Komponente im Frontend besteht aus einer Logik/JSX-Datei für die Funktionalität und einer styles.js-Datei für das Styling, um eine klare Trennung von Logik und Präsentation zu gewährleisten.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Design und Entwicklung</span>"
     ]
@@ -213,40 +203,60 @@
     "objectID": "design_und_entwicklung.html#backend",
     "href": "design_und_entwicklung.html#backend",
     "title": "4  Design und Entwicklung",
-    "section": "4.7 Backend",
-    "text": "4.7 Backend\nDas Backend unserer Software setzt auf leistungsstarke Technologien, um Anfragen effizient zu verarbeiten und eine nahtlose Kommunikation zwischen dem Frontend und externen Diensten zu ermöglichen.\n\nFlask: Als leichtgewichtiges Web-Framework für Python bietet Flask eine einfache und dennoch flexible Struktur für die Entwicklung von Webanwendungen. Flask ermöglicht es, schnell RESTful APIs zu erstellen.\nFlask-RESTx: Dieses Framework macht die Entwicklung von RESTful APIs in Flask noch einfacher. Durch die automatische Validierung von API-Endpunkten erleichtert Flask-RESTx die Erstellung von robusten APIs.\nOpenAI Assistant: Der OpenAI Assistant wird im Backend genutzt, um Anfragen der Benutzer zu verarbeiten und qualitativ hochwertige Antworten zu generieren. Die Integration ermöglicht es, fortschrittliche natürliche Sprachverarbeitungstechnologien in die Software zu integrieren.\n\nDie Kombination dieser Technologien bildet ein robustes Backend, das die Interaktionen zwischen dem Frontend und externen Diensten effizient und zuverlässig abwickelt.",
+    "section": "4.6 Backend",
+    "text": "4.6 Backend\nDas Backend unserer Software setzt auf leistungsstarke Technologien, um Anfragen effizient zu verarbeiten und eine nahtlose Kommunikation zwischen dem Frontend und externen Diensten zu ermöglichen.\n\nFlask: Als leichtgewichtiges Web-Framework für Python bietet Flask eine einfache und dennoch flexible Struktur für die Entwicklung von Webanwendungen. Flask ermöglicht es, schnell RESTful APIs zu erstellen.\nFlask-RESTx: Dieses Framework macht die Entwicklung von RESTful APIs in Flask noch einfacher. Durch die automatische Validierung von API-Endpunkten erleichtert Flask-RESTx die Erstellung von robusten APIs.\nOpenAI Assistant: Der OpenAI Assistant wird im Backend genutzt, um Anfragen der Benutzer zu verarbeiten und qualitativ hochwertige Antworten zu generieren. Die Integration ermöglicht es, fortschrittliche natürliche Sprachverarbeitungstechnologien in die Software zu integrieren.\n\nDie Kombination dieser Technologien bildet ein robustes Backend, das die Interaktionen zwischen dem Frontend und externen Diensten effizient und zuverlässig abwickelt.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Design und Entwicklung</span>"
     ]
   },
   {
-    "objectID": "evaluation.html",
-    "href": "evaluation.html",
-    "title": "5  Evaluation",
+    "objectID": "evaluation_of_the_model.html",
+    "href": "evaluation_of_the_model.html",
+    "title": "5  Evaluation of the Model",
     "section": "",
-    "text": "5.1 Learnings\nIm Projekt haben wir einige Learnings erhalten. Diese sind:\n- Übersicht und Einführung in Generative AI\n- Large Language Models im Überblick\n- Nutzung der API von OpenAI und der Erstellung einer Anwendung\n- Prompt Engineering\n- Aufbau eines Chatsystems mittels Langchain -&gt; umstellung nach der hälfte des Projekts auf den von OpenAI eigenen Assistant\n- Aufbau einer App mittels modernen Technologien wie React, Python, Flask oder Vue\n- Evaluation of the Chatsystem / LLM",
+    "text": "5.1 Richtigkeit und Verlässlichkeit des Chatbots\nWir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren.\nTestszenario 1\nPrompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.\nTestszenario 2\nPromt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.\nTestszenario 3\nPrompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.\nTestszenario 4\nPrompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Evaluation</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Evaluation of the Model</span>"
     ]
   },
   {
-    "objectID": "evaluation.html#zusammenarbeit-in-der-gruppe",
-    "href": "evaluation.html#zusammenarbeit-in-der-gruppe",
-    "title": "5  Evaluation",
-    "section": "5.2 Zusammenarbeit in der Gruppe",
-    "text": "5.2 Zusammenarbeit in der Gruppe\nZu Beginn des Projekts haben wir zusammen einige Ideen gesammelt und uns schnell für einen Vorschlag entschieden. Wir konnten Aufgaben immer gut verteilen und niemand hat sich aus der Arbeit herausgehalten. Das hat die Entwicklung und die Arbeit am Projekt deutlich erleichtert. Wir haben uns wöchtentlich getroffen und dort am System zusammen gearbeitet und programmiert. Andere To-Do’s wie Prompt Engineering und testing konnten wir einzeln aufteilen und haben dies dann unter der Woche, bis zum nächsten Termin, erledigt. Hier haben wir uns in einem Notion Board organisiert, sodass nicht zwei Personen am gleichen Problem arbeiten. Zusammengefasst können wir auf eine gute Gruppendynamik und gute Zusammenarbeit zurückschauen.",
+    "objectID": "evaluation_of_the_model.html#verbesserung-der-user-experience-ux",
+    "href": "evaluation_of_the_model.html#verbesserung-der-user-experience-ux",
+    "title": "5  Evaluation of the Model",
+    "section": "5.2 Verbesserung der User Experience (UX):",
+    "text": "5.2 Verbesserung der User Experience (UX):\nTestszenario 1: Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.\nManuell:\nVorgehensweise: Der User muss auf die Produktübersicht gehen und die Kachel “Bohren und Schrauben” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.\nDauer: &gt; 5 Minuten\nChatbot:\nPrompt: Ich möchte einen Allrounder Akkuschrauber für Heimwerker.\nAntwort: Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.\nEvaluation: Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.\nDauer: 32 Sekunden\nFazit: Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Evaluation</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Evaluation of the Model</span>"
+    ]
+  },
+  {
+    "objectID": "projekt_evaluation.html",
+    "href": "projekt_evaluation.html",
+    "title": "6  Projekt Evaluation",
+    "section": "",
+    "text": "6.1 Learnings\nIm Projekt haben wir einige Learnings erhalten. Diese sind:\n- Übersicht und Einführung in Generative AI\n- Large Language Models im Überblick\n- Nutzung der API von OpenAI und der Erstellung einer Anwendung\n- Prompt Engineering\n- Aufbau eines Chatsystems mittels Langchain -&gt; umstellung nach der hälfte des Projekts auf den von OpenAI eigenen Assistant\n- Aufbau einer App mittels modernen Technologien wie React, Python, Flask oder Vue\n- Evaluation of the Chatsystem / LLM",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projekt Evaluation</span>"
+    ]
+  },
+  {
+    "objectID": "projekt_evaluation.html#zusammenarbeit-in-der-gruppe",
+    "href": "projekt_evaluation.html#zusammenarbeit-in-der-gruppe",
+    "title": "6  Projekt Evaluation",
+    "section": "6.2 Zusammenarbeit in der Gruppe",
+    "text": "6.2 Zusammenarbeit in der Gruppe\nZu Beginn des Projekts haben wir zusammen einige Ideen gesammelt und uns schnell für einen Vorschlag entschieden. Wir konnten Aufgaben immer gut verteilen und niemand hat sich aus der Arbeit herausgehalten. Das hat die Entwicklung und die Arbeit am Projekt deutlich erleichtert. Wir haben uns wöchtentlich getroffen und dort am System zusammen gearbeitet und programmiert. Andere To-Do’s wie Prompt Engineering und testing konnten wir einzeln aufteilen und haben dies dann unter der Woche, bis zum nächsten Termin, erledigt. Hier haben wir uns in einem Notion Board organisiert, sodass nicht zwei Personen am gleichen Case arbeiten. Ein paar Probleme hatten bei der Evaluation des Chatbots. Zu Beginn wussten wir nicht genau, wie wir das System auf Korrektheit Evaluieren sollten. Da wir unsere Technologie auf den von OpenAI bereitgestellten Assistant umgebaut haben, sind wir auf das Problem gestoßen, dass die vorgestellten Frameworks wie TrueLens zur Evaluation des Systems, das eben auf den Assistent setzt, nicht funktionieren. Deshalb haben wir uns zu Beginn entschieden, die Evaluation manuell vorzunehmen. Dadurch hatten wir dann auch einen ersten guten Einblick erhalten, ob der Bot überhaupt unseren Anwendungsfall abdeckt. Nach einer kurzen Rücksprache mit Prof. Kirenz sind wir dann auf die Suche nach einem geeigneten Framework gegangen, dass auch entwickelte Systeme mit dem von OpenAI bereitgestellten Assistant evaluieren kann. Hier sind wir auf Promptfoo gestoßen. Mit diesem neuen Framework ist es uns dann gelungen, den Chatbot zu evaluieren. Zusammengefasst hatten wir zwar einige Probleme was die Entwicklung aber vor allem die Evaluation betrifft, trotzdem können wir auf eine gute Gruppendynamik und gute Zusammenarbeit im Team zurückschauen. Die Entwicklung im Team hat sehr viel Spaß gemacht und uns einen tiefen Einblick in LLM’s sowie in die modernen Technologien zur Entwicklung und Evaluation LLM basierter Anwendungen gegeben.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projekt Evaluation</span>"
     ]
   },
   {
     "objectID": "fazit.html",
     "href": "fazit.html",
-    "title": "6  Fazit",
+    "title": "7  Fazit",
     "section": "",
     "text": "Das Modul Einsatz von Large Language Models in Unternehmensanwendungen empfanden wir als ein sehr spannendes Projekt. Gerade weil KI in der heutigen Zeit viel Aufmerksamkeit erlangt, Technologien sich ändern und maschinelles Lernen in der Zukunft noch eine Große Rolle spielt, haben wir uns entschieden das Projekt zu wählen. Aus einer Idee, wie man einem Kunden ein besseres Erlebnis in einem Webshop gewähren kann, ist ein funktionierender Chatbot auf Basis des LLM’s von OpenAI in der Version GPT4.5 turbo entstanden. Das hat uns gezeigt, wie einfach heutzutage solche Anwendungen entwickelt werden können. Gleichzeitig wurde uns allen bewusst wie schwer es derzeit ist, aus dem LLM eine perfekte Antwort zu generieren. Mittels prompt Engineering und speziellen kniffen, kann man jedoch eine hohe genauigkeit der Antworten entlocken.\nZuletzt lässt sich festhalten, dass das Projekt einen gelungenen Einblick in die komplexe Welt von Large Language Models gegeben hat.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Fazit</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Fazit</span>"
     ]
   },
   {
@@ -274,16 +284,6 @@
     "href": "links.html",
     "title": "Links",
     "section": "",
-    "text": "Link zur App\nLINK ZUR APP EINFÜGEN",
-    "crumbs": [
-      "Links"
-    ]
-  },
-  {
-    "objectID": "links.html#link-zum-github-repository---application",
-    "href": "links.html#link-zum-github-repository---application",
-    "title": "Links",
-    "section": "Link zum GitHub Repository - Application",
     "text": "Link zum GitHub Repository - Application\nhttps://github.com/llm-hdm/llm-app",
     "crumbs": [
       "Links"
@@ -295,6 +295,16 @@
     "title": "Links",
     "section": "Link zum GitHub Repository - Page Scraper",
     "text": "Link zum GitHub Repository - Page Scraper\nhttps://github.com/llm-hdm/page-scraper",
+    "crumbs": [
+      "Links"
+    ]
+  },
+  {
+    "objectID": "links.html#link-zum-github-repository---documentation",
+    "href": "links.html#link-zum-github-repository---documentation",
+    "title": "Links",
+    "section": "Link zum GitHub Repository - Documentation",
+    "text": "Link zum GitHub Repository - Documentation\nhttps://github.com/llm-hdm/documentation",
     "crumbs": [
       "Links"
     ]
