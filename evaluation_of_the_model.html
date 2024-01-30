@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#richtigkeit-und-verlässlichkeit-des-chatbots" id="toc-richtigkeit-und-verlässlichkeit-des-chatbots" class="nav-link active" data-scroll-target="#richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</a></li>
-  <li><a href="#verbesserung-der-user-experience-ux" id="toc-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Verbesserung der User Experience (UX):</a></li>
+  <li><a href="#messung-der-verbesserung-der-user-experience-ux" id="toc-messung-der-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Messung der Verbesserung der User Experience (UX):</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/llm-hdm/documentation/edit/main/evaluation_of_the_model.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -212,9 +212,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Wir haben uns dazu entschieden, bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren. Die Vorgehensweise ist auf andere Produktkategorien anwendbar.</p>
 <section id="richtigkeit-und-verlässlichkeit-des-chatbots" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</h2>
-<p>Wir haben uns dazu entschieden, und bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren.</p>
 <p><strong>Testszenario 1</strong></p>
 <p>Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.</p>
 <p><strong>Testszenario 2</strong></p>
@@ -224,17 +224,17 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Testszenario 4</strong></p>
 <p>Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.</p>
 </section>
-<section id="verbesserung-der-user-experience-ux" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Verbesserung der User Experience (UX):</h2>
-<p><strong>Testszenario 1:</strong> Ein Kunde möchte einen Akkuschrauber für Heimwerker, der ein guter Allrounder ist.</p>
+<section id="messung-der-verbesserung-der-user-experience-ux" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Messung der Verbesserung der User Experience (UX):</h2>
+<p><strong>Testszenario 1:</strong> Ein Kunde (Heimwerker) möchte eine allrounder Tauchsäge mit Akku.</p>
 <p><strong>Manuell:</strong></p>
-<p><em>Vorgehensweise:</em> Der User muss auf die Produktübersicht gehen und die Kachel “Bohren und Schrauben” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Ein günsitges, zwei Mittelteure und ein hochpreisiges Produkt. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 1,5 Minuten vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Akkuschrauber miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 5 Minuten.</p>
-<p><em>Dauer: &gt; 5 Minuten</em></p>
+<p><em>Vorgehensweise:</em> Der User muss auf die Produktübersicht gehen und die Kachel “Sägen” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 40 Sekunden vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Tauchsägen miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 2 Minuten. DAbei fiel auch auf, dass es nur eine Tauchsäge mit Akku gibt. Das ist ein Pluspunkt der Vergleichsseite. Alternativ kann der Kunde auch die Kachel ‘Akkuwerkzeug’ auswählen. Jedoch hat in unserem Test die Testperson den Reiter ‘Sägen’ gewählt.</p>
+<p><em>Dauer:</em> &gt; 4 Minuten</p>
 <p><strong>Chatbot:</strong></p>
-<p><em>Prompt:</em> Ich möchte einen Allrounder Akkuschrauber für Heimwerker.</p>
-<p><em>Antwort:</em> Ich empfehle Ihnen den TID 18 Akkuschrauber. Er ist leistungsstark, hat einen wartungsfreien Motor und eine ergonomische Bauform, perfekt für den Heimwerker-Alltag.</p>
-<p><em>Evaluation:</em> Der Chatbot empfiehlt ein fortgeschrittenes Modell, was gut für Heimwerker geeignet ist und mit 385,99€ preislich in Ornung ist. Jedoch ist bei dem Gerät kein Akku dabei. Diesen muss man seperat erwerben. Die Antwort ist für die gestellte Frage ist jedoch trotzdem gut, weil das Gerät optimal für Heimwerker, die auch mal etweas mehr als Möbel zusammen bauen, geeigenet ist.</p>
-<p><em>Dauer: 32 Sekunden</em></p>
+<p><em>Prompt:</em> Ich möchte eine allrounder Tauchsäge mit Akku für Heimwerker.</p>
+<p><em>Antwort:</em> Für Heimwerker empfehle ich die Akku-Tauchsäge TSC 55 KEB-Basic. Sie bietet Sicherheit durch KickbackStop und flexible Anpassungen an das Material mit hoher Schnittleistung.</p>
+<p><em>Evaluation:</em> Der Chatbot empfielt dem Heimwerker das einzige Modell das Festool anbietet, welches mit Akku betrieben werden kann. Der Bot verlinkt das passende Gerät gleich, dadurch ist eine Suche nicht nötig. Für die Eingabe des Prompts wurden 15 Sekunden benötigt. Die Antwort kam nach weiteren 19 Sekunden.</p>
+<p><em>Dauer: 34 Sekunden</em></p>
 <p><strong>Fazit:</strong> Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!</p>
 
 
