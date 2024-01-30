@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#richtigkeit-und-verlässlichkeit-des-chatbots" id="toc-richtigkeit-und-verlässlichkeit-des-chatbots" class="nav-link active" data-scroll-target="#richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</a></li>
-  <li><a href="#messung-der-verbesserung-der-user-experience-ux" id="toc-messung-der-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Messung der Verbesserung der User Experience (UX):</a></li>
+  <li><a href="#manuelle-messung-der-verbesserung-der-user-experience-ux" id="toc-manuelle-messung-der-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#manuelle-messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Manuelle Messung der Verbesserung der User Experience (UX):</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/evaluation_of_the_model.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -217,8 +217,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Testszenario 4</strong></p>
 <p>Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.</p>
 </section>
-<section id="messung-der-verbesserung-der-user-experience-ux" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Messung der Verbesserung der User Experience (UX):</h2>
+<section id="manuelle-messung-der-verbesserung-der-user-experience-ux" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="manuelle-messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Manuelle Messung der Verbesserung der User Experience (UX):</h2>
 <p><strong>Testszenario 1:</strong> Ein Kunde (Heimwerker) möchte eine allrounder Tauchsäge mit Akku.</p>
 <p><strong>Manuell:</strong></p>
 <p><em>Vorgehensweise:</em> Der User muss auf die Produktübersicht gehen und die Kachel “Sägen” wählen. Anschließend werden ihm sehr viele Geräte angeboten. Für einen Heimwerker ist die Auswahl enorm. Er benötigt Zeit um alles anzusehen. Um schneller vergleichen zu können Nutzt er die Vergleichs option, die Festool bereits auf ihrer seite anbietet. Jetzt wählt er vier zufällige Modelle aus. Schnell fällt auf, dass nach Auswahl aller Modelle bereits 40 Sekunden vergangen sind. Jetzt gilt es, sich etwas auszukennen und die verschiedenen Features der Tauchsägen miteinander zu vergleichen. Dies dauert in unserem Test deutlich über 2 Minuten. DAbei fiel auch auf, dass es nur eine Tauchsäge mit Akku gibt. Das ist ein Pluspunkt der Vergleichsseite. Alternativ kann der Kunde auch die Kachel ‘Akkuwerkzeug’ auswählen. Jedoch hat in unserem Test die Testperson den Reiter ‘Sägen’ gewählt.</p>
@@ -226,9 +226,19 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Chatbot:</strong></p>
 <p><em>Prompt:</em> Ich möchte eine allrounder Tauchsäge mit Akku für Heimwerker.</p>
 <p><em>Antwort:</em> Für Heimwerker empfehle ich die Akku-Tauchsäge TSC 55 KEB-Basic. Sie bietet Sicherheit durch KickbackStop und flexible Anpassungen an das Material mit hoher Schnittleistung.</p>
-<p><em>Evaluation:</em> Der Chatbot empfielt dem Heimwerker das einzige Modell das Festool anbietet, welches mit Akku betrieben werden kann. Dadurch ist eine Suche nicht nötig. Der Bot verlinkt das passende Gerät gleich. Für die Eingabe des Prompts, wurden 15 Sekunden benötigt. Die Antwort kam nach weiteren 19 Sekunden.</p>
+<p><em>Evaluation:</em> Der Chatbot empfielt dem Heimwerker das einzige Modell das Festool anbietet, welches mit Akku betrieben werden kann. Der Bot verlinkt das passende Gerät gleich, dadurch ist eine Suche nicht nötig. Für die Eingabe des Prompts wurden 15 Sekunden benötigt. Die Antwort kam nach weiteren 19 Sekunden.</p>
 <p><em>Dauer: 34 Sekunden</em></p>
 <p><strong>Fazit:</strong> Der Chatbot beschleunigt die Auswahl von Produkten für Heimwerker oder solche Personen, die weniger vertraut mit Werkzeugen sind!</p>
+<p><strong>Testszenario 2:</strong> Ein Kunde sucht eine leichte Kappsäge für die Baustelle.</p>
+<p><strong>Manuell:</strong></p>
+<p><em>Vorgehensweise:</em> Der Kunde wählt den Reiter Werkzeuge und sieht bereits eine Kachel auf der eine Kappsäge abgebildet ist. Er wählt die Kachel aus und nutzt die Vergleichsfunktion für alle angebotenen Kappsägen (3 Stück). Nun kann er die Gewichte miteinander vergleichen. Nach lesen der Unterschiede entscheidet er sich für das Gerät mit Akku.</p>
+<p><em>Dauer:</em> 3,20 Minuten</p>
+<p><strong>Chatbot:</strong></p>
+<p><em>Prompt:</em> Ich suche eine leichte Kappsäge für die Baustelle.</p>
+<p><em>Antwort:</em> Für den Einsatz auf der Baustelle empfehle ich Ihnen die Kapp-Zugsäge KAPEX KS 60 E. Sie ist kompakt, leicht und dank ihrer ergonomischen Tragegriffe einfach zu transportieren. Weitere Informationen finden Sie hier.</p>
+<p><em>Evaluation:</em> Der Chatbot empfielt und verlinkt das extra für die Montage geeignete Modell ohne Akku. Nach eingabe des Prompts (10 Sekunden) und der Antwort (12 Sekunden) kommt der Kunde in nur 22 Sekunden an das vorgeschlagene Modell. Die passende Säge hat er vorgeschlagen, jedoch nicht erwähnt, dass es zwei Arten dieser Säge gibt. Eine Akku und eine Netz Variante.</p>
+<p><em>Dauer: 22 Sekunden</em></p>
+<p><strong>Fazit:</strong> Der Bot empfielt dem Kunden <em>eine</em> geeignete Säge. Dies ist eine brauchbare Antwort. Dennoch gibt es hier zwei Sägenn, die nahezu identisch sind. Der Hauptunterschied liegt bei der Stromzuführung. Der Bot empfiehlt jedoch die Säge, die auf der Produktseite mit “Verzichtet auf alles, was auf Montage überflüssig ist”, beschrieben wird. Daher ist die Antwort in soweit korrekt. Jedoch wäre eine Erwähnung der Stromversorgung wünschenswert gewesen.</p>
 
 
 </section>

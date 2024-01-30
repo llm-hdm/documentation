@@ -9,7 +9,6 @@ Folgende Daten wurden gespeichert:
 - URL
 - Name
 - Artikelnummer
-- Bruttopreis
 - Beschreibung (Produktbeschreibung)
 - Vorteile / Benefits
 - Technische Daten
