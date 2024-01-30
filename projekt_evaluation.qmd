@@ -14,6 +14,9 @@ Im Projekt haben wir einige Learnings erhalten. Diese sind: \
 ## Zusammenarbeit in der Gruppe
 
 Zu Beginn des Projekts haben wir zusammen einige Ideen gesammelt und uns schnell für einen Vorschlag entschieden. Wir konnten Aufgaben immer gut verteilen und niemand hat sich aus der Arbeit herausgehalten. Das hat die Entwicklung und die Arbeit am Projekt deutlich erleichtert. 
-Wir haben uns wöchtentlich getroffen und dort am System zusammen gearbeitet und programmiert. Andere To-Do's wie Prompt Engineering und testing konnten wir einzeln aufteilen und haben dies dann unter der Woche, bis zum nächsten Termin, erledigt. Hier haben wir uns in einem Notion Board organisiert, sodass nicht zwei Personen am gleichen Problem arbeiten. 
-Zusammengefasst können wir auf eine gute Gruppendynamik und gute Zusammenarbeit zurückschauen.
-
+Wir haben uns wöchtentlich getroffen und dort am System zusammen gearbeitet und programmiert. Andere To-Do's wie Prompt Engineering und testing konnten wir einzeln aufteilen und haben dies dann unter der Woche, bis zum nächsten Termin, erledigt. Hier haben wir uns in einem Notion Board organisiert, sodass nicht zwei Personen am gleichen Case arbeiten. 
+Ein paar Probleme hatten bei der Evaluation des Chatbots. Zu Beginn wussten wir nicht genau, wie wir das System auf Korrektheit Evaluieren sollten. Da wir unsere Technologie auf den von OpenAI bereitgestellten Assistant umgebaut haben, sind wir auf das Problem gestoßen, dass die vorgestellten Frameworks wie TrueLens zur Evaluation des Systems, das eben auf den Assistent setzt, nicht funktionieren. 
+Deshalb haben wir uns zu Beginn entschieden, die Evaluation manuell vorzunehmen. Dadurch hatten wir dann auch einen ersten guten Einblick erhalten, ob der Bot überhaupt unseren Anwendungsfall abdeckt.
+Nach einer kurzen Rücksprache mit Prof. Kirenz sind wir dann auf die Suche nach einem geeigneten Framework gegangen, dass auch entwickelte Systeme mit dem von OpenAI bereitgestellten Assistant evaluieren kann. 
+Hier sind wir auf Promptfoo gestoßen. Mit diesem neuen Framework ist es uns dann gelungen, den Chatbot zu evaluieren.
+Zusammengefasst hatten wir zwar einige Probleme was die Entwicklung aber vor allem die Evaluation betrifft, trotzdem können wir auf eine gute Gruppendynamik und gute Zusammenarbeit im Team zurückschauen. Die Entwicklung im Team hat sehr viel Spaß gemacht und uns einen tiefen Einblick in LLM's sowie in die modernen Technologien zur Entwicklung und Evaluation LLM basierter Anwendungen gegeben.
