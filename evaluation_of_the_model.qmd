@@ -41,8 +41,8 @@ _Prompt:_ Ich möchte eine allrounder Tauchsäge mit Akku für Heimwerker.
 
 _Antwort:_ Für Heimwerker empfehle ich die Akku-Tauchsäge TSC 55 KEB-Basic. Sie bietet Sicherheit durch KickbackStop und flexible Anpassungen an das Material mit hoher Schnittleistung.
 
-_Evaluation:_ Der Chatbot empfielt dem Heimwerker das einzige Modell das Festool anbietet, welches mit Akku betrieben werden kann. Dadurch ist eine Suche nicht nötig. Der Bot verlinkt das passende Gerät gleich.
-Für die Eingabe des Prompts, wurden 15 Sekunden benötigt. Die Antwort kam nach weiteren 19 Sekunden.
+_Evaluation:_ Der Chatbot empfielt dem Heimwerker das einzige Modell das Festool anbietet, welches mit Akku betrieben werden kann. Der Bot verlinkt das passende Gerät gleich, dadurch ist eine Suche nicht nötig.
+Für die Eingabe des Prompts wurden 15 Sekunden benötigt. Die Antwort kam nach weiteren 19 Sekunden.
 
 _Dauer: 34 Sekunden_
 
