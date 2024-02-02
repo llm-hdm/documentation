@@ -69,7 +69,10 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Projekt Dokumentation - 5&nbsp; Evaluation of the Model">
 <meta property="og:description" content="Entwicklung eines KI basierten Chatbot’s am Beispiel des Unternehmens FESTOOL">
+<meta property="og:image" content="https://llm-hdm.github.io/documentation/images/LLM_EVAL.png">
 <meta property="og:site-name" content="Projekt Dokumentation">
+<meta property="og:image:height" content="808">
+<meta property="og:image:width" content="1240">
 </head>
 
 <body class="nav-sidebar floating">
@@ -180,7 +183,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#richtigkeit-und-verlässlichkeit-des-chatbots" id="toc-richtigkeit-und-verlässlichkeit-des-chatbots" class="nav-link active" data-scroll-target="#richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</a></li>
+  <li><a href="#richtigkeit-und-verlässlichkeit-des-chatbots" id="toc-richtigkeit-und-verlässlichkeit-des-chatbots" class="nav-link active" data-scroll-target="#richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</a>
+  <ul class="collapse">
+  <li><a href="#warum-evaluieren" id="toc-warum-evaluieren" class="nav-link" data-scroll-target="#warum-evaluieren"><span class="header-section-number">5.1.1</span> Warum Evaluieren?</a></li>
+  <li><a href="#vorgehen" id="toc-vorgehen" class="nav-link" data-scroll-target="#vorgehen"><span class="header-section-number">5.1.2</span> Vorgehen</a></li>
+  <li><a href="#promtfoo" id="toc-promtfoo" class="nav-link" data-scroll-target="#promtfoo"><span class="header-section-number">5.1.3</span> Promtfoo:</a></li>
+  <li><a href="#welche-metriken-nutzen-wir-zur-evaluation" id="toc-welche-metriken-nutzen-wir-zur-evaluation" class="nav-link" data-scroll-target="#welche-metriken-nutzen-wir-zur-evaluation"><span class="header-section-number">5.1.4</span> Welche Metriken nutzen wir zur Evaluation:</a></li>
+  </ul></li>
   <li><a href="#manuelle-messung-der-verbesserung-der-user-experience-ux" id="toc-manuelle-messung-der-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#manuelle-messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Manuelle Messung der Verbesserung der User Experience (UX):</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/llm-hdm/documentation/edit/main/evaluation_of_the_model.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/llm-hdm/documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -205,17 +214,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Wir haben uns dazu entschieden, bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren. Die Vorgehensweise ist auf andere Produktkategorien anwendbar.</p>
+<p>Unsere Gruppe stand vor einer besonderen Herausforderung bei der Auswertung unserer LLM-Applikation. Vorerst hatten wir uns dazu entschieden die Applikation über einen Vektordatenbank zu handhaben mit den dazugehörigen Framework Langchain. Anfang November präsentierte dann OpenAI die Assistant API und nach ersten Evaluationen der beiden haben wir gemerkt, dass die Assistant API weitaus bessere Ergebnis und schnellere Ergebnisse liefert als Langchain in Kombination mit der Vektordatenbank. Anschließend haben wir uns also für die Assistant API entschieden und nutzen diese.</p>
+<p>Wir haben uns zudem dazu entschieden, bei der Evaluation des Chatbots auf den Produktbereich “Sägen” zu fokussieren. Die Vorgehensweise ist auf andere Produktkategorien anwendbar.</p>
 <section id="richtigkeit-und-verlässlichkeit-des-chatbots" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="richtigkeit-und-verlässlichkeit-des-chatbots"><span class="header-section-number">5.1</span> Richtigkeit und Verlässlichkeit des Chatbots</h2>
-<p><strong>Testszenario 1</strong></p>
-<p>Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.</p>
-<p><strong>Testszenario 2</strong></p>
-<p>Promt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.</p>
-<p><strong>Testszenario 3</strong></p>
-<p>Prompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.</p>
-<p><strong>Testszenario 4</strong></p>
-<p>Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.</p>
+<section id="warum-evaluieren" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="warum-evaluieren"><span class="header-section-number">5.1.1</span> Warum Evaluieren?</h3>
+<p>In diesem Kapitel beschäftigen wir uns damit, warum ein LLM evaluiert werden sollte. Die Evaluation von RAG (Retrieval-Augmented Generation) und LLM (Large Language Models) ist entscheidend, um ihre Leistungsfähigkeit, Anwendbarkeit und Zuverlässigkeit in verschiedenen natürlichsprachlichen Aufgaben zu verstehen. Die Evaluation ermöglicht den Vergleich der Leistung von RAG und LLM mit anderen Modellen oder Methoden. Dies ist wichtig, um herauszufinden, ob diese Ansätze tatsächlich Fortschritte in Bezug auf die Qualität der generierten Inhalte oder die Effektivität des Information Retrievals bieten. Zudem können die Stärken und Schwächen der Modelle identifiziert werden. Dies ist entscheidend, um die Anwendungsgebiete zu bestimmen, in denen die Modelle am effektivsten sind, sowie potenzielle Einschränkungen zu erkennen. Weitergehend kann durch das Evaluieren Entwickler und Forscher Bereiche identifizieren, die verbessert oder weiter optimiert werden müssen. In unserem Fall kann der Prompt so geschrieben werden, dass der Bot bestmögliche Antworten liefert und zudem nicht anfängt zu halluzinieren. Dies trägt zur kontinuierlichen Entwicklung und Verbesserung solcher Modelle bei. Ein weiterer wichtiger Bereiche ist die Benutzerakzeptanz, die eine wichtige Rolle spielt, insbesondere wenn Modelle für reale Anwendungen vorgesehen sind. Durch die Evaluation kann festgestellt werden, ob die generierten Ergebnisse den Erwartungen der Benutzer entsprechen und in den beabsichtigten Anwendungsbereichen nützlich sind. Auch Ethik und Sicherheit dürfen nicht ausgelassen werden, um potenzielle ethische und sicherheitsrelevante Bedenken zu identifizieren, wie zum Beispiel das Vermeiden von unangemessenen oder bösartigen Inhalten. Zusammenfassend ist die Evaluation ein integraler Bestandteil des Modellentwicklungsprozesses, um sicherzustellen, dass die Modelle in der Lage sind, die gewünschten Aufgaben effektiv und zuverlässig zu bewältigen.</p>
+</section>
+<section id="vorgehen" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="vorgehen"><span class="header-section-number">5.1.2</span> Vorgehen</h3>
+<p>Vorerst evaluierten wir den Bot händisch mit verschiedenen Fragen und haben dann manuell entschieden, ob der Bot die richtige Auswahl des Produkts getroffen hat. Grundsätzlich ist dies eine Möglichkeit einen Bot zu evaluieren und damit den Prompt bestmöglich zu gestalten, erfordert aber viel Aufwand. Hier stellt wir und Prof.&nbsp;Dr.&nbsp;Kirenz also schnell fest, dass wir eine skalierbare Lösung brauchen, um unseren Bot und damit den Prompt bestmöglich zu testen, um dann zu schauen welcher Prompt bestmöglich geeignet ist.</p>
+<p><img src="images/LLM_EVAL.png" width="450"></p>
+<p>Da wir unsere Assistant API auswerten wollten, haben wir uns auf die Suche nach einem Framework gemacht, mit dem wir automatisiert und skalierbar unseren Bot evaluieren können. Hier sind wir auf das Framework Promptfoo gestoßen.</p>
+</section>
+<section id="promtfoo" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="promtfoo"><span class="header-section-number">5.1.3</span> Promtfoo:</h3>
+<ul>
+<li>Mit 1,8 k GitHub Stars vs.&nbsp;Trulens 1,1 k Github Stars etwas bekannter</li>
+<li>TypeScript Framework</li>
+<li>Ersteller war bereits bei NASA und Google beschäftigt und ist derzeit Softwareengineer bei Discord</li>
+<li>Auswerten Multipler Prompts</li>
+<li>Unterschiedliche Metriken zur Evaluation</li>
+</ul>
+<p>Wir haben uns dazu entschieden Promptfoo zu nutzen, da wir unseren Assistant direkt integrieren können.</p>
+</section>
+<section id="welche-metriken-nutzen-wir-zur-evaluation" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="welche-metriken-nutzen-wir-zur-evaluation"><span class="header-section-number">5.1.4</span> Welche Metriken nutzen wir zur Evaluation:</h3>
+<p><img src="images/metriken.png" width="650"></p>
+<p><strong>Contains-any:</strong></p>
+<p>Überprüft ob ein Wert aus einer Liste an möglichen Values in der Antwort vorhanden ist.</p>
+<p><strong>Java Script:</strong></p>
+<p>Eigens Entwickeltes js Test-File. Überprüft ob ein Link vorhanden ist. Ist dieser TEil der Antwort, wird die funktionsweise des Links überprüft.</p>
+<p><img src="images/js_testfile.png" width="650"></p>
+<p><strong>Factuality:</strong></p>
+<p>Misst, ob die LLM Ausgabe auf der Wahrheit beruht. Hier wird ein Wert formuliert, der anschließend getestet wird. Beispiel: Prompt: Schlage mir eine Stihl Säge vor. Output: Der vom LLM ausgegebener Text Referenz Wert: Die Antwort bezieht sich auf ein Produkt von FESTOOL -&gt; Anschließend wird ausgegeben: 1 = Pass oder 0= fail</p>
+<p>Es wird überprüft, ob der Chatbot halluziniert.</p>
+<p><strong>Answer-Relevance:</strong></p>
+<p>Bei dieser Metrik wird vorerst die erhaltene Antwort genommen und basierend darauf werden Kandidaten-Fragen generiert. Kandidaten-Fragen sind alternative Formulierungen und Varianten der gestellten Frage. Anschließend wird der Mittelwert der Cosinus Ähnlichkeit zwischen den generierten Fragen und der eigentlichen Frage berechnet. Das Ziel dahinter ist es sicherzustellen, dass die generierte Antwort nicht nur auf die spezifischen Formulierungen passt, sondern auf verschiedene Formen oder Ausdrucksweisen der gleichen Fragen. Eine Antwort wird also als relevant angesehen, wenn sie direkt und angemessen auf die ursprüngliche Frage eingeht. Wichtig ist, dass wir bei der Bewertung der Relevanz einer Antwort nicht die “factuality” berücksichtigen, sondern die Fälle betrachten und als “failed” raten, in denen die Antwort unvollständig ist oder redundante Details enthält.</p>
+<p><strong>Similarity</strong></p>
+<p>Semantische Bewertung bezieht sich darauf, die Verwandtschaft zwischen dem erwarteten und dem ausgegebenen Text zu analysieren, indem man sich auf ihre zugrunde liegenden Bedeutungen konzentriert, anstatt sich ausschließlich auf exakte Wort Übereinstimmungen zu verlassen. Dies wird mit Textembedding-Modellen wie dem Ada-Modell von OpenAI durchgeführt. Um die Semantische Similarity zu berechnen, erfolgt zunächst ein Aufruf an eine Embedding API. Das zugrunde liegende Modell ist das OpenAI Embedding Modell.</p>
+<p>Anschließend wird eine Cosinus Ähnlichkeit der beiden Vektoren berechnet.</p>
+</section>
 </section>
 <section id="manuelle-messung-der-verbesserung-der-user-experience-ux" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="manuelle-messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Manuelle Messung der Verbesserung der User Experience (UX):</h2>

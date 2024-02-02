@@ -1,25 +1,84 @@
 # Evaluation of the Model
 
-Wir haben uns dazu entschieden, bei der Evaluation des Chatbots auf den Produktbereich "Sägen" zu fokussieren.
+Unsere Gruppe stand vor einer besonderen Herausforderung bei der Auswertung unserer LLM-Applikation. Vorerst hatten wir uns dazu entschieden die Applikation über einen Vektordatenbank zu handhaben mit den dazugehörigen Framework Langchain.
+Anfang November präsentierte dann OpenAI die Assistant API und nach ersten Evaluationen der beiden haben wir gemerkt, dass die Assistant API weitaus bessere Ergebnis und schnellere Ergebnisse liefert als Langchain in Kombination mit der Vektordatenbank.
+Anschließend haben wir uns also für die Assistant API entschieden und nutzen diese.
+
+Wir haben uns zudem dazu entschieden, bei der Evaluation des Chatbots auf den Produktbereich "Sägen" zu fokussieren.
 Die Vorgehensweise ist auf andere Produktkategorien anwendbar.
 
 ## Richtigkeit und Verlässlichkeit des Chatbots
 
-**Testszenario 1**
+### Warum Evaluieren?
 
-Prompt: Ich suche eine mobile Tischkreissäge die ich mit auf die Baustelle nehmen kann. Am besten sollte Sie einen Akku haben und der Sägeblattwechsel sollte schnell gehen. Wichtig ist auch, dass ich die Tischkreissäge einfach transportieren kann und evlt. mit meinem Smartphone verbinden kann.
+In diesem Kapitel beschäftigen wir uns damit, warum ein LLM evaluiert werden sollte.
+Die Evaluation von RAG (Retrieval-Augmented Generation) und LLM (Large Language Models) ist entscheidend, um ihre Leistungsfähigkeit, Anwendbarkeit und Zuverlässigkeit in verschiedenen natürlichsprachlichen Aufgaben zu verstehen.
+Die Evaluation ermöglicht den Vergleich der Leistung von RAG und LLM mit anderen Modellen oder Methoden. Dies ist wichtig, um herauszufinden, ob diese Ansätze tatsächlich Fortschritte in Bezug auf die Qualität der generierten Inhalte oder die Effektivität des Information Retrievals bieten.
+Zudem können die Stärken und Schwächen der Modelle identifiziert werden. Dies ist entscheidend, um die Anwendungsgebiete zu bestimmen, in denen die Modelle am effektivsten sind, sowie potenzielle Einschränkungen zu erkennen.
+Weitergehend kann durch das Evaluieren Entwickler und Forscher Bereiche identifizieren, die verbessert oder weiter optimiert werden müssen. In unserem Fall kann der Prompt so geschrieben werden, dass der Bot bestmögliche Antworten liefert und zudem nicht anfängt zu halluzinieren. Dies trägt zur kontinuierlichen Entwicklung und Verbesserung solcher Modelle bei. Ein weiterer wichtiger Bereiche ist die Benutzerakzeptanz, die eine wichtige Rolle spielt, insbesondere wenn Modelle für reale Anwendungen vorgesehen sind. Durch die Evaluation kann festgestellt werden, ob die generierten Ergebnisse den Erwartungen der Benutzer entsprechen und in den beabsichtigten Anwendungsbereichen nützlich sind.
+Auch Ethik und Sicherheit dürfen nicht ausgelassen werden, um potenzielle ethische und sicherheitsrelevante Bedenken zu identifizieren, wie zum Beispiel das Vermeiden von unangemessenen oder bösartigen Inhalten. Zusammenfassend ist die Evaluation ein integraler Bestandteil des Modellentwicklungsprozesses, um sicherzustellen, dass die Modelle in der Lage sind, die gewünschten Aufgaben effektiv und zuverlässig zu bewältigen.
 
-**Testszenario 2**
+### Vorgehen
 
-Promt: Ich suche eine Tauchsäge ohne Akku. Wichtig ist, dass die Säge bei anhalten schnell stopppt und über eine Temperaturüberwachung verfügt. Zudem sollte sie eine lange Lebensdauer haben.
+Vorerst evaluierten wir den Bot händisch mit verschiedenen Fragen und haben dann manuell entschieden, ob der Bot die richtige Auswahl des Produkts getroffen hat. Grundsätzlich ist dies eine Möglichkeit einen Bot zu evaluieren und damit den Prompt bestmöglich zu gestalten, erfordert aber viel Aufwand. Hier stellt wir und Prof. Dr. Kirenz also schnell fest, dass wir eine skalierbare Lösung brauchen, um unseren Bot und damit den Prompt bestmöglich zu testen, um dann zu schauen welcher Prompt bestmöglich geeignet ist.
 
-**Testszenario 3**
+<img src="images/LLM_EVAL.png" width="450">
 
-Prompt: Ich suche eine Dämmstoffsäge mit Akku für die Baustelle. Sie sollte mobil sein, sodass ich sie auch einfach auf dem Gerüst benutzen kann.
+Da wir unsere Assistant API auswerten wollten, haben wir uns auf die Suche nach einem Framework gemacht, mit dem wir automatisiert und skalierbar unseren Bot evaluieren können. Hier sind wir auf das Framework Promptfoo gestoßen.
 
-**Testszenario 4**
+### Promtfoo:
 
-Prompt: Ich brauche eine Schwertsäge mit hoher Schnitttiefe. Zudem wäre es gut, wenn die Säge zum Transport leichter als 11kg ist und ich auch Winkelschnitte ausführen kann.
+- Mit 1,8 k GitHub Stars vs. Trulens 1,1 k Github Stars etwas bekannter
+- TypeScript Framework
+- Ersteller war bereits bei NASA und Google beschäftigt und ist derzeit Softwareengineer bei Discord
+- Auswerten Multipler Prompts
+- Unterschiedliche Metriken zur Evaluation
+
+Wir haben uns dazu entschieden Promptfoo zu nutzen, da wir unseren Assistant direkt integrieren können.
+
+### Welche Metriken nutzen wir zur Evaluation:
+
+<img src="images/metriken.png" width="650">
+
+
+**Contains-any:**
+
+Überprüft ob ein Wert aus einer Liste an möglichen Values in der Antwort vorhanden ist.
+
+**Java Script:**
+
+Eigens Entwickeltes js Test-File.
+Überprüft ob ein Link vorhanden ist. Ist dieser TEil der Antwort, wird die funktionsweise des Links überprüft.
+
+<img src="images/js_testfile.png" width="650">
+
+**Factuality:**
+
+Misst, ob die LLM Ausgabe auf der Wahrheit beruht.
+Hier wird ein Wert formuliert, der anschließend getestet wird. 
+Beispiel:
+Prompt: Schlage mir eine Stihl Säge vor.
+Output: Der vom LLM ausgegebener Text
+Referenz Wert: Die Antwort bezieht sich auf ein Produkt von FESTOOL 
+-> Anschließend wird ausgegeben: 1 = Pass oder 0= fail 
+
+Es wird überprüft, ob der Chatbot halluziniert.
+
+**Answer-Relevance:**
+
+Bei dieser Metrik wird vorerst die erhaltene Antwort genommen und basierend darauf
+werden Kandidaten-Fragen generiert. Kandidaten-Fragen sind alternative Formulierungen und Varianten der gestellten Frage. Anschließend wird der Mittelwert der Cosinus Ähnlichkeit zwischen den generierten Fragen und der eigentlichen Frage berechnet. 
+Das Ziel dahinter ist es sicherzustellen, dass die generierte Antwort nicht nur auf die spezifischen Formulierungen passt, sondern auf verschiedene Formen oder Ausdrucksweisen der gleichen Fragen. Eine Antwort wird also als relevant angesehen, wenn sie direkt und angemessen auf die ursprüngliche Frage eingeht. Wichtig ist, dass wir bei der Bewertung der Relevanz einer Antwort nicht die “factuality” berücksichtigen, sondern die Fälle betrachten und als “failed” raten, in denen die Antwort unvollständig ist oder redundante Details enthält. 
+
+
+**Similarity**
+
+Semantische Bewertung bezieht sich darauf, die Verwandtschaft zwischen dem erwarteten und dem ausgegebenen Text zu analysieren, indem man sich auf ihre zugrunde liegenden Bedeutungen konzentriert, anstatt sich ausschließlich auf exakte Wort Übereinstimmungen zu verlassen. Dies wird mit Textembedding-Modellen wie dem Ada-Modell von OpenAI durchgeführt.
+Um die Semantische Similarity zu berechnen, erfolgt zunächst ein Aufruf an eine Embedding API. Das zugrunde liegende Modell ist das OpenAI Embedding Modell. 
+
+Anschließend wird eine Cosinus Ähnlichkeit der beiden Vektoren berechnet. 
+
+
 
 ## Manuelle Messung der Verbesserung der User Experience (UX):
 
