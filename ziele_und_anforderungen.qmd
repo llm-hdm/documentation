@@ -41,12 +41,13 @@ Nach kurzer Diskussion waren wir uns einig, **Idee 1** weiter zu verfolgen. Dies
 
 - Daten beschaffung gut möglich (über Produktinformationen in dem jeweiligen Online Shop)
 - Realistische Situation was uns motiviert, das System gut zu gestalten
-- Bekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung anwenden
-- relevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)
+- Bekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung entwickeln
+- Relevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)
 
 ## Auswahl des Unternehmens
 
 Bei der Auswahl des Unternehmens war es uns wichtig, dass das Unternehmen folgende eigenschaften Besitzt:
+
 - Kein gleiches oder ähnliches System bereits vorhanden
 - eine gute datenbeschaffungs Basis (viele Produktinformationen in Form von Bedienungsanleitungen Beschreibungen im Online Shop, o.ä.)
 - Produkte für Endanwender
@@ -61,7 +62,7 @@ Aufgrund dieser Kriterien standen für uns folgende Firmen zur Auswahl:
 - Ensinger Mineral-Heilquellen GmbH
 - Kärcher 
 
-Final haben wir uns für die Firma *FESTOOL* entschieden, da sie noch kein so ein System besitzt uns wir überzeugt sind, dass ein solcher Chatbot für Profis als auch für Amateure im Bereich "Bauen" hilfreich sein kann. Zudem hat FESTOOL sehr viele Produktinformationen in ihrem Onlineshop, was sich gut eigenet um es dem LLM als Informationen zu übergeben.
+Final haben wir uns für die Firma *FESTOOL* entschieden, da sie noch kein vergleichbares Chat-System besitzt uns wir überzeugt sind, dass ein solcher Chatbot für Profis als auch für Amateure im Bereich "Bauen und Handwerken" hilfreich sein kann. Zudem hat FESTOOL sehr viele Produktinformationen in ihrem Onlineshop welche sich gut eigenen als Information für das LLM übergeben zu werden. 
 
 ## Business Model Canvas
 
@@ -73,12 +74,11 @@ Final haben wir uns für die Firma *FESTOOL* entschieden, da sie noch kein so ei
 Der Kunde kann...
 
 - Fragen zu Produkten auf der Festtool Website stellen
+- per gesprochener Sprache mit dem Chatbot interagieren
 - Rückfragen zu vorher gestellten Fragen stellen
 - Auf Antworten des Chatbots eingehen
-- Den Chat über einen Button “Clear” schalten
-- Seine Fähigkeit bzw. sein Vorwissen "Profi - Amateur - Anfänger" einstellen
-
-
+- Den Chatbot minimieren und den Chat nach öffnem wieder Aufrufen
+- über ausgegebene Links direkt auf die Produktseite weitergeleitet werden
 
 ## User Personas
 
