@@ -1,7 +1,0 @@
-# Promtfoo Evalution Eerklärung 
-
-Das Excel-Sheet präsentiert die Ergebnisse unserer Evaluation, bei der sechs verschiedene Prompts getestet wurden. Diese wurden hinsichtlich der Metriken "contains any," "javascript (check URL)," "factuality," "answer relevance" und "similarity" überprüft. In der Spalte "Value" sind die Produkte aufgeführt, die gefunden wurden. Wenn in einer Spalte kein Produkt angezeigt wird, kann dies zwei Gründe haben. Erstens könnte ein JavaScript durchgeführt worden sein, das lediglich testet, ob der Link verfügbar ist oder nicht. Eine weitere Möglichkeit besteht darin, dass der Bot auf ein Produkt angesprochen wurde, das nicht von Festool geführt wird, wie beispielsweise ein Rasenmäher, oder der Bot auf eine andere Marke angesprochen wird. Die Spalte "Variable" ist nur für den ersten Prompt relevant, da dieser für verschiedene Sägearten getestet wurde.
-
-Die Spalte "Output" zeigt die Antwort des Bots mit dem entsprechenden Link, falls vorhanden. Die Spalte "Test Passed" gibt Auskunft darüber, ob die Prüfung bestanden wurde oder nicht, und die Spalte "Score" führt das Ergebnis der Prüfung auf.
-
-Das Evaluationsergebnis des Bots ist beeindruckend, mit beeindruckenden 88,6% bestandenen Tests und lediglich 11,4% nicht bestandenen Tests! Das bedeutet, dass der Bot in erstaunlichen 88,6% der Fälle die korrekte Antwort liefert.

@@ -189,6 +189,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#vorgehen" id="toc-vorgehen" class="nav-link" data-scroll-target="#vorgehen"><span class="header-section-number">5.1.2</span> Vorgehen</a></li>
   <li><a href="#promtfoo" id="toc-promtfoo" class="nav-link" data-scroll-target="#promtfoo"><span class="header-section-number">5.1.3</span> Promtfoo:</a></li>
   <li><a href="#welche-metriken-nutzen-wir-zur-evaluation" id="toc-welche-metriken-nutzen-wir-zur-evaluation" class="nav-link" data-scroll-target="#welche-metriken-nutzen-wir-zur-evaluation"><span class="header-section-number">5.1.4</span> Welche Metriken nutzen wir zur Evaluation:</a></li>
+  <li><a href="#ergebnis" id="toc-ergebnis" class="nav-link" data-scroll-target="#ergebnis"><span class="header-section-number">5.1.5</span> Ergebnis:</a></li>
   </ul></li>
   <li><a href="#manuelle-messung-der-verbesserung-der-user-experience-ux" id="toc-manuelle-messung-der-verbesserung-der-user-experience-ux" class="nav-link" data-scroll-target="#manuelle-messung-der-verbesserung-der-user-experience-ux"><span class="header-section-number">5.2</span> Manuelle Messung der Verbesserung der User Experience (UX):</a></li>
   </ul>
@@ -255,6 +256,16 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Similarity</strong></p>
 <p>Semantische Bewertung bezieht sich darauf, die Verwandtschaft zwischen dem erwarteten und dem ausgegebenen Text zu analysieren, indem man sich auf ihre zugrunde liegenden Bedeutungen konzentriert, anstatt sich ausschließlich auf exakte Wort Übereinstimmungen zu verlassen. Dies wird mit Textembedding-Modellen wie dem Ada-Modell von OpenAI durchgeführt. Um die Semantische Similarity zu berechnen, erfolgt zunächst ein Aufruf an eine Embedding API. Das zugrunde liegende Modell ist das OpenAI Embedding Modell.</p>
 <p>Anschließend wird eine Cosinus Ähnlichkeit der beiden Vektoren berechnet.</p>
+</section>
+<section id="ergebnis" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="ergebnis"><span class="header-section-number">5.1.5</span> Ergebnis:</h3>
+<p>Das Excel-Sheet präsentiert die Ergebnisse unserer Evaluation, bei der sechs verschiedene Prompts getestet wurden. Diese wurden hinsichtlich der Metriken “contains any,” “javascript (check URL),” “factuality,” “answer relevance” und “similarity” überprüft. In der Spalte “Value” sind die Produkte aufgeführt, die gefunden wurden. Wenn in einer Spalte kein Produkt angezeigt wird, kann dies zwei Gründe haben. Erstens könnte ein JavaScript durchgeführt worden sein, das lediglich testet, ob der Link verfügbar ist oder nicht. Eine weitere Möglichkeit besteht darin, dass der Bot auf ein Produkt angesprochen wurde, das nicht von Festool geführt wird, wie beispielsweise ein Rasenmäher, oder der Bot auf eine andere Marke angesprochen wird. Die Spalte “Variable” ist nur für den ersten Prompt relevant, da dieser für verschiedene Sägearten getestet wurde.</p>
+<p>Die Spalte “Output” zeigt die Antwort des Bots mit dem entsprechenden Link, falls vorhanden. Die Spalte “Test Passed” gibt Auskunft darüber, ob die Prüfung bestanden wurde oder nicht, und die Spalte “Score” führt das Ergebnis der Prüfung auf.</p>
+<p>Das Evaluationsergebnis des Bots ist beeindruckend, mit beeindruckenden 88,6% bestandenen Tests und lediglich 11,4% nicht bestandenen Tests! Das bedeutet, dass der Bot in erstaunlichen 88,6% der Fälle die korrekte Antwort liefert.</p>
+<p><img src="images/evaluation_erg.png" width="450"></p>
+<p><a href="https://docs.google.com/spreadsheets/d/1Ja2ftZF-HW9Rh0X78Q5FRh7QnoDH0yGZXqmTwf71T6I/edit#gid=0">Link zum Excel-Sheet bei dem alle relevanten Testergebnisse aufgelistet sind</a></p>
+<p><a href="https://app.promptfoo.dev/eval/f:935bcc11-1318-4ca1-bbcf-22d9775a35f0/">Link zum promt-foo Dashboard</a></p>
+<p><strong><em>Hinweis: nicht alle angezeigten Tests im Promptfoo Dashboard sind relevant. Einige testen auch auf Dinge, die keinen Sinn ergeben. Grund ist, dass bei einem Testdurchlauf immer alle Tests gegen alle Prompts getestet werden. Wir haben daher die relevanten Tests in der Excel Tabelle zusammengefasst</em></strong></p>
 </section>
 </section>
 <section id="manuelle-messung-der-verbesserung-der-user-experience-ux" class="level2" data-number="5.2">

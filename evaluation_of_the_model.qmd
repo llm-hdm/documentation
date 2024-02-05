@@ -78,7 +78,21 @@ Um die Semantische Similarity zu berechnen, erfolgt zunächst ein Aufruf an eine
 
 Anschließend wird eine Cosinus Ähnlichkeit der beiden Vektoren berechnet. 
 
+### Ergebnis: 
 
+Das Excel-Sheet präsentiert die Ergebnisse unserer Evaluation, bei der sechs verschiedene Prompts getestet wurden. Diese wurden hinsichtlich der Metriken "contains any," "javascript (check URL)," "factuality," "answer relevance" und "similarity" überprüft. In der Spalte "Value" sind die Produkte aufgeführt, die gefunden wurden. Wenn in einer Spalte kein Produkt angezeigt wird, kann dies zwei Gründe haben. Erstens könnte ein JavaScript durchgeführt worden sein, das lediglich testet, ob der Link verfügbar ist oder nicht. Eine weitere Möglichkeit besteht darin, dass der Bot auf ein Produkt angesprochen wurde, das nicht von Festool geführt wird, wie beispielsweise ein Rasenmäher, oder der Bot auf eine andere Marke angesprochen wird. Die Spalte "Variable" ist nur für den ersten Prompt relevant, da dieser für verschiedene Sägearten getestet wurde.
+
+Die Spalte "Output" zeigt die Antwort des Bots mit dem entsprechenden Link, falls vorhanden. Die Spalte "Test Passed" gibt Auskunft darüber, ob die Prüfung bestanden wurde oder nicht, und die Spalte "Score" führt das Ergebnis der Prüfung auf.
+
+Das Evaluationsergebnis des Bots ist beeindruckend, mit beeindruckenden 88,6% bestandenen Tests und lediglich 11,4% nicht bestandenen Tests! Das bedeutet, dass der Bot in erstaunlichen 88,6% der Fälle die korrekte Antwort liefert.
+
+<img src="images/evaluation_erg.png" width="450">
+
+[Link zum Excel-Sheet bei dem alle relevanten Testergebnisse aufgelistet sind](https://docs.google.com/spreadsheets/d/1Ja2ftZF-HW9Rh0X78Q5FRh7QnoDH0yGZXqmTwf71T6I/edit#gid=0)
+
+[Link zum promt-foo Dashboard](https://app.promptfoo.dev/eval/f:935bcc11-1318-4ca1-bbcf-22d9775a35f0/)
+
+**_Hinweis: nicht alle angezeigten Tests im Promptfoo Dashboard sind relevant. Einige testen auch auf Dinge, die keinen Sinn ergeben. Grund ist, dass bei einem Testdurchlauf immer alle Tests gegen alle Prompts getestet werden. Wir haben daher die relevanten Tests in der Excel Tabelle zusammengefasst_**
 
 ## Manuelle Messung der Verbesserung der User Experience (UX):
 
