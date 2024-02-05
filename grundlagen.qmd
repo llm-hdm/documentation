@@ -8,12 +8,12 @@ Der Kurs *Einsatz von Large Language Models im Unternehmensanwendungen* konzentr
 
 ## Technologien
 
-Die verwendeten Technologien sind in unserem Fall: GPT4.5 turbo, **//////////////////////////////** 
-Desweiteren React, Python, AWS-Cloud (hier cloud dienste Angeben) ...
+Die verwendeten Technologien sind in unserem Fall: GPT-4-turbo-preview, OpenAI Assistent, SpechToText API
+Desweiteren React, Python, Flask, Flask-RESTx Tailwind CSS und Vite
 
 
 ## Betreuung und Beratung bei der Entwicklung
 
 - Prof. Dr. Jan Kirenz
-- ZOI TechCOn GmbH
+- ZOI TechCon GmbH
 
