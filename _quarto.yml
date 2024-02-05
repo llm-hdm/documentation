@@ -37,6 +37,7 @@ book:
         - ziele_und_anforderungen.qmd
         - design_und_entwicklung.qmd
         - evaluation.qmd
+        - Promtfoo.qmd
         - fazit.qmd
         - benutzeranleitung.qmd
         - links.qmd
