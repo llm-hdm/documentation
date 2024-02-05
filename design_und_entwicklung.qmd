@@ -108,11 +108,11 @@ Zudem steht es dem User frei, einen Darkmode oder den normalen weißen Modus des
 
 **Dark-Mode:**
 
-![](images/Darkmode1.png){width=50%} 
+<img src="images/Darkmode.png" width="50%">
 
 **Normal-Mode:**
 
-![](images/Darkmode2.png){width=50%}
+<img src="images/Lightmode.png" width="50%">
 
 ## Frontend
 Die Benutzeroberfläche unserer Software wurde mit modernen Technologien entwickelt, um eine reibungslose und ansprechende Benutzererfahrung zu gewährleisten.
