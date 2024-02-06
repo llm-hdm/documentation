@@ -263,8 +263,8 @@ Im Laufe des Programms besucht der Scraper dann jede URL und speichert die oben 
 <section id="software-architecture" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="software-architecture"><span class="header-section-number">4.3</span> Software Architecture</h2>
 <p>Aufgrund der schnellen Entwicklung von technologien im Bereich von LLM’s haben wir in der Zeit der Entwicklung zwei verschiedene Software Architekturen implementiert.<br>
-Zu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf ‘GPT4 turbo preview’ umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die genauigkeit der Antworten des Modells durch neue Prompts verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben.<br>
-Die Vektor-Datenbank (ChromaDB) haben wir vollständig durch OpenAI’s eigenen Assistent abgelöst in dem wir das file mit allen Produktinformationen direkt im Assisten hochgeladen haben. Auch hier konnten wir eine deutliche Verbesserung der Performance als auch der Genauigkeit des Outputs des Modells erhalten.</p>
+Zu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf ‘GPT4 turbo preview’ umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die Genauigkeit der Antworten des Modells durch neue Prompts verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben.<br>
+Die Vektor-Datenbank (ChromaDB) haben wir vollständig durch OpenAI’s eigenen Assistent abgelöst in dem wir das file mit allen Produktinformationen direkt im Assistant hochgeladen haben. Auch hier konnten wir eine deutliche Verbesserung der Performance als auch der Genauigkeit des Outputs des Modells erhalten.</p>
 <p><strong>Version 1:</strong></p>
 <p><img src="images/Software_Architektur_1.png" width="650"></p>
 <p><strong>Version 2:</strong></p>
