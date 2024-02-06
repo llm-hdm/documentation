@@ -89,8 +89,8 @@ Antworte immer auf Deutsch.
 ## Software Architecture
 
 Aufgrund der schnellen Entwicklung von technologien im Bereich von LLM's haben wir in der Zeit der Entwicklung zwei verschiedene Software Architekturen implementiert. \
-Zu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf 'GPT4 turbo preview' umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die genauigkeit der Antworten des Modells durch neue Prompts verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben. \
-Die Vektor-Datenbank (ChromaDB) haben wir vollständig durch OpenAI's eigenen Assistent abgelöst in dem wir das file mit allen Produktinformationen direkt im Assisten hochgeladen haben. Auch hier konnten wir eine deutliche Verbesserung der Performance als auch der Genauigkeit des Outputs des Modells erhalten.
+Zu Beginn basierte unser Protoyp auf GPT3.5 turbo. Im Laufe der Entwicklung haben wir das Modell auf 'GPT4 turbo preview' umgestellt. Dies hatte deutliche performance verbesserungen. Gleichzeitig konnten wir die Genauigkeit der Antworten des Modells durch neue Prompts verbessern. Zudem hat das neue Modell uns den Vorteil geboten, mehr Tokens pro Request an das Modell mitzugeben. \
+Die Vektor-Datenbank (ChromaDB) haben wir vollständig durch OpenAI's eigenen Assistent abgelöst in dem wir das file mit allen Produktinformationen direkt im Assistant hochgeladen haben. Auch hier konnten wir eine deutliche Verbesserung der Performance als auch der Genauigkeit des Outputs des Modells erhalten.
 
 **Version 1:**
 

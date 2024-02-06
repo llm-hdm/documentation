@@ -5,7 +5,9 @@ Anfang November präsentierte dann OpenAI die Assistant API und nach ersten Eval
 Anschließend haben wir uns also für die Assistant API entschieden und nutzen diese.
 
 Wir haben uns zudem dazu entschieden, bei der Evaluation des Chatbots auf den Produktbereich "Sägen" zu fokussieren.
-Die Vorgehensweise ist auf andere Produktkategorien anwendbar.
+Da wir auch zu den anderen Produktbereichen durch das Webscrappen ähnlich viele Daten haben sollte der Test der Sägen auch aussagekräftig sein für die 
+anderen Produktbereiche.
+Das Testen wäre aber auch auf andere Produktkategorien anwendbar.
 
 ## Richtigkeit und Verlässlichkeit des Chatbots
 
@@ -23,10 +25,13 @@ Auch Ethik und Sicherheit dürfen nicht ausgelassen werden, um potenzielle ethis
 Vorerst evaluierten wir den Bot händisch mit verschiedenen Fragen und haben dann manuell entschieden, ob der Bot die richtige Auswahl des Produkts getroffen hat. Grundsätzlich ist dies eine Möglichkeit einen Bot zu evaluieren und damit den Prompt bestmöglich zu gestalten, erfordert aber viel Aufwand. Hier stellt wir und Prof. Dr. Kirenz also schnell fest, dass wir eine skalierbare Lösung brauchen, um unseren Bot und damit den Prompt bestmöglich zu testen, um dann zu schauen welcher Prompt bestmöglich geeignet ist.
 
 <img src="images/LLM_EVAL.png" width="450">
+Quelle: https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/ 
 
+
+Die folgeden Abbildung zeigt, dass die manuelle Auswertung durch Menschen ähnlich bedeutend und aussagekräftig ist wie die Evaluation mit LLM´s ist aber keine Möglichkeit bietet zu skalieren.
 Da wir unsere Assistant API auswerten wollten, haben wir uns auf die Suche nach einem Framework gemacht, mit dem wir automatisiert und skalierbar unseren Bot evaluieren können. Hier sind wir auf das Framework Promptfoo gestoßen.
 
-### Promtfoo:
+### Promptfoo:
 
 - Mit 1,8 k GitHub Stars vs. Trulens 1,1 k Github Stars etwas bekannter
 - TypeScript Framework

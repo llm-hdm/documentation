@@ -41,7 +41,7 @@ Nach kurzer Diskussion waren wir uns einig, **Idee 1** weiter zu verfolgen. Dies
 
 - Daten beschaffung gut möglich (über Produktinformationen in dem jeweiligen Online Shop)
 - Realistische Situation was uns motiviert, das System gut zu gestalten
-- Bekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anahnd eines realen Problems unsere Lösung entwickeln
+- Bekannter Prozess. Wir müssen nicht erst fiktive Unternehmensprozesse erfinden sondern können direkt anhand eines realen Problems unsere Lösung entwickeln
 - Relevanz der Idee in der realen Welt (Chat Systeme finden immer mehr Anwendung in Verkaufssituationen)
 
 ## Auswahl des Unternehmens
