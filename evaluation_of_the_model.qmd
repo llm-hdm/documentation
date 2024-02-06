@@ -89,7 +89,13 @@ Das Excel-Sheet präsentiert die Ergebnisse unserer Evaluation, bei der sechs ve
 
 Die Spalte "Output" zeigt die Antwort des Bots mit dem entsprechenden Link, falls vorhanden. Die Spalte "Test Passed" gibt Auskunft darüber, ob die Prüfung bestanden wurde oder nicht, und die Spalte "Score" führt das Ergebnis der Prüfung auf.
 
-Das Evaluationsergebnis des Bots ist beeindruckend, mit beeindruckenden 88,6% bestandenen Tests und lediglich 11,4% nicht bestandenen Tests! Das bedeutet, dass der Bot in erstaunlichen 88,6% der Fälle die korrekte Antwort liefert.
+Der Bot lieferte uns gute Ergebnis hinsichtlich der getesteten Metriken. Zum einen Bestand der Bot alle Test hinsichtlich der Factuality. Damit haben wir geprüft ob der Bot halluziniert, also z.B. Produkte erfindet die es nicht im Sortiment gibt oder Konkurrenz Produkte vorschlägt. Anderseits haben wir geprüft ob richtige Produkte ausgegeben werden bei speziellen Fragen. Zusätzlich haben wir durch die Answer-relevance testen können ob der Bot uns vollständige Antworten liefert, hier konnten wir dem Bot auch gute Ergebisse testieren.
+Auch die Qualität der generierten Antoworten war zufriedenstellend. Hier überprüften wir die semantische Ähnlichkeit einer von uns festgelegten Antwort und der generierten Antowort. 
+
+Dies nur die Basis einer vollständigen Evaluaution, liefert aber unserer Meinung bereits wichtige Erkenntisse zum Bot. 
+Erkenntnisse die wir daraus ziehen konnten waren unter anderem Situationen in dennen der Bot Sägen vorschlug, die für den geforderten Use-case nicht perfekt zugeschnitten sind. Wir haben aber gemerkt, dass der Bot sich in diesen Situationen oftmals an Detailfragen aufgehangen hat, die wir ihm durch die gegebenen Produktinformationen mitgegeben haben. Hier würden wir zukünftig empfehlen detaillierte Daten dem Bot zur Verfügung zu stellen. Der Bot kann ja in diesem Fall nur so schlau sein wie die ihm zur Verfügung gestellten Daten das zulassen. 
+Zukünftig würden wir unsere Evaluautionstest außerdem nochmals mit einem Experten besprechen, da es vorkommen kann das unser Wissen nicht ausreicht um die Ergebnisse zu beurteilen. Das heißt eine vorgeschlagene Säge kann eventuell doch einen Sinn ergeben oder es gibt eventuell doch eine andere Säge die für den Anwendungsfall besser passt. Zufriedenstellen aus unsere Sicht war aber dass  der Bot mit beeindruckenden 88,6% bestandenen Tests und lediglich 11,4% nicht bestandenen Tests glänzen konnte! Das bedeutet, dass der Bot in erstaunlichen 88,6% der Fälle die korrekte Antwort liefert.
+
 
 <img src="images/evaluation_erg.png" width="450">
 
